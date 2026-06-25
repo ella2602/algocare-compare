@@ -88,6 +88,9 @@
   }
   section.product > h2 .num{color:var(--accent);font-weight:700;margin-right:12px;}
   .sub{color:var(--muted);font-size:.94rem;font-weight:400;margin-left:14px;}
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start;}
+  .two-col > div{min-width:0;}
+  @media(max-width:720px){.two-col{grid-template-columns:1fr;gap:0;}}
   h3{
     font-size:1.06rem;font-weight:600;margin:40px 0 16px;
     display:flex;align-items:center;gap:10px;
@@ -168,6 +171,8 @@
   <section class="product" id="multi">
     <h2><span class="num">01</span>멀티미네랄 비타민 <span class="sub">알고케어 멀티미네랄비타민 vs 오쏘몰 이뮨</span></h2>
 
+    <div class="two-col">
+    <div>
     <h3>비교군 · 오쏘몰 이뮨</h3>
     <div class="block">
       <ul>
@@ -177,7 +182,8 @@
         <li>공식 홈페이지 기준 개별 성분 원료사 미공개</li>
       </ul>
     </div>
-
+    </div>
+    <div>
     <h3>알고케어 멀티미네랄비타민의 차별점</h3>
     <div class="block brand">
       <ul>
@@ -189,7 +195,11 @@
         <li>비타민 D는 멀티 안에서는 기본량으로 설계하고, 필요 시 별도 비타민 D 제품으로 보충하도록 라인업 분리</li>
       </ul>
     </div>
+    </div>
+    </div>
 
+    <div class="two-col">
+    <div>
     <h3>가격</h3>
     <div class="table-wrap">
       <table class="price-table">
@@ -202,7 +212,8 @@
         </tbody>
       </table>
     </div>
-
+    </div>
+    <div>
     <h3>성분 수 비교</h3>
     <div class="table-wrap">
       <table class="slim">
@@ -214,6 +225,8 @@
           <tr><td class="left">미네랄</td><td class="algo-col">8종</td><td>8종</td></tr>
         </tbody>
       </table>
+    </div>
+    </div>
     </div>
 
     <h3>성분 함량 및 원료사 비교표</h3>
