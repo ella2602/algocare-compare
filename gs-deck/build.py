@@ -396,3 +396,91 @@ document.fonts.ready.then(()=>{{
 </script></body></html>"""
 (ROOT / "deck.html").write_text(doc, encoding="utf-8")
 print("pages:", len(pages))
+
+# ---------------------------------------------------------------- 상세판(FULL)
+# 노션 특징 문구 전체(data/features_full.md)를 표 다음 장에 「상세 비교 포인트」로 추가한 별도 파일
+import os
+if os.environ.get("FULL"):
+    FEAT = (ROOT / "data" / "features_full.md").read_text(encoding="utf-8")
+    FSEC = {}
+    for sec in re.split(r"\n(?=## )", FEAT):
+        m = re.match(r"## (.+)\n", sec)
+        if m:
+            FSEC[m.group(1).strip()] = sec[m.end():]
+
+    def feat_html(txt):
+        out, depth = [], 0
+        def close_to(d):
+            nonlocal depth
+            while depth > d:
+                out.append("</li></ul>"); depth -= 1
+        for line in txt.splitlines():
+            if not line.strip():
+                continue
+            mb = re.match(r"\*\*\[(.+?)\]\s*(.*?)\s*\*\*\s*$", line)
+            if mb:
+                close_to(0)
+                if out: out.append("</div>")
+                out.append('<div class="fb">')
+                sub = f'<span>{cell_html(mb.group(2).lstrip("- "))}</span>' if mb.group(2) else ""
+                out.append(f'<h3 class="fb-h">{cell_html(mb.group(1))}{sub}</h3>')
+                continue
+            ml = re.match(r"( *)- (.*)", line)
+            if not ml:
+                continue
+            d = len(ml.group(1)) // 2 + 1
+            if d > depth:
+                while depth < d:
+                    out.append(f'<ul class="lv{depth+1}"><li>'); depth += 1
+            else:
+                close_to(d)
+                out.append("</li><li>")
+            out.append(cell_html(ml.group(2)))
+        close_to(0)
+        out.append("</div>")
+        return "".join(out)
+
+    def detail_page(b):
+        key = next(k for k in FSEC if k.startswith(b["table"]))
+        return (f'<section class="page dp"><header class="tp-h"><div class="eyebrow"><b>{b["no"]}</b><span>{b["en"]}</span><i>DETAIL</i></div>'
+                f'<h2>{html.escape(b["name"])} <span>상세 비교 포인트</span></h2></header>'
+                f'<div class="dp-body"><div class="dp-cols">{feat_html(FSEC[key])}</div></div>{footer()}</section>')
+
+    PAGE_NO[0] = 0
+    pages = [cover(), lineup()]
+    for b in BOTTLES:
+        pages.append(hero_page(b))
+        if b["table"]:
+            pages.append(table_page(b, tbl(b["table"])))
+            pages.append(detail_page(b))
+    pages.append(closing())
+    DCSS = """
+.dp-body{position:absolute;left:14mm;right:14mm;top:31mm;bottom:17mm}
+.dp-cols{column-count:2;column-gap:12mm;column-fill:auto;height:100%;font-size:9pt;line-height:1.6;color:var(--ink2)}
+.fb-h{break-after:avoid;font-size:1.02em;font-weight:700;color:var(--ink);padding:.5em 0 .45em;margin-bottom:.5em;border-bottom:0.6pt solid var(--ink);letter-spacing:-0.02em}
+.fb{break-inside:avoid-column}\n.fb+.fb{margin-top:1.4em}
+.fb-h span{display:block;font-size:.8em;font-weight:500;color:var(--mute);margin-top:.15em}
+.dp ul{list-style:none}
+.dp ul.lv1>li{position:relative;padding-left:1.1em;margin-bottom:.55em;font-weight:600;color:var(--ink);break-inside:avoid-column}
+.dp ul.lv1>li::before{content:"";position:absolute;left:0;top:.62em;width:.38em;height:.38em;background:var(--orange);border-radius:50%}
+.dp ul.lv2{margin-top:.25em}
+.dp ul.lv2>li{position:relative;padding-left:.95em;margin-bottom:.2em;font-weight:400;color:var(--ink2)}
+.dp ul.lv2>li::before{content:"";position:absolute;left:.1em;top:.78em;width:.45em;height:0.5pt;background:var(--mute)}
+.dp ul.lv3{margin-top:.15em}
+.dp ul.lv3>li{position:relative;padding-left:.9em;font-size:.92em;color:var(--mute)}
+.dp ul.lv3>li::before{content:"·";position:absolute;left:.2em}
+.dp ul.lv4>li{padding-left:.9em;font-size:.95em;color:var(--mute)}
+.dp a{border-bottom:0.5pt solid currentColor}
+"""
+    FIT = doc[doc.index("<script>"):doc.index("</script>") + 9]
+    FIT2 = FIT.replace("document.body.dataset.fitted='1';",
+        "document.querySelectorAll('.dp-body').forEach(bx=>{const c=bx.querySelector('.dp-cols');"
+        "let a=6,b=12;for(let i=0;i<14;i++){const m=(a+b)/2;c.style.fontSize=m+'pt';"
+        "(c.scrollWidth>c.clientWidth+1)?b=m:a=m;}c.style.fontSize=a+'pt';});"
+        "document.body.dataset.fitted='1';")
+    docf = f"""<!doctype html><html lang="ko"><head><meta charset="utf-8">
+<title>알고케어 뉴트리션 보틀 품질 비교 자료 (상세판)</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>{CSS}{DCSS}</style></head><body>{''.join(pages)}{FIT2}</body></html>"""
+    (ROOT / "deck_full.html").write_text(docf, encoding="utf-8")
+    print("full pages:", len(pages))
