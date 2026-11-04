@@ -216,7 +216,7 @@ BOTTLES = [
         ("Kaneka Ubiquinol® 100mg", "미국 프리미엄 시장의 대표 유비퀴놀 원료", "kaneka"),
         ("Pycnogenol® 150mg", "프랑스 해안송 추출물 Horphag사 Pycnogenol®을 더한 복합 설계", "pycnogenol"),
         ("활성형 B군", "엽산(Quatrefolic® 5-MTHF) · B6(P5P) · B2(R5P) · B12(메틸코발라민)"),
-        ("미국 수출용 / 국내 직구 고객 타겟", "유비퀴놀 형태를 선호하는 해외 직구 고객층의 니즈를 반영한 설계"),
+        ("미국 수출용 / 국내 고관여 고객 타겟", "유비퀴놀 형태를 선호하는 해외 직구 고객층의 니즈를 반영한 설계"),
       ],
       core="미국 출시 예정 · 유비퀴놀에 혈관 건강 원료를 더한 복합 설계"),
  dict(key="lutein", no="05", en="LUTEIN & ZEAXANTHIN", table="5. 루테인",
@@ -264,7 +264,7 @@ BOTTLES = [
       core="미국 출시 예정 · Albion TRAACS® 킬레이트 마그네슘을 원하는 고관여 고객을 위한 USA 라인"),
  dict(key="milk", no="07", en="MILK THISTLE", table="7. 밀크씨슬",
       name="알고케어 뉴트리션 밀크씨슬", photo="milk", pillcap="미니정제 · 1정 실리마린 43.33mg",
-      hero="글로벌 프리미엄 허브 이탈리아 원료사<br>Indena의 밀크씨슬",
+      hero="글로벌 프리미엄 허브 원료사<br>이탈리아 Indena사 밀크씨슬",
       stats=[("60", "%", "실리마린 순도"), ("130", "mg", "1일 실리마린 (기능성 함량)"), ("43.33", "mg", "1정 실리마린")],
       points=[
         ("Indena(이탈리아) 원료", "세계적인 허브 추출물 원료사 Indena의 순도 60% 밀크씨슬", "indena"),
