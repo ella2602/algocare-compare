@@ -612,7 +612,7 @@ def lineup(appendix=None):
 def closing():
     pillars = [
         ("SOURCE", "글로벌 프리미엄 원료를 씁니다", "Polaris · Indena · DSM · Gnosis MenaQ7® · Laila SERRATRIN® · 일동바이오사이언스 외 — 성분마다 검증된 프리미엄 원료사 원료 사용"),
-        ("DOSE", "미니정제 알 수 조절로 개인별 맞춤 실현", "오메가3 · 멜라토닌 · 비타민D · 칼슘&마그네슘까지, 고정 1회분이 아닌 정 · 캡슐 단위 조절"),
+        ("DOSE", "미니정제 알 수 조절로 개인별 맞춤 실현", "오메가3 · 멜라토닌 · 비타민D · 칼슘&마그네슘까지 — 고정 1회분이 아닌 정 · 캡슐 단위 조절"),
         ("SYSTEM", "설계 단계부터 중복 섭취를 막습니다", "단일 배합 보틀로 멀티비타민미네랄과의 중복 섭취를 막는 알고케어 시스템"),
     ]
     cards = "".join(f'<div class="pl"><div class="pl-en">{e}</div><h3>{t}</h3><p>{html.escape(d).replace(' — ', '<br>')}</p></div>' for e, t, d in pillars)
