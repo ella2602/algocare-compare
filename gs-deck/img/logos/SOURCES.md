@@ -27,3 +27,4 @@
 - NOVICHEM, Novotech, Superior Powders, Molecules bio labs: 히어로 페이지 포인트 제목에 나오지 않거나 쓸 만한 공식 마크가 없음
 
 | Shoden® | https://nxtingredients.com/wp-content/uploads/2025/04/SHODEN-BY-ARJUNA-NATURAL-LOGO-min.png (Arjuna Natural 공식 유통사 NXT Ingredients 게시 브랜드 로고, 하단 태그라인 잘라냄·흰 배경 투명화) |
+| Pycnogenol® | Horphag 공식 로고 키트 pycnogenol_horizontal_large.svg에서 PYCNOGENOL® 워드마크만 잘라냄(원본 색) |

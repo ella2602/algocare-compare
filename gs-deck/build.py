@@ -75,7 +75,7 @@ ROW_LABEL = {"판매 링크": "판매처"}
 # 비교표 원료사 행(알고케어 열)에 원료사 공식 마크를 붙임: 셀 문구에 나오는 원료사만
 TABLE_LOGO_KW = [("Polaris", "polaris"), ("일동바이오사이언스", "ildong"),
                  ("Lute-gen", "lutegen"), ("Indena", "indena"), ("Aquamin", "aquamin"), ("아쿠아민", "aquamin"),
-                 ("Albion", "albion"), ("Nektium", "nektium"), ("DSM", "dsm"), ("Laila", "laila"), ("Lactium", "lactium"), ("Shoden", "shoden")]
+                 ("Albion", "albion"), ("Nektium", "nektium"), ("DSM", "dsm"), ("Laila", "laila"), ("Lactium", "lactium"), ("Shoden", "shoden"), ("Pycnogenol", "pycnogenol")]
 
 def table_logos(label, cell):
     if "원료사" not in label:
@@ -213,10 +213,10 @@ BOTTLES = [
       hero="Kaneka® Ubiquinol에 Pycnogenol®까지,<br>혈관 케어 프리미엄 보틀",
       stats=[("100", "mg", "Kaneka Ubiquinol®"), ("150", "mg", "Pycnogenol®"), ("4", "종", "활성형 B군")],
       points=[
-        ("Kaneka Ubiquinol® 100mg", "미국 프리미엄 시장의 대표 유비퀴놀 원료. 쏜리서치 유비퀴놀과 같은 원료", "kaneka"),
-        ("Pycnogenol® 150mg", "Horphag 피크노제놀을 더한 복합 설계"),
+        ("Kaneka Ubiquinol® 100mg", "미국 프리미엄 시장의 대표 유비퀴놀 원료", "kaneka"),
+        ("Pycnogenol® 150mg", "프랑스 해안송 추출물 Horphag사 Pycnogenol®을 더한 복합 설계", "pycnogenol"),
         ("활성형 B군", "엽산(Quatrefolic® 5-MTHF) · B6(P5P) · B2(R5P) · B12(메틸코발라민)"),
-        ("미국용 · 국내 직구 고객용", "유비퀴놀 형태를 선호하는 해외 직구 고객층의 니즈를 반영한 설계"),
+        ("미국 수출용 / 국내 직구 고객 타겟", "유비퀴놀 형태를 선호하는 해외 직구 고객층의 니즈를 반영한 설계"),
       ],
       core="미국 출시 예정 · 유비퀴놀에 혈관 건강 원료를 더한 복합 설계"),
  dict(key="lutein", no="05", en="LUTEIN & ZEAXANTHIN", table="5. 루테인",
@@ -401,6 +401,7 @@ LOGOS = {   # 4번째 값: 밝은 색 마크를 다른 로고와 같은 회색 �
     "ildong":  ("ildong.png", 2.8, "Ildong Bioscience", "dark"),
     "lactium": ("lactium.png", 5.6, "Lactium", ""),
     "shoden":  ("shoden.png", 3.2, "Shoden", ""),
+    "pycnogenol": ("pycnogenol.png", 2.6, "Pycnogenol", ""),
     "kaneka":  ("kaneka.svg", 5.0, "Kaneka Nutrients", "dark"),
     "lutegen": ("lutegen.png", 6.2, "Lute-gen", "dark"),
     "indena":  ("indena.svg", 4.4, "Indena", ""),
