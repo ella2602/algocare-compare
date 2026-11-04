@@ -295,7 +295,7 @@ BOTTLES = [
       core="Nektium 홍경천 200mg과 L-테아닌 200mg을 한 보틀에 담은 스트레스 관리 집중 보틀"),
  dict(key="multi", no="10", en="MULTIVITAMIN & MINERAL", table="10. 멀티",
       name="알고케어 뉴트리션 멀티비타민미네랄", photo="multi", pillcap="미니정제 120mg",
-      hero="DSM·MenaQ7® 등 글로벌 원료사를 담은<br>데일리 밸런스 멀티",
+      hero="글로벌 프리미엄 원료로 구성한<br>데일리 밸런스 멀티",
       stats=[("21", "종", "비타민 13 · 미네랄 8"), ("40", "%", "지용성 A · E · K 기준치"), ("4~15", "정", "고객별 1일 섭취 범위")],
       points=[
         ("필요한 만큼 다르게, 차등 설계", "B1 · B12 1,000%로 높이고 지용성 A · E · K 40%, 비타민D 60%, 미량미네랄 60~80%"),
@@ -303,7 +303,7 @@ BOTTLES = [
         ("중성 비타민C · K1+K2", "위장관 부담까지 고려한 L-아스코브산칼슘. 국내 비교 제품 중 MenaQ7® K2를 갖춘 유일한 제품"),
         ("칼슘 · 마그네슘은 별도 보틀", "시너지 마그네슘 · 칼슘&마그네슘 보틀로 나눠 중복 섭취 방지. 120mg 미니정제로 정 수 조절"),
       ],
-      core="충족형(100%)도 고함량형(수천%)도 아닌 차등 설계 — 지용성 A · E · K 40%, 정 수 맞춤 조절까지"),
+      core="DSM · MenaQ7® 등 글로벌 원료사와 중성 비타민C로 완성한 데일리 멀티비타민미네랄"),
  dict(key="multi-line", no="10-1", en="MULTI · PRESTIGE & USA", table=None, prerelease=True,
       name="알고케어 프레스티지 멀티비타민미네랄 · (가칭) 알고케어 USA Essential Mineral Multi", photo=None, badge="PRESTIGE · USA",
       split=[
