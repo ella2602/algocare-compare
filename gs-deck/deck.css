@@ -144,13 +144,15 @@ table.cmp.dense{line-height:1.36}
 table.cmp.dense th,table.cmp.dense td{padding:.42em .5em}
 table.cmp.dense col.c-label{width:17mm}
 table.cmp.dense th.grp{padding-top:.6em;padding-bottom:.6em}
-/* cover v2: 무대형 보틀 구성 */
-.cover .cv-glow{position:absolute;left:115mm;top:25mm;width:190mm;height:160mm;background:radial-gradient(50% 50% at 50% 55%,rgba(244,123,26,.10) 0%,rgba(255,240,225,.07) 35%,rgba(0,0,0,0) 70%)}
-.cover .cv-floor{position:absolute;left:0;right:0;top:166mm;bottom:0;background:linear-gradient(180deg,#1a1715 0%,#0A0909 85%);border-top:0.3pt solid rgba(255,255,255,.08)}
-.cover .cv-stage{position:absolute;inset:0}
-.cover .cv-bt{position:absolute;object-fit:contain;filter:drop-shadow(0 2mm 3mm rgba(0,0,0,.55))}
-.cover .cv-rf{position:absolute;object-fit:contain;transform:scaleY(-1);transform-origin:center;opacity:.18;
-  -webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,0) 62%,rgba(0,0,0,1) 100%);mask-image:linear-gradient(180deg,rgba(0,0,0,0) 62%,rgba(0,0,0,1) 100%)}
-.cover .cv-main{top:58mm;width:110mm}
+/* cover v3: 화보형 — 좌 텍스트 / 우 전면 사진 */
+.cover .cv-photo{position:absolute;right:0;top:0;bottom:0;width:142mm;background-size:cover;background-position:center}
+.cover .cv-main{top:62mm;width:120mm}
 .cover .cv-rule{margin-top:10mm;width:14mm;height:0.8pt;background:var(--orange)}
 .cover .cv-meta{margin-top:4mm;font-size:7.5pt;letter-spacing:.32em;color:#9a928a;font-weight:500}
+.cover.cv-dark{background:#0A0909}
+.cover.cv-dark .cv-photo::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#0A0909 0%,rgba(10,9,9,0) 22%)}
+.cover.cv-pills{background:#efe6da;color:#0A0909}
+.cover.cv-pills .cv-photo{width:130mm}
+.cover.cv-pills .cv-photo::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#efe6da 0%,rgba(239,230,218,0) 18%)}
+.cover.cv-pills h1{color:#0A0909}
+.cover.cv-pills .cv-top span,.cover.cv-pills .cv-meta{color:#7a7068}

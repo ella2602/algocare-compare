@@ -529,29 +529,15 @@ def table_page(b, rows, title_extra=""):
             f'<span class="lg gs"></span>GS SHOP 매칭 상품 <span class="lg pharma"></span>{PHARMA_LABEL}'
             f'<span class="lg-note">「-」 미표기 · 미확인 / 「없음」 해당 성분 없음</span></div>{footer()}</section>')
 
+COVER = os.environ.get("COVER", "dark")   # dark: 오메가3·바나바 다크 연출컷 / pills: 알약 원형 배치(룩북)
+
 def cover():
-    # 무대형 구성: Drive 공식 누끼 5병을 중앙(멀티) 기준 좌우 대칭·원근으로 배치 + 바닥 반사
-    order = ["coq", "mela", "multi", "rhod", "milk"]
-    H = {0: 104, 1: 86, 2: 70}          # 중앙에서 떨어진 정도별 높이(mm)
-    X = {0: 0, 1: 31, 2: 57}            # 중앙 기준 x 오프셋(mm)
-    cx, floor = 210, 166                        # 무대 중심 x, 바닥선 y (mm)
-    items = []
-    for i, k in enumerate(order):
-        d = i - 2; a = abs(d)
-        h = H[a]; w = h * 0.41
-        left = cx + (X[a] if d > 0 else -X[a]) - w / 2
-        z = 10 - a
-        br = [1, .86, .72][a]
-        st = f"left:{left:.1f}mm;top:{floor - h:.1f}mm;width:{w:.1f}mm;height:{h:.1f}mm;z-index:{z};filter:brightness({br})"
-        rf = f"left:{left:.1f}mm;top:{floor:.1f}mm;width:{w:.1f}mm;height:{h:.1f}mm;z-index:{z};filter:brightness({br * .8})"
-        items.append(f'<img class="cv-bt" src="img/cut/{k}_bottle.png" style="{st}">'
-                     f'<img class="cv-rf" src="img/cut/{k}_bottle.png" style="{rf}">')
-    return (f'<section class="page cover"><div class="cv-glow"></div><div class="cv-floor"></div>'
-            f'<div class="cv-top">{logo(True, 20)}<span>내부용 / 대외비 · 2026.11</span></div>'
+    img = {"dark": "cover_dark", "pills": "cover_pills"}[COVER]
+    return (f'<section class="page cover cv-{COVER}"><div class="cv-photo" style="background-image:url(img/{img}.jpg)"></div>'
+            f'<div class="cv-top">{logo(COVER == "dark", 20)}<span>내부용 / 대외비 · 2026.11</span></div>'
             f'<div class="cv-main"><div class="cv-kicker">ALGOCARE NUTRITION BOTTLE</div>'
             f'<h1>알고케어 뉴트리션 보틀<br><b>품질 비교 자료</b></h1>'
-            f'<div class="cv-rule"></div><div class="cv-meta">14 BOTTLES · 2026.11</div></div>'
-            f'<div class="cv-stage">{"".join(items)}</div></section>')
+            f'<div class="cv-rule"></div><div class="cv-meta">14 BOTTLES · 2026.11</div></div></section>')
 
 def lineup():
     rows = []
