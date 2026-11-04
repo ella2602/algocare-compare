@@ -142,7 +142,7 @@ BOTTLES = [
       stats=[("80", "%", "오메가3 농도"), ("377", "mg", "소형 캡슐 1알"), ("3 : 2", "", "EPA : DHA 함량 표기")],
       points=[
         ("프랑스 Polaris 원료", "IFOS 5-Star 인증으로 순도·안전성·품질을 검증받은 프리미엄 오메가3 원료사", "polaris"),
-        ("오메가3 농도 80%", "비교 제품 중 최상위(유한과 동률). 그 외 제품은 60% 또는 농도 미표기"),
+        ("오메가3 농도 80%", "비교 제품 중 최상위(유한양행 제품과 동일). 그 외 제품은 60% 또는 농도 미표기"),
         ("rTG · 377mg 소형 캡슐", "1알 EPA+DHA 300mg. 2~3알로 식약처 기능성 용량(500·600·900mg)에 맞춰 섭취"),
         ("장용 캡슐 · EPA:DHA 각각 표기", "어취와 더부룩함을 줄인 장용 캡슐. EPA 180 : DHA 120mg으로 쏜리서치 Super EPA와 같은 3:2"),
       ],
@@ -379,16 +379,16 @@ def stats_html(stats):
 # key: (파일, 높이 mm — 워드마크/심벌 비율 차이를 눈으로 맞춘 값, 대체 텍스트)
 LOGOS = {   # 4번째 값: 밝은 색 마크를 다른 로고와 같은 회색 농도로 맞추는 보정(필터) — 형태·비율은 원본 그대로
     "polaris": ("polaris.png", 3.6, "Polaris", "dark"),
-    "ildong":  ("ildong.png", 2.6, "Ildong Bioscience", ""),
+    "ildong":  ("ildong.png", 2.8, "Ildong Bioscience", "dark"),
     "lactium": ("lactium.png", 5.6, "Lactium", ""),
-    "kaneka":  ("kaneka.svg", 5.0, "Kaneka Nutrients", ""),
+    "kaneka":  ("kaneka.svg", 5.0, "Kaneka Nutrients", "dark"),
     "lutegen": ("lutegen.png", 6.2, "Lute-gen", "dark"),
     "indena":  ("indena.svg", 4.4, "Indena", ""),
     "aquamin": ("aquamin.png", 5.4, "Aquamin", "soft"),
     "albion":  ("albion.svg", 5.0, "Albion Minerals", ""),
     "nektium": ("nektium.png", 3.4, "Nektium", ""),
     "dsm":     ("dsm.svg", 2.6, "dsm-firmenich", ""),
-    "laila":   ("laila.png", 6.4, "Laila Nutra", "dark"),
+    "laila":   ("laila.png", 6.8, "Laila Nutra", "dark"),
 }
 
 def logos_html(keys):
