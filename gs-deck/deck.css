@@ -176,3 +176,4 @@ table.cmp.dense th.grp{padding-top:.6em;padding-bottom:.6em}
 .lineup .lu-nm em{vertical-align:2pt}
 .lineup .lu-no{font-size:9pt}
 .lineup .lu.lu-ax .lu-nm{color:var(--orange-d,#c95f0c);letter-spacing:.04em}
+.lineup .lu.lu-ax .ax-sub{margin-left:3mm;color:var(--ink);letter-spacing:-0.02em}
