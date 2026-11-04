@@ -536,7 +536,7 @@ def scene_visual(b):
     return (f'<div class="visual v-scene sc-pillonly" style="{style}"><div class="sc-floor"></div>{hero}'
             f'{pills([SCENE_PILLS[0], SCENE_PILLS[1], SCENE_PILLS[2], SCENE_PILLS[4]])}{cap}</div>')
 
-KEY_TOP = "ALL"   # KEY 박스를 수치 바로 아래(포인트 위)로 올림. "ALL" 또는 보틀 key 집합
+KEY_TOP = "ALL" if os.environ.get("KEYTOP", "ALL") == "ALL" else set()   # KEY 박스를 수치 바로 아래(포인트 위)로 올림. KEYTOP=NONE이면 하단 배치
 
 def hero_page(b):
     pre = b.get("prerelease")
