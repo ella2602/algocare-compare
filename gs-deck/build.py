@@ -91,6 +91,10 @@ def table_logos(label, cell):
     return '<span class="td-logo">' + "".join(
         f'<img src="img/logos/{LOGOS[k][0]}" alt="{html.escape(LOGOS[k][2])}" style="height:{LOGOS[k][1] * .8:.2f}mm">' for k in keys) + "</span>"
 
+# 비교표 칸 평가 표시: 셀 끝에 [[베스트]] [[우수]] [[동급]] [[평범]] [[열위]]
+RATE = {"베스트": "best", "우수": "good", "동급": "eq", "평범": "mid", "열위": "low"}
+RATE_RE = re.compile(r"\s*\[\[(베스트|우수|동급|평범|열위)\]\]\s*$")
+
 def render_table(rows, dense=False):
     # 글자 수가 매우 많은 표(멀티 8열 등)만 셀 여백을 줄여 자동 맞춤 글자 크기를 확보
     dense = sum(len(c) for r in rows for c in r) > 2600
@@ -149,7 +153,14 @@ def render_table(rows, dense=False):
             if plain in ("-", "없음") or plain.startswith("(개발중)"):
                 cls += " mute"
             mark = table_logos(lab, c) if kinds[i].startswith("algo") else ""
-            h.append(f'<td class="{cls}">{cell_html(c)}{mark}</td>')
+            badge = ""
+            m = RATE_RE.search(c)
+            if m:
+                c = c[:m.start()].rstrip()
+                badge = f'<span class="rate r-{RATE[m.group(1)]}">{m.group(1)}</span>'
+            if lab == "참고":
+                cls += " note"
+            h.append(f'<td class="{cls}">{badge}{cell_html(c)}{mark}</td>')
         h.append("</tr>")
     h.append("</tbody></table>")
     return "".join(h)
@@ -163,7 +174,7 @@ BOTTLES = [
       stats=[("80", "%", "오메가3 농도"), ("377", "mg", "소형 캡슐 1알"), ("3 : 2", "", "EPA : DHA 함량 별도 관리")],
       points=[
         ("프랑스 Polaris 원료", "IFOS 5-Star 인증으로 순도·안전성·품질을 검증받은 프리미엄 오메가3 원료사", "polaris"),
-        ("오메가3 농도 80%", "비교 제품 중 최상위(유한양행 제품과 동일). 그 외 제품은 60% 또는 농도 미표기"),
+        ("오메가3 농도 80%", "비교 제품 중 최상위(솔가 · YDY 제품과 동급). GS 판매 제품은 60%"),
         ("rTG · 377mg 소형 캡슐", "1알 EPA+DHA 300mg. 2~3알로 식약처 기능성 용량(500·600·900mg)에 맞춰 섭취"),
         ("장용 캡슐 · EPA:DHA 함량 별도 관리", "어취와 더부룩함을 줄인 장용 캡슐. EPA 180 : DHA 120mg으로 쏜리서치 Super EPA와 같은 3:2"),
       ],
