@@ -70,3 +70,8 @@
 .v-scene .sc-cap{position:absolute;left:0;right:0;bottom:9mm;text-align:center;font-size:6.4pt;letter-spacing:.06em;color:var(--mute);z-index:4}
 .v-scene.sc-photo .sc-ph{position:absolute;inset:0;background-size:cover;background-position:center 62%}
 .v-scene.sc-photo .sc-cap{color:var(--ink2)}
+/* duo: 보틀명 라벨 (보틀 사진 좌상단) */
+.v-duo .vd-name{position:absolute;left:10mm;top:12mm;right:10mm;z-index:2;display:flex;flex-direction:column;gap:1.6mm}
+.v-duo .vd-name span{font-size:8pt;font-weight:500;letter-spacing:.02em;color:rgba(10,9,9,.62)}
+.v-duo .vd-name b{font-size:17pt;font-weight:700;line-height:1.22;letter-spacing:-0.035em;color:#0A0909;word-break:keep-all}
+.v-duo .vd-name::after{content:"";display:block;width:9mm;height:0.8pt;margin-top:2.2mm;background:var(--orange)}

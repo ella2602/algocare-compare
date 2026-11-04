@@ -427,7 +427,15 @@ def photo_visual(b):
     pl = f'background-image:url(img/{b["photo"]}_pill.jpg)'
     cap = html.escape(b.get("pillcap", ""))
     if VISUAL == "duo":      # A. 세로 2단: 보틀 + 알약 매크로 스트립, 같은 톤·같은 캡션 체계
-        return (f'<div class="visual v-duo"><div class="vd-top" style="{bt}"></div>'
+        nm = b["name"]
+        for pre in ("알고케어 뉴트리션 ", "알고케어 "):
+            if nm.startswith(pre):
+                brand, prod = pre.strip(), nm[len(pre):]; break
+        else:
+            brand, prod = "알고케어", nm
+        label = (f'<div class="vd-name"><span>{html.escape(brand)}</span>'
+                 f'<b>{html.escape(prod)}</b></div>')
+        return (f'<div class="visual v-duo"><div class="vd-top" style="{bt}">{label}</div>'
                 f'<div class="vd-bot">{real_pills(b["photo"])}</div></div>')
     if VISUAL == "lens":     # B. 보틀 전면 + 원형 매크로 렌즈, 리더 라인과 캡션으로 보틀에 연결
         return (f'<div class="visual v-lens" style="{bt}"><div class="vl-line"></div>'
@@ -503,7 +511,7 @@ def hero_page(b):
                    f'<div class="pname">{html.escape(b["name"])}</div>{body}')
     else:
         content = (f'<div class="eyebrow"><b>{b["no"]}</b><span>{b["en"]}</span>{"<em>출시 예정</em>" if pre else ""}</div>'
-                   f'<div class="pname">{html.escape(b["name"])}</div>'
+                   + ("" if (VISUAL == "duo" and b.get("photo")) else f'<div class="pname">{html.escape(b["name"])}</div>') +
                    f'<h1 class="hero">{b["hero"]}</h1>'
                    f'{stats_html(b["stats"])}'
                    f'{points_html(b["points"])}'
