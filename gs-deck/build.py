@@ -416,7 +416,7 @@ def real_pills(k):
     elif kind == "hard":
         cap = f"실물 크기 · 15.9×5.8mm · 1일 {n}{unit}"
     elif ok:
-        cap = f"실물 크기 · 약 12.6×7.6mm (업계 표준 7.5 Oval) · 1일 {n}{unit}"
+        cap = f"실물 크기 · 약 12.6×7.6mm · 1일 {n}{unit}"
     else:
         cap = f"1일 {n}{unit} · 캡슐 실측 치수 확인 중"
     scale = ('<div class="rp-scale"><i></i><span>0</span><span>10mm</span></div>' if ok else "")
