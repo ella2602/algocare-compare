@@ -639,18 +639,28 @@ if os.environ.get("FULL"):
 
     def detail_page(b):
         key = next(k for k in FSEC if k.startswith(b["table"]))
-        return (f'<section class="page dp"><header class="tp-h"><div class="eyebrow"><b>{b["no"]}</b><span>{b["en"]}</span><i>DETAIL</i></div>'
+        return (f'<section class="page dp"><header class="tp-h"><div class="eyebrow"><b>{b["no"]}</b><span>{b["en"]}</span><i>APPENDIX</i></div>'
                 f'<h2>{html.escape(b["name"])} <span>상세 비교 포인트</span></h2></header>'
                 f'<div class="dp-body"><div class="dp-cols">{feat_html(FSEC[key])}</div></div>{footer()}</section>')
 
     PAGE_NO[0] = 0
+    # 본문(간단판과 동일) → 마무리 → APPENDIX(보틀별 상세 비교 포인트 모음)
     pages = [cover(), lineup()]
     for b in BOTTLES:
         pages.append(hero_page(b))
         if b["table"]:
             pages.append(table_page(b, tbl(b["table"])))
-            pages.append(detail_page(b))
     pages.append(closing())
+    det = [b for b in BOTTLES if b["table"]]
+    start = PAGE_NO[0] + 2                      # 구분 장 다음 번호부터
+    toc = "".join(f'<div class="ax-row"><b>{b["no"]}</b><span>{html.escape(b["name"])}</span><i>{start + i:02d}</i></div>'
+                  for i, b in enumerate(det))
+    pages.append(f'<section class="page ax"><div class="ax-in"><div class="cv-kicker">APPENDIX</div>'
+                 f'<h1>보틀별 <b>상세 비교 포인트</b></h1>'
+                 f'<p>본문 비교표의 근거가 되는 특징 문구 전체를 보틀 순서대로 모았습니다.</p>'
+                 f'<div class="ax-toc">{toc}</div></div>{footer()}</section>')
+    for b in det:
+        pages.append(detail_page(b))
     DCSS = """
 .dp-body{position:absolute;left:14mm;right:14mm;top:31mm;bottom:17mm}
 .dp-cols{column-count:2;column-gap:12mm;column-fill:auto;height:100%;font-size:9pt;line-height:1.6;color:var(--ink2)}
