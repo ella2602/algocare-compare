@@ -558,7 +558,7 @@ def lineup(appendix=None):
                   f'</div></div>')
         rows = rows + [None]
     return (f'<section class="page lineup"><header class="tp-h">'
-            f'<h2>한눈에 보는 알고케어 뉴트리션 라인업</h2></header><div class="lu-grid{" dense" if len(rows) > 14 else ""}" style="grid-template-rows:repeat({(len(rows)+1)//2},1fr)">{items}</div>{footer()}</section>')
+            f'<h2>알고케어 뉴트리션 보틀 품질 비교 자료 목차</h2></header><div class="lu-grid{" dense" if len(rows) > 14 else ""}" style="grid-template-rows:repeat({(len(rows)+1)//2},1fr)">{items}</div>{footer()}</section>')
 
 def closing():
     pillars = [
