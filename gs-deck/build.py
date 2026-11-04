@@ -193,7 +193,7 @@ BOTTLES = [
       hero="멜라토닌에<br>Lactium®·아쉬와간다 Shoden®,<br>테아닌·GABA까지 하나로 설계한 나이트 보틀",
       stats=[("5", "종", "핵심 성분 배합"), ("200", "mg", "테아닌 (Pure의 4배)"), ("300", "mg", "Lactium®")],
       points=[
-        ("하나로 설계한 토탈 나이트 보틀", "멜라토닌 3mg + Lactium® 300mg + GABA 50mg + 테아닌 200mg + Shoden® 120mg"),
+        ("하나로 설계한 토탈 나이트 보틀", "멜라토닌 3mg + Lactium® 300mg + GABA 50mg + 테아닌 200mg + 아쉬와간다 Shoden® 120mg"),
         ("Lactium® · Shoden® 배합", "인체 대상 수면 시험 결과가 있는 두 원료를 더함. 국내 비교 제품에는 없는 구성", ("lactium", "shoden")),
         ("테아닌 200mg", "허브 중심 배합인 Pure Best-Rest(테아닌 50mg)의 4배"),
       ],
