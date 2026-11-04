@@ -615,7 +615,7 @@ def closing():
         ("DOSE", "미니정제 알 수 조절로 개인별 맞춤 실현", "오메가3 · 멜라토닌 · 비타민D · 칼슘&마그네슘까지, 고정 1회분이 아닌 정 · 캡슐 단위 조절"),
         ("SYSTEM", "설계 단계부터 중복 섭취를 막습니다", "단일 배합 보틀로 멀티비타민미네랄과의 중복 섭취를 막는 알고케어 시스템"),
     ]
-    cards = "".join(f'<div class="pl"><div class="pl-en">{e}</div><h3>{t}</h3><p>{html.escape(d)}</p></div>' for e, t, d in pillars)
+    cards = "".join(f'<div class="pl"><div class="pl-en">{e}</div><h3>{t}</h3><p>{html.escape(d).replace(' — ', '<br>')}</p></div>' for e, t, d in pillars)
     return (f'<section class="page closing"><div class="cl-in"><div class="cv-kicker">WHY ALGOCARE</div>'
             f'<h1>같은 이름의 영양제라도,<br><b>설계는 다릅니다.</b></h1><div class="pillars">{cards}</div></div>'
             f'<div class="cl-logo">{logo(True, 22)}</div></section>')
