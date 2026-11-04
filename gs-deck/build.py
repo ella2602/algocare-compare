@@ -77,8 +77,10 @@ TABLE_LOGO_KW = [("Polaris", "polaris"), ("일동바이오사이언스", "ildong
                  ("Lute-gen", "lutegen"), ("Indena", "indena"), ("Aquamin", "aquamin"), ("아쿠아민", "aquamin"),
                  ("Albion", "albion"), ("Nektium", "nektium"), ("DSM", "dsm"), ("Laila", "laila"), ("Lactium", "lactium"), ("Shoden", "shoden"), ("Pycnogenol", "pycnogenol")]
 
+TABLE_LOGOS_ON = False   # 비교표 원료사 칸 로고 표시 여부 (v3부터 끔)
+
 def table_logos(label, cell):
-    if "원료사" not in label:
+    if not TABLE_LOGOS_ON or "원료사" not in label:
         return ""
     keys = []
     for kw, k in TABLE_LOGO_KW:
