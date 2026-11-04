@@ -549,7 +549,7 @@ def hero_page(b):
         visual = (f'<div class="visual dark"><div class="vd-in"><div class="vd-badge">{b["badge"]}</div>'
                   f'<div class="vd-en">{b["en"]}</div><div class="vd-rule"></div>'
                   f'<div class="vd-sub">{"미국 출시 예정" if "USA" in b["badge"] and "PRESTIGE" not in b["badge"] else "출시 예정"}</div></div>'
-                  f'<div class="vd-logo">{logo(True, 13)}</div></div>')
+                  f'<div class="vd-logo">{logo(False, 13)}</div></div>')
     if b.get("split"):
         body = '<div class="split">' + "".join(
             f'<div class="sp"><div class="sp-lab">{s["label"]}</div><div class="sp-sub">{html.escape(s["sub"])}</div>'

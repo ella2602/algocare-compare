@@ -186,3 +186,9 @@ table.cmp.dense th.grp{padding-top:.6em;padding-bottom:.6em}
 .pt-logo img{display:block;width:auto}
 .td-logo{display:flex;flex-wrap:wrap;align-items:center;gap:1.6mm 2.4mm;margin-top:1.4mm}
 .td-logo img{display:block;width:auto}
+/* 출시 예정 페이지: 검정 패널 대신 출시 제품(duo)과 같은 밝은 톤, '출시 예정'은 주황 태그로 강조 */
+.visual.dark{background:linear-gradient(180deg,#d8d5d1 0%,#dcd6cf 55%,#e1cfbb 100%);color:#0A0909}
+.visual.dark .vd-en{color:#0A0909;font-weight:300}
+.visual.dark .vd-sub{display:inline-block;margin-top:1mm;padding:1.6mm 4.5mm;border:0.8pt solid var(--orange);border-radius:6mm;
+  color:var(--orange-d,#c95f0c);font-weight:700;font-size:8pt;letter-spacing:.24em;background:rgba(255,255,255,.35)}
+.visual.dark .vd-logo{opacity:.75}
