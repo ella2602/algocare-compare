@@ -302,7 +302,7 @@ BOTTLES = [
                ("B6 · 지용성 A · K는 보수적으로", "고함량 장기 섭취 시 주의가 필요한 B6는 보수적으로, A · K는 베이직처럼 40%"),
              ]),
         dict(label="USA", sub="(가칭) 알고케어 USA Essential Mineral Multi · 미국 출시 예정",
-             hero="Albion TRAACS® 킬레이트 미네랄과 Quatrefolic® 활성형 엽산, 미국 프리미엄 기준에 맞춘 멀티",
+             hero="Albion TRAACS® 킬레이트 미네랄과 Quatrefolic® 활성형 엽산, 글로벌 프리미엄 기준에 맞춘 멀티",
              points=[
                ("Albion TRAACS® 킬레이트 미네랄 7종", "국내 건강기능식품 규정상 쓸 수 없는 킬레이트 미네랄을 미국용 라인에 적용"),
                ("활성형 엽산 · 활성형 B군", "Quatrefolic® 5-MTHF, 메틸코발라민 · P5P · R5P"),
@@ -322,7 +322,7 @@ BOTTLES = [
       core="1,000IU 단위 정 수 조절과 단일 배합을 함께 갖춘 유일한 제품"),
  dict(key="calmag", no="12", en="CALCIUM & MAGNESIUM", table="12. 칼슘",
       name="알고케어 뉴트리션 칼슘&마그네슘", photo="calmag", pillcap="미니정제 135mg",
-      hero="칼슘:마그네슘 2:1,<br>체내 미네랄 균형을 고려한 칼마",
+      hero="칼슘:마그네슘 2:1,<br>체내 미네랄 균형을 고려한 칼슘 마그네슘 복합보틀",
       stats=[("2 : 1", "", "칼슘 : 마그네슘"), ("300+150", "mg", "1일 14정 기준"), ("23", "정", "최대 조절 (칼슘 약 493mg)")],
       points=[
         ("칼슘 : 마그네슘 2 : 1", "흡수에 좋은 비율로 알려진 2:1 설계. 종근당 칼슘 앤 마그네슘 · 아임비타와 같은 비율"),
