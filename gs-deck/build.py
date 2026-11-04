@@ -617,7 +617,7 @@ def closing():
     ]
     cards = "".join(f'<div class="pl"><div class="pl-en">{e}</div><h3>{t}</h3><p>{html.escape(d).replace(' — ', '<br>')}</p></div>' for e, t, d in pillars)
     return (f'<section class="page closing"><div class="cl-in"><div class="cv-kicker">WHY ALGOCARE</div>'
-            f'<h1>같은 이름의 영양제라도,<br><b>설계는 다릅니다.</b></h1><div class="pillars">{cards}</div></div>'
+            f'<h1>글로벌 프리미엄 원료로, 나에게 딱 맞춘 영양 설계<br><b>알고케어는 다릅니다.</b></h1><div class="pillars">{cards}</div></div>'
             f'<div class="cl-logo">{logo(True, 22)}</div></section>')
 
 CSS = (ROOT / "deck.css").read_text(encoding="utf-8") + (ROOT / "visual_options.css").read_text(encoding="utf-8")
