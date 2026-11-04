@@ -248,7 +248,7 @@ BOTTLES = [
         ("마그네슘 3종 복합 설계", "Aquamin(해조) + 젖산(유기산) + 글루콘산(유기산). 국내 비교 제품군은 마그네슘 원료 1종으로만 구성(산화 또는 젖산마그네슘)", "aquamin"),
         ("마그네슘 단일 배합", "마그네슘 단일 배합으로 멀티비타민미네랄과 중복 섭취 방지"),
         ("1정 25.71mg 단위 조절", "1정 25.71mg로 개인별 섭취량 조절 가능"),
-        ("킬레이트 마그네슘은 USA 제품으로 별도 구비", "킬레이트 마그네슘을 찾는 고관여 고객을 위해, Albion TRAACS® 비스글리시네이트 기반 알고케어 USA 제품을 별도로 준비 중"),
+        ("킬레이트 마그네슘은 USA 제품으로 별도 구비", "킬레이트 마그네슘을 찾는 고관여 고객을 위해, Albion TRAACS® 비스글리시네이트 기반 알고케어 USA 제품을 별도로 준비 중 || 국내 규정상 킬레이트 마그네슘은 건강기능식품 원료로 사용 불가"),
       ],
       core="비교 제품 중 유일하게 마그네슘 원료 3종을 복합으로 배합하여, 1정 단위로 조절하는 제품"),
  dict(key="mag-line", no="06-1", en="MAGNESIUM · PRESTIGE & USA", table=None, prerelease=True,
@@ -422,10 +422,17 @@ def logos_html(keys):
                    for k in keys if k in LOGOS)
     return f'<span class="pt-logo">{imgs}</span>' if imgs else ""
 
+def desc_html(d):
+    # "본문 || 보충 설명" → 보충 설명은 작은 회색 괄호 글씨
+    if "||" in d:
+        body, note = (x.strip() for x in d.split("||", 1))
+        return f'{html.escape(body)} <span class="pt-note">({html.escape(note)})</span>'
+    return html.escape(d)
+
 def points_html(points, cols=2):
     return f'<div class="points cols{cols}">' + "".join(
         f'<div class="pt"><div class="pt-n">{i:02d}</div><div><h4><span class="pt-t">{html.escape(p[0])}</span>{logos_html(p[2] if len(p) > 2 else None)}</h4>'
-        f'<p>{html.escape(p[1])}</p></div></div>'
+        f'<p>{desc_html(p[1])}</p></div></div>'
         for i, p in enumerate(points, 1)) + "</div>"
 
 # ---------------------------------------------- 히어로 비주얼 시안 (VISUAL=duo|lens|studio)

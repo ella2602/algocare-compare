@@ -195,3 +195,4 @@ table.cmp.dense th.grp{padding-top:.6em;padding-bottom:.6em}
 .stats.many .sv{font-size:min(1.6em,19pt)}
 .stats.many .stat+.stat{padding-left:.8em}
 .stats.many .sl{white-space:nowrap;font-size:.62em}
+.pt-note{display:block;margin-top:.35em;font-size:.86em;color:var(--mute)}
