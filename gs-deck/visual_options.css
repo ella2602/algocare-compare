@@ -1,14 +1,14 @@
 /* ---------- 히어로 비주얼 시안 (build.py VISUAL=duo|lens|studio). classic(기본)에는 영향 없음 ---------- */
-:root{ --pillbg:#E3D3C0; }
+:root{ --pillbg:#E1CFBB; }
 
 /* A. duo — 세로 2단: 보틀 위, 알약 매크로 스트립 아래. 보틀 배경이 알약 톤으로 이어지는 그라데이션 */
 .v-duo{background:var(--pillbg)}
 .v-duo .vd-top{position:absolute;left:0;right:0;top:0;height:67%;background-size:cover;background-position:center 64%}
 .v-duo .vd-top::after{content:"";position:absolute;inset:0;
-  background:linear-gradient(180deg,rgba(227,211,192,0) 58%,rgba(227,211,192,.65) 92%,var(--pillbg) 100%)}
+  background:linear-gradient(180deg,rgba(225,207,187,0) 58%,rgba(225,207,187,.65) 92%,var(--pillbg) 100%)}
 .v-duo .vd-bot{position:absolute;left:0;right:0;top:67%;bottom:0;background:var(--pillbg)}
 .v-duo .vd-bot::before{content:"";position:absolute;left:10mm;right:10mm;top:0;height:0.5pt;background:rgba(10,9,9,.22)}
-.v-duo .vd-pill{position:absolute;right:6mm;top:-2mm;width:46mm;bottom:0;background-size:118% auto;background-position:50% 47%;background-repeat:no-repeat}
+.v-duo .vd-pill{position:absolute;right:6mm;top:-2mm;width:46mm;bottom:0;background-size:118% auto;background-position:50% 47%;background-repeat:no-repeat;-webkit-mask-image:radial-gradient(60% 55% at 50% 50%,#000 60%,transparent 100%);mask-image:radial-gradient(60% 55% at 50% 50%,#000 60%,transparent 100%)}
 .v-duo .vd-cap{position:absolute;left:10mm;bottom:12mm;width:44mm;display:flex;flex-direction:column;gap:1.6mm}
 .v-duo .vd-cap span{font-size:5.6pt;letter-spacing:.32em;color:var(--orange-d);font-weight:600}
 .v-duo .vd-cap b{font-size:8.6pt;font-weight:600;color:var(--ink);line-height:1.4;letter-spacing:-0.02em}

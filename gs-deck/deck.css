@@ -140,3 +140,7 @@ td a{border-bottom:0.5pt solid currentColor}
 .cl-logo{position:absolute;left:16mm;bottom:14mm}
 .lu-grid.dense .lu-hero{font-size:10pt;margin-top:.8mm}
 .lu-grid.dense .lu-nm{font-size:6.6pt}
+table.cmp.dense{line-height:1.36}
+table.cmp.dense th,table.cmp.dense td{padding:.42em .5em}
+table.cmp.dense col.c-label{width:17mm}
+table.cmp.dense th.grp{padding-top:.6em;padding-bottom:.6em}

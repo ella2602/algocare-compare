@@ -72,7 +72,8 @@ PHARMA_LABEL = "제약사 브랜드 인기 · 프리미엄 상품 (해외 제품
 ROW_LABEL = {"판매 링크": "판매처"}
 
 def render_table(rows, dense=False):
-    dense=False
+    # 글자 수가 매우 많은 표(멀티 8열 등)만 셀 여백을 줄여 자동 맞춤 글자 크기를 확보
+    dense = sum(len(c) for r in rows for c in r) > 2600
     group_row, *body = rows
     ncol = len(group_row)
     # 알고케어 계열 열 판정: 그룹 라벨이 '알고케어'로 시작
@@ -513,8 +514,8 @@ def lineup():
 def closing():
     pillars = [
         ("SOURCE", "글로벌 프리미엄 원료를 씁니다", "Polaris · Indena · DSM · Gnosis MenaQ7® · Laila SERRATRIN® · 일동바이오사이언스 — 성분마다 검증된 프리미엄 원료사 원료 사용"),
-        ("DOSE", "알 수로 맞춥니다", "오메가3 · 멜라토닌 · 비타민D · 칼슘&마그네슘까지, 고정 1회분이 아닌 정 · 캡슐 단위 조절"),
-        ("SYSTEM", "중복 없이 설계합니다", "단일 배합 보틀로 멀티비타민미네랄과의 중복 섭취를 막는 알고케어 시스템"),
+        ("DOSE", "미니정제 알 수 조절로 개인별 맞춤 실현", "오메가3 · 멜라토닌 · 비타민D · 칼슘&마그네슘까지, 고정 1회분이 아닌 정 · 캡슐 단위 조절"),
+        ("SYSTEM", "설계 단계부터 중복 섭취를 막습니다", "단일 배합 보틀로 멀티비타민미네랄과의 중복 섭취를 막는 알고케어 시스템"),
     ]
     cards = "".join(f'<div class="pl"><div class="pl-en">{e}</div><h3>{t}</h3><p>{html.escape(d)}</p></div>' for e, t, d in pillars)
     return (f'<section class="page closing"><div class="cl-in"><div class="cv-kicker">WHY ALGOCARE</div>'
