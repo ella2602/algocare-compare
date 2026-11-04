@@ -397,7 +397,7 @@ PILLSPEC = {  # key: (1일 알 수, 종류, 길이 mm, 확정 여부)
     "vitd": (1, "tab", 5.1, True), "banaba": (1, "tab", 5.1, True), "mag": (7, "tab", 5.1, True),
     "calmag": (14, "tab", 5.1, True), "catechin": (7, "tab", 5.1, True), "boswellia": (8, "tab", 5.1, True),
     "mela": (3, "tab", 5.1, True),
-    "omega": (3, "soft", 12.6, True), "coq": (1, "soft", 12.6, True), "lutein": (1, "soft", 10.5, False),
+    "omega": (3, "soft", 12.6, True), "coq": (1, "soft", 12.6, True), "lutein": (1, "soft", 12.6, True),
     "probio": (1, "hard", 15.9, True),
 }
 
