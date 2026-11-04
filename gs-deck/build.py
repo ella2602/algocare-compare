@@ -171,7 +171,7 @@ BOTTLES = [
       core="국내 비교군 중 저용량 멜라토닌으로 개인별 맞춤이 가능한 유일한 제품"),
  dict(key="sleep", no="03-1", en="SLEEP PRESTIGE", table="3-1.", prerelease=True,
       name="알고케어 프레스티지 수면", photo=None, badge="PRESTIGE",
-      hero="멜라토닌 + 테아닌 200mg + Lactium®·Shoden®,<br>하나로 설계한 나이트 보틀",
+      hero="멜라토닌 + 테아닌 200mg + GABA 50mg + Lactium®·Shoden®,<br>하나로 설계한 나이트 보틀",
       stats=[("5", "종", "핵심 성분 배합"), ("200", "mg", "테아닌 (Pure의 4배)"), ("300", "mg", "Lactium®")],
       points=[
         ("하나로 설계한 토탈 나이트 보틀", "멜라토닌 3mg + Lactium® 300mg + GABA 50mg + 테아닌 200mg + Shoden® 120mg"),
@@ -235,7 +235,7 @@ BOTTLES = [
       name="알고케어 프레스티지 마그네슘 · (가칭) 알고케어 USA Magnesium", photo=None, badge="PRESTIGE · USA",
       split=[
         dict(label="PRESTIGE", sub="알고케어 프레스티지 마그네슘 · 국내 출시 예정",
-             hero="유기산 마그네슘 비중을 크게 높인 프레스티지",
+             hero="유기산 마그네슘 비중을 크게 높인 프레스티지 마그네슘",
              points=[
                ("유기산 마그네슘 50%", "흡수율이 좋은 것으로 알려진 유기산 마그네슘 비중을 50%로 (Mg 원소 기준)"),
                ("리포좀(메타좀) 마그네슘", "베이직 라인의 아쿠아민 대신 리포좀(메타좀) 마그네슘 사용"),
