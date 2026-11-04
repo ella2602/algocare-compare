@@ -57,7 +57,7 @@ Column groups / colors:
 | 원산지 | 프랑스 정제(페루 멸치) | 독일 정제 (남태평양 멸치) | 스페인 정제 (어종 미표기) | 프랑스 정제 | 어종만 표기 |
 | 장용 코팅 | 장용 | 장용 | 장용 아님 | 장용 아님 | - |
 | 제조 | 서흥헬스케어 | 종근당건강 자체 공장 | 우리바이오 | 알피바이오 | - |
-| 인증·품질 문구 | IFOS, GOED, GMP | GOED | GOED, GMP | IFOS, GMP | NSF Certified for Sport |
+| 인증·품질 문구 | IFOS, GOED, GMP | GOED, GMP | GOED, GMP | IFOS, GMP | NSF Certified for Sport |
 | 월 환산가 | 월 19,757원(600mg) / 29,636원(900mg), 자사몰 | 월 9,900원 (GS TV 10박스 99,000원) | 월 약 5,817원 (GS 6박스 34,900원) | 월 19,000원 (60캡슐, 유한양행 공식몰) | 월 약 $30~45 ($45/90캡슐, 1일 2~3캡슐) |
 | 판매 링크 | [알고케어 자사몰](https://www.algocare.ai/products/omega-3) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1101555012) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1036883468) | [유한양행 공식몰](https://www.yuhanshop.co.kr/goods/goods_view.php?goodsNo=1000000824) | [Thorne 공식몰](https://www.thorne.com/products/dp/super-epa) |
 
