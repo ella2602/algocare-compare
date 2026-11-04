@@ -170,3 +170,9 @@ table.cmp.dense th.grp{padding-top:.6em;padding-bottom:.6em}
 .ax .ax-row i{font-style:normal;color:var(--ink2);font-variant-numeric:tabular-nums}
 .lu.lu-ax .lu-no{color:var(--ink)}
 .lu.lu-ax .lu-nm{color:var(--orange-d,#c95f0c);font-weight:600;letter-spacing:.06em}
+/* 라인업: 보틀명 강조, 히어로 문장은 보조 */
+.lineup .lu-nm,.lineup .lu-grid.dense .lu-nm{font-size:10.5pt;font-weight:700;color:var(--ink);letter-spacing:-0.025em;line-height:1.3}
+.lineup .lu-hero,.lineup .lu-grid.dense .lu-hero{margin-top:1mm;font-size:7.6pt;font-weight:400;color:var(--ink2);letter-spacing:-0.01em;line-height:1.4}
+.lineup .lu-nm em{vertical-align:2pt}
+.lineup .lu-no{font-size:9pt}
+.lineup .lu.lu-ax .lu-nm{color:var(--orange-d,#c95f0c);letter-spacing:.04em}

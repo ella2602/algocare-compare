@@ -557,7 +557,7 @@ def lineup(appendix=None):
                   f'<div class="lu-nm">APPENDIX · p.{appendix:02d}~</div>'
                   f'<div class="lu-hero">보틀별 상세 비교 포인트 (비교표 근거 전체)</div></div></div>')
         rows = rows + [None]
-    return (f'<section class="page lineup"><header class="tp-h"><div class="eyebrow"><b>00</b><span>LINE-UP</span><i>HERO LINES</i></div>'
+    return (f'<section class="page lineup"><header class="tp-h">'
             f'<h2>한눈에 보는 알고케어 뉴트리션 라인업</h2></header><div class="lu-grid{" dense" if len(rows) > 14 else ""}" style="grid-template-rows:repeat({(len(rows)+1)//2},1fr)">{items}</div>{footer()}</section>')
 
 def closing():
