@@ -73,7 +73,7 @@ PHARMA_LABEL = "제약사 브랜드 인기 · 프리미엄 상품 (해외 제품
 ROW_LABEL = {"판매 링크": "판매처"}
 
 # 비교표 원료사 행(알고케어 열)에 원료사 공식 마크를 붙임: 셀 문구에 나오는 원료사만
-TABLE_LOGO_KW = [("Polaris", "polaris"), ("일동바이오사이언스", "ildong"), ("Kaneka", "kaneka"),
+TABLE_LOGO_KW = [("Polaris", "polaris"), ("일동바이오사이언스", "ildong"),
                  ("Lute-gen", "lutegen"), ("Indena", "indena"), ("Aquamin", "aquamin"), ("아쿠아민", "aquamin"),
                  ("Albion", "albion"), ("Nektium", "nektium"), ("DSM", "dsm"), ("Laila", "laila"), ("Lactium", "lactium"), ("Shoden", "shoden")]
 
