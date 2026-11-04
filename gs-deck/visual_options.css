@@ -1,0 +1,35 @@
+/* ---------- 히어로 비주얼 시안 (build.py VISUAL=duo|lens|studio). classic(기본)에는 영향 없음 ---------- */
+:root{ --pillbg:#E3D3C0; }
+
+/* A. duo — 세로 2단: 보틀 위, 알약 매크로 스트립 아래. 보틀 배경이 알약 톤으로 이어지는 그라데이션 */
+.v-duo{background:var(--pillbg)}
+.v-duo .vd-top{position:absolute;left:0;right:0;top:0;height:67%;background-size:cover;background-position:center 64%}
+.v-duo .vd-top::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(227,211,192,0) 58%,rgba(227,211,192,.65) 92%,var(--pillbg) 100%)}
+.v-duo .vd-bot{position:absolute;left:0;right:0;top:67%;bottom:0;background:var(--pillbg)}
+.v-duo .vd-bot::before{content:"";position:absolute;left:10mm;right:10mm;top:0;height:0.5pt;background:rgba(10,9,9,.22)}
+.v-duo .vd-pill{position:absolute;right:6mm;top:-2mm;width:46mm;bottom:0;background-size:118% auto;background-position:50% 47%;background-repeat:no-repeat}
+.v-duo .vd-cap{position:absolute;left:10mm;bottom:12mm;width:44mm;display:flex;flex-direction:column;gap:1.6mm}
+.v-duo .vd-cap span{font-size:5.6pt;letter-spacing:.32em;color:var(--orange-d);font-weight:600}
+.v-duo .vd-cap b{font-size:8.6pt;font-weight:600;color:var(--ink);line-height:1.4;letter-spacing:-0.02em}
+
+/* B. lens — 보틀 전면 + 원형 매크로 렌즈가 보틀 어깨에 걸침, 리더 라인 + 캡션 */
+.v-lens{background-size:cover;background-position:72% 62%}
+.v-lens .vl-fig{position:absolute;right:9mm;top:92mm;width:40mm;text-align:center}
+.v-lens .vl-lens{width:40mm;height:40mm;border-radius:50%;background-size:128% auto;background-position:50% 43%;
+  border:0.9mm solid #FEFEFE;box-shadow:0 3mm 10mm rgba(10,9,9,.16), 0 0 0 0.3pt rgba(10,9,9,.08)}
+.v-lens figcaption{margin-top:3.2mm;font-size:7.2pt;font-weight:600;color:var(--ink);line-height:1.4;letter-spacing:-0.01em}
+.v-lens figcaption span{display:block;font-size:5.4pt;letter-spacing:.3em;color:var(--orange-d);margin-bottom:1mm}
+.v-lens .vl-line{position:absolute;right:49mm;top:111.5mm;width:11mm;height:0.5pt;background:rgba(10,9,9,.45)}
+.v-lens .vl-line::before{content:"";position:absolute;left:-0.9mm;top:-0.9mm;width:1.8mm;height:1.8mm;border-radius:50%;background:var(--orange)}
+
+/* C. studio — 하나의 구성 패널: 같은 라운드·같은 그림자의 보틀 카드 + 알약 카드 + 캡션 */
+.v-studio{background:linear-gradient(180deg,#F3EFEA 0%,#E8E2DA 100%)}
+.v-studio .vs-card{border-radius:1.8mm;background-repeat:no-repeat;box-shadow:0 1.6mm 5mm rgba(10,9,9,.07),0 0 0 0.3pt rgba(10,9,9,.06)}
+.v-studio .vs-bottle{position:absolute;left:10mm;right:10mm;top:12mm;height:130mm;background-size:cover;background-position:center 64%}
+.v-studio .vs-row{position:absolute;left:10mm;right:10mm;top:147mm;bottom:12mm;display:flex;gap:5mm}
+.v-studio .vs-pill{flex:none;width:51mm;height:100%;background-size:128% auto;background-position:50% 44%;background-color:var(--pillbg)}
+.v-studio .vs-cap{flex:1;display:flex;flex-direction:column;justify-content:flex-end;gap:1.4mm;padding-bottom:.6mm}
+.v-studio .vs-cap span{font-size:5.2pt;letter-spacing:.22em;color:var(--orange-d);font-weight:600;line-height:1.5}
+.v-studio .vs-cap b{font-size:7.6pt;font-weight:600;color:var(--ink);line-height:1.4;letter-spacing:-0.02em}
+.v-studio .vs-cap i{font-style:normal;font-size:6.2pt;color:var(--mute)}

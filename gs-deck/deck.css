@@ -118,7 +118,7 @@ td a{border-bottom:0.5pt solid currentColor}
 .cover h1,.closing h1{margin-top:7mm;font-size:36pt;font-weight:200;line-height:1.22;letter-spacing:-0.04em}
 .cover h1 b,.closing h1 b{font-weight:700}
 .cover p{margin-top:9mm;font-size:9.5pt;line-height:1.75;color:#c8c1b8;font-weight:300}
-.cv-row{position:absolute;left:0;right:0;bottom:0;height:58mm;display:grid;grid-template-columns:repeat(9,1fr);gap:0.6mm;background:#0A0909}
+.cv-row{position:absolute;left:0;right:0;bottom:0;height:58mm;display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:0.6mm;background:#0A0909}
 .cv-b{background-size:cover;background-position:center 62%;filter:saturate(.9)}
 
 /* ---------- lineup ---------- */
@@ -138,3 +138,5 @@ td a{border-bottom:0.5pt solid currentColor}
 .pl h3{margin-top:3mm;font-size:16pt;font-weight:700;letter-spacing:-0.03em}
 .pl p{margin-top:3mm;font-size:9pt;line-height:1.7;color:#bdb5ac;font-weight:300}
 .cl-logo{position:absolute;left:16mm;bottom:14mm}
+.lu-grid.dense .lu-hero{font-size:10pt;margin-top:.8mm}
+.lu-grid.dense .lu-nm{font-size:6.6pt}

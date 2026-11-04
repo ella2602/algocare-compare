@@ -58,7 +58,15 @@ OFFICIAL = {
     "알고케어 밀크씨슬": "알고케어 뉴트리션 밀크씨슬",
     "알고케어 바나바": "알고케어 뉴트리션 바나바",
     "알고케어 홍경천&테아닌": "알고케어 뉴트리션 홍경천&테아닌",
+    "알고케어 멀티비타민미네랄": "알고케어 뉴트리션 멀티비타민미네랄",
+    "알고케어 비타민D": "알고케어 뉴트리션 비타민D3",
+    "알고케어 칼슘&마그네슘": "알고케어 뉴트리션 칼슘&마그네슘",
+    "알고케어 보스웰리아": "알고케어 뉴트리션 보스웰리아",
+    "알고케어 녹차카테킨": "알고케어 뉴트리션 녹차카테킨",
 }
+# 노션 제품 행이 이미 정식명이면 그대로 통과(OFFICIAL.get(c, c)) — 이중 매핑 없음
+
+PHARMA_LABEL = "제약사 브랜드 인기 · 프리미엄 상품 (해외 제품 포함)"
 
 # 표에서 인쇄물에 맞지 않는 행 라벨 정리
 ROW_LABEL = {"판매 링크": "판매처"}
@@ -101,7 +109,7 @@ def render_table(rows, dense=False):
             h.append(f'<th class="grp {k}" colspan="{span}">{html.escape(label)}{tag}</th>')
         else:
             if k == "pharma":
-                label = "제약사 브랜드 인기 · 프리미엄 상품"
+                label = PHARMA_LABEL
             h.append(f'<th class="grp {k}" colspan="{span}">{html.escape(label)}</th>')
     h.append("</tr>")
     # 제품명 행
@@ -128,29 +136,29 @@ def render_table(rows, dense=False):
 # 핵심 포인트는 노션 「알고케어 제품의 특징」 문구를 사실 그대로 요약
 BOTTLES = [
  dict(key="omega", no="01", en="OMEGA-3", table="1. 오메가3",
-      name="알고케어 뉴트리션 장용성 초임계 rTG 오메가3", photo="omega",
+      name="알고케어 뉴트리션 장용성 초임계 rTG 오메가3", photo="omega", pillcap="rTG 소형 캡슐 377mg",
       hero="글로벌 프리미엄 원료사 프랑스 Polaris,<br>80% 고농도 rTG를 작은 한 알에",
-      stats=[("80", "%", "오메가3 농도"), ("377", "mg", "소형 캡슐 1알"), ("3 : 2", "", "EPA : DHA 함량 공개")],
+      stats=[("80", "%", "오메가3 농도"), ("377", "mg", "소형 캡슐 1알"), ("3 : 2", "", "EPA : DHA 함량 표기")],
       points=[
         ("프랑스 Polaris 원료", "IFOS 5-Star 인증으로 순도·안전성·품질을 검증받은 프리미엄 오메가3 원료사"),
         ("오메가3 농도 80%", "비교 제품 중 최상위(유한과 동률). 그 외 제품은 60% 또는 농도 미표기"),
         ("rTG · 377mg 소형 캡슐", "1알 EPA+DHA 300mg. 2~3알로 식약처 기능성 용량(500·600·900mg)에 맞춰 섭취"),
-        ("장용 캡슐 · 비율 공개", "어취와 더부룩함을 줄인 장용 캡슐, EPA 180 : DHA 120mg 함량 각각 공개"),
+        ("장용 캡슐 · EPA:DHA 각각 표기", "어취와 더부룩함을 줄인 장용 캡슐. EPA 180 : DHA 120mg으로 쏜리서치 Super EPA와 같은 3:2"),
       ],
-      core="원료사 · 농도 80% · rTG · EPA:DHA 비율 공개 — 네 가지를 모두 갖춘 제품은 비교 제품 중 알고케어뿐"),
+      core="Polaris 원료 · 농도 80% · rTG · EPA:DHA 비율 표기 — 네 가지를 모두 갖춘 제품은 비교 제품 중 알고케어뿐"),
  dict(key="probio", no="02", en="PROBIOTICS", table="2. 프로바이오틱스",
-      name="알고케어 뉴트리션 프로바이오틱스", photo="probio",
+      name="알고케어 뉴트리션 프로바이오틱스", photo="probio", pillcap="장용 캡슐 200mg",
       hero="일동바이오사이언스 유산균,<br>특허 4중 코팅에 장용성 캡슐까지",
       stats=[("500", "억", "투입 균수 (보장 100억)"), ("5", "종", "특허 균주 IDCC"), ("4중+장용", "", "이중 보호 설계")],
       points=[
         ("일동바이오사이언스 특허 균주 5종", "한국인 대상 인체 적용 연구가 있는 IDCC 3201·4301·3302·2201·4101"),
-        ("보장균수 100억, 투입 500억", "보장균수의 5배를 투입. 투입 균수까지 공개한 제품은 비교 제품 중 알고케어뿐"),
+        ("보장균수 100억, 투입 500억", "보장균수의 5배를 투입. 투입 균수까지 확인되는 제품은 비교 제품 중 알고케어뿐"),
         ("균체 4중 코팅 + 장용 캡슐", "위산을 지나 장까지 닿도록 이중 보호. 두 기술을 동시에 적용한 제품은 알고케어뿐"),
-        ("캡슐 수로 균수 조절", "더 높은 균수가 필요한 고객은 영양 설계 알고리즘에 따라 캡슐 수를 늘려 대응"),
+        ("캡슐 수로 균수 조절", "쏜리서치 200억처럼 높은 균수가 필요하면 영양 설계 알고리즘에 따라 캡슐 수를 늘려 대응"),
       ],
-      core="특허 균주 · 투입 균수 공개 · 균체 코팅과 장용 캡슐 동시 적용"),
+      core="특허 균주 · 투입 균수 표기 · 균체 코팅과 장용 캡슐 동시 적용"),
  dict(key="mela", no="03", en="MELATONIN", table="3. 멜라토닌",
-      name="알고케어 뉴트리션 멜라토닌", photo="mela",
+      name="알고케어 뉴트리션 멜라토닌", photo="mela", pillcap="정제 · 1정 0.67mg",
       hero="0.67mg, 국내에 드문 저용량 설계로<br>나에게 맞추는 멜라토닌",
       stats=[("0.67", "mg", "1정 멜라토닌"), ("2", "mg↑", "국내 비교 제품 1회량"), ("단일", "", "멜라토닌 단일 배합")],
       points=[
@@ -171,13 +179,13 @@ BOTTLES = [
       ],
       core="국내 비교 제품은 멜라토닌에 테아닌 · 트립토판 · 마그네슘 구성, 알고케어 프레스티지는 Lactium® · Shoden®까지"),
  dict(key="coq", no="04", en="COENZYME Q10", table="4. 코큐텐",
-      name="알고케어 뉴트리션 장용성 코큐텐", photo="coq",
+      name="알고케어 뉴트리션 장용성 코큐텐", photo="coq", pillcap="장용 연질캡슐 300mg",
       hero="장용성으로 완성한 코큐텐",
       stats=[("장용", "", "연질캡슐 300mg"), ("98", "%", "고순도 · GMO-Free"), ("100~300", "mg", "1일 조절 범위")],
       points=[
         ("장용성 연질캡슐", "위장 편안함을 고려한 설계. 비교 제품 중 장용성 연질캡슐 제형은 알고케어뿐"),
-        ("원료사 공개", "Global Merchant 98% GMO-Free 고순도 코큐텐. 국내 비교 제품 중 원료사 공개는 알고케어뿐"),
-        ("국내 기능성 원료 유비퀴논", "국내 건강기능식품 기능성은 유비퀴논만 인정 — 항산화 · 높은 혈압 감소에 도움"),
+        ("98% 고순도 코큐텐 단일 배합", "Global Merchant 98% GMO-Free 원료. 국내 비교 제품 3종은 비타민·미네랄 복합 배합"),
+        ("국내 기능성 원료 유비퀴논", "국내 건강기능식품 기능성(항산화·높은 혈압 감소에 도움을 줄 수 있음)은 유비퀴논 형태만 인정"),
       ],
       core="유비퀴놀을 원하는 고객에게는 알고케어 USA 라인으로 Kaneka 유비퀴놀을 제안"),
  dict(key="coq-usa", no="04-1", en="COENZYME Q10 · USA", table=None, prerelease=True,
@@ -185,19 +193,19 @@ BOTTLES = [
       hero="Kaneka 유비퀴놀에 Pycnogenol®까지,<br>혈관 케어 프리미엄 보틀",
       stats=[("100", "mg", "Kaneka Ubiquinol®"), ("150", "mg", "Pycnogenol®"), ("4", "종", "활성형 B군")],
       points=[
-        ("Kaneka Ubiquinol® 100mg", "미국 프리미엄 시장의 대표 유비퀴놀 원료. Thorne 유비퀴놀과 같은 원료"),
+        ("Kaneka Ubiquinol® 100mg", "미국 프리미엄 시장의 대표 유비퀴놀 원료. 쏜리서치 유비퀴놀과 같은 원료"),
         ("Pycnogenol® 150mg", "Horphag 피크노제놀을 더한 복합 설계"),
         ("활성형 B군", "엽산(Quatrefolic® 5-MTHF) · B6(P5P) · B2(R5P) · B12(메틸코발라민)"),
         ("미국용 · 국내 직구 고객용", "유비퀴놀 형태를 선호하는 해외 직구 고객층의 니즈를 반영한 설계"),
       ],
-      core="미국 출시 예정 · 원료사 Kaneka · Horphag · Quatrefolic"),
+      core="미국 출시 예정 · 유비퀴놀에 혈관 건강 원료를 더한 복합 설계"),
  dict(key="lutein", no="05", en="LUTEIN & ZEAXANTHIN", table="5. 루테인",
-      name="알고케어 뉴트리션 장용성 루테인지아잔틴", photo="lutein",
+      name="알고케어 뉴트리션 장용성 루테인지아잔틴", photo="lutein", pillcap="장용 연질캡슐 300mg",
       hero="매일 챙기는 눈 건강 기본 루틴",
       stats=[("10+2", "mg", "루테인 + 지아잔틴"), ("2", "캡슐", "최대 20+4mg까지"), ("장용", "", "연질캡슐 300mg")],
       points=[
         ("루테인 10 + 지아잔틴 2mg 단일 배합", "부담 없이 시작할 수 있는 눈 영양제 포지션"),
-        ("Lute-gen 원료", "원료사 Lute-gen(Bio-gen Extracts)의 개별인정형 원료 사용"),
+        ("개별인정형 Lute-gen 원료", "Lute-gen(Bio-gen Extracts)의 개별인정형 원료 사용"),
         ("최대 2캡슐까지 조절", "필요에 따라 루테인 20mg · 지아잔틴 4mg까지"),
         ("장용 연질캡슐", "비교 제품 중 유일한 장용 연질캡슐로 위 부담을 덜음"),
       ],
@@ -208,17 +216,17 @@ BOTTLES = [
       stats=[("160", "mg", "Mirtoselect® 빌베리"), ("6", "mg", "아스타잔틴"), ("3", "가지", "기능성 함량 성분")],
       points=[
         ("황반 관리 + 눈 피로 관리", "루테인지아잔틴에 아스타잔틴 · 빌베리를 한 보틀에 담은 프레스티지 눈 케어 라인"),
-        ("Indena Mirtoselect® 빌베리 160mg", "세계적인 식물 추출물 원료사 Indena(이탈리아). 개별인정형 기능성 함량으로 배합"),
+        ("Indena Mirtoselect® 빌베리 160mg", "이탈리아 Indena의 빌베리를 개별인정형 기능성 함량으로 배합. 비교 제품 중 빌베리를 기능성 함량으로 넣은 제품 없음"),
         ("3가지 모두 기능성 함량", "루테인 · 아스타잔틴 · 빌베리를 모두 기능성 함량으로 담은 제품은 비교 제품 중 알고케어뿐"),
       ],
       core="일동 마이니 · 고려은단은 루테인지아잔틴 + 아스타잔틴 2가지 배합"),
  dict(key="mag", no="06", en="MAGNESIUM", table="6. 마그네슘",
-      name="알고케어 시너지 마그네슘", photo="mag",
+      name="알고케어 시너지 마그네슘", photo="mag", pillcap="미니정제 · 1정 Mg 25.71mg",
       hero="아쿠아민·젖산·글루콘산,<br>3종 마그네슘을 한 보틀에",
-      stats=[("3", "종", "마그네슘 원료 복합"), ("3", "곳", "원료사 모두 공개"), ("180~385", "mg", "1일 조절 범위")],
+      stats=[("3", "종", "마그네슘 원료 복합"), ("25.71", "mg", "1정 단위 조절"), ("180~385", "mg", "1일 조절 범위")],
       points=[
         ("마그네슘 3종 복합 설계", "Aquamin(해조) + 젖산(유기산) + 글루콘산(유기산). 비교 제품은 원료 1종만 사용"),
-        ("원료사 3곳 공개", "Superior Powders(영국) · NOVICHEM(폴란드) · Novotech(미국)"),
+        ("마그네슘 단일 배합", "그 밖의 성분 없이 멀티와 중복 섭취 방지. 국내 비교 3종은 칼슘·비타민D·B군 등 복합 배합"),
         ("1정 25.71mg 단위 조절", "180~385mg까지 조절. 국내 비교 제품은 1회 섭취량 고정(175~315mg)"),
       ],
       core="유기산 비중을 높인 프레스티지, 킬레이트 마그네슘 USA 라인까지"),
@@ -241,35 +249,109 @@ BOTTLES = [
              ]),
       ]),
  dict(key="milk", no="07", en="MILK THISTLE", table="7. 밀크씨슬",
-      name="알고케어 뉴트리션 밀크씨슬", photo="milk",
+      name="알고케어 뉴트리션 밀크씨슬", photo="milk", pillcap="미니정제 · 1정 실리마린 43.33mg",
       hero="글로벌 프리미엄 허브 원료사<br>Indena의 밀크씨슬",
-      stats=[("Indena", "", "이탈리아 원료사"), ("60", "%", "실리마린 순도"), ("43.33", "mg", "1정 실리마린")],
+      stats=[("60", "%", "실리마린 순도"), ("130", "mg", "1일 실리마린 (기능성 함량)"), ("43.33", "mg", "1정 실리마린")],
       points=[
-        ("Indena(이탈리아) 원료", "세계적인 허브 추출물 원료사의 순도 60% 밀크씨슬. 국내 비교 제품은 원료사 확인 불가"),
-        ("실리마린 130mg", "식약처 기능성 함량에 맞춘 설계"),
+        ("Indena(이탈리아) 원료", "세계적인 허브 추출물 원료사 Indena의 순도 60% 밀크씨슬"),
+        ("실리마린 130mg", "식약처 기능성 함량에 맞춘 설계 (비교 제품도 모두 130mg)"),
         ("1정 43.33mg 단위 맞춤", "개인별 미량 맞춤 가능. 비교 제품은 1알 130mg으로 1회 복용량 고정"),
+        ("밀크씨슬 단일 배합", "그 밖의 성분 없이 멀티와 중복 섭취 방지. 국내 비교 3종은 비타민 B군 등 복합 배합"),
       ],
-      core="원료사를 밝힌 밀크씨슬은 비교 제품 중 알고케어뿐"),
+      core="실리마린 130mg은 같아도, 정 단위로 나눠 맞추는 밀크씨슬은 비교 제품 중 알고케어뿐"),
  dict(key="banaba", no="08", en="BANABA", table="8. 바나바",
-      name="알고케어 뉴트리션 바나바", photo="banaba",
-      hero="혈당 건강이 필요할 때,<br>겹치지 않게 더하는 바나바",
-      stats=[("1.3", "mg", "코로솔산"), ("30", "μg", "크롬 최소 배합"), ("STAR HI", "", "원료사 공개")],
+      name="알고케어 뉴트리션 바나바", photo="banaba", pillcap="미니정제",
+      hero="혈당 건강이 필요할 때,<br>루틴에 더하는 바나바 단일 보틀",
+      stats=[("1.3", "mg", "코로솔산"), ("30", "μg", "크롬 최소 배합"), ("2", "종", "코로솔산 + 크롬만")],
       points=[
         ("필요한 사람에게만 더하는 보틀", "알고케어 사용자 중 혈당 관리가 필요한 사람에게 맞춤으로 더함"),
         ("코로솔산 1.3mg + 크롬 30μg", "식약처 기능성 함량만 담은 최소 배합. 비타민 · 미네랄은 멀티와 중복 섭취 방지"),
-        ("원료사 STAR HI 공개", "비교 제품 4종은 모두 원료사 미표기"),
+        ("비교 제품은 복합 배합", "비교 제품 4종은 B군 · 아연 · 셀렌 등 비타민 · 미네랄을 함께 배합"),
       ],
       core="알고케어 시스템 안에서 중복 없이 맞춤으로 더하는 보틀"),
  dict(key="rhod", no="09", en="RHODIOLA & THEANINE", table="9. 홍경천",
-      name="알고케어 뉴트리션 홍경천&테아닌", photo="rhod",
+      name="알고케어 뉴트리션 홍경천&테아닌", photo="rhod", pillcap="미니정제",
       hero="스트레스 관리에 집중한<br>홍경천·테아닌 보틀",
       stats=[("200", "mg", "홍경천 추출물"), ("200", "mg", "L-테아닌"), ("4.2", "mg", "로사빈")],
       points=[
         ("홍경천 + 테아닌 한 보틀", "비교 제품 중 둘을 함께 담은 제품은 모어네이처와 알고케어 2종뿐"),
-        ("원료사 공개", "홍경천 Nektium(스페인) · 테아닌 Molecules bio labs(인도). 비교 제품 4종은 모두 미표기"),
+        ("홍경천 200mg · L-테아닌 200mg", "홍경천은 스페인 Nektium, 테아닌은 인도 Molecules bio labs 원료"),
         ("두 성분 외 배합 없음", "마그네슘 · 비타민B군 · 아연은 알고케어 별도 보틀로 제공해 중복 섭취 방지"),
       ],
       core="여에스더 · 동아 · 종근당은 홍경천 없는 테아닌 중심 제품"),
+ dict(key="multi", no="10", en="MULTIVITAMIN & MINERAL", table="10. 멀티",
+      name="알고케어 뉴트리션 멀티비타민미네랄", photo="multi", pillcap="미니정제 120mg",
+      hero="DSM·MenaQ7® 등 글로벌 원료사를 담은<br>데일리 밸런스 멀티",
+      stats=[("21", "종", "비타민 13 · 미네랄 8"), ("40", "%", "지용성 A · E · K 기준치"), ("4~15", "정", "고객별 1일 섭취 범위")],
+      points=[
+        ("필요한 만큼 다르게, 차등 설계", "B1 · B12 1,000%로 높이고 지용성 A · E · K 40%, 비타민D 60%, 미량미네랄 60~80%"),
+        ("DSM 비타민 10종 · MenaQ7® K2", "DSM(A · B군 5종 · C · D · E · K1), 이탈리아 Gnosis MenaQ7®, 미국 Jost Chemical 미네랄"),
+        ("중성 비타민C · K1+K2", "위장관 부담까지 고려한 L-아스코브산칼슘. 국내 비교 제품 중 MenaQ7® K2는 알고케어뿐"),
+        ("칼슘 · 마그네슘은 별도 보틀", "시너지 마그네슘 · 칼슘&마그네슘 보틀로 나눠 중복 섭취 방지. 120mg 미니정제로 정 수 조절"),
+      ],
+      core="충족형(100%)도 고함량형(수천%)도 아닌 차등 설계 — 지용성 A · E · K 40%, 정 수 맞춤 조절까지"),
+ dict(key="multi-line", no="10-1", en="MULTI · PRESTIGE & USA", table=None, prerelease=True,
+      name="알고케어 프레스티지 멀티비타민미네랄 · (가칭) 알고케어 USA Essential Mineral Multi", photo=None, badge="PRESTIGE · USA",
+      split=[
+        dict(label="PRESTIGE", sub="알고케어 프레스티지 멀티비타민미네랄 · 출시 예정",
+             hero="활성형 엽산·메타좀 비타민C·헴철, 한 단계 위의 프리미엄 멀티",
+             points=[
+               ("활성형 엽산 · 메타좀 비타민C · 헴철", "국내 비교 제품 중 활성형 엽산 · 메타좀 비타민C를 사용한 멀티는 없음"),
+               ("비타민D 1,000IU · B군 고함량", "D 250%로 별도 비타민D 보틀 없이. B1 · B2 50mg, B12 500㎍"),
+               ("B6 · 지용성 A · K는 보수적으로", "고함량 장기 섭취 시 주의가 필요한 B6는 보수적으로, A · K는 베이직처럼 40%"),
+             ]),
+        dict(label="USA", sub="(가칭) 알고케어 USA Essential Mineral Multi · 미국 출시 예정",
+             hero="Albion TRAACS® 킬레이트 미네랄과 Quatrefolic® 활성형 엽산, 미국 프리미엄 기준에 맞춘 멀티",
+             points=[
+               ("Albion TRAACS® 킬레이트 미네랄 7종", "국내 건강기능식품 규정상 쓸 수 없는 킬레이트 미네랄을 미국용 라인에 적용"),
+               ("활성형 엽산 · 활성형 B군", "Quatrefolic® 5-MTHF, 메틸코발라민 · P5P · R5P"),
+               ("비타민 · 미네랄 22종", "붕소 포함 22종, 철 · 칼슘 제외. 쏜리서치 수준의 프리미엄 품질"),
+             ]),
+      ]),
+ dict(key="vitd", no="11", en="VITAMIN D3", table="11. 비타민D",
+      name="알고케어 뉴트리션 비타민D3", photo="vitd", pillcap="미니정제 95mg · 1정 1,000IU",
+      hero="DSM Quali®-D, 1,000IU부터 4,000IU까지<br>나에게 맞추는 비타민D",
+      stats=[("1,000", "IU", "1정 비타민D3"), ("1~4", "정", "1,000~4,000IU 조절"), ("95", "mg", "미니정제 1정")],
+      points=[
+        ("1정 1,000IU, 정 수로 조절", "청소년 · 임산부 · 고령자 등 필요에 따라 1,000~4,000IU. 국내 · GS 비교 제품은 1정(캡슐) 고정"),
+        ("DSM Quali®-D 원료", "국내 비타민D 표준 원료. 국내 비교 제품도 모두 DSM 원료 사용"),
+        ("95mg 미니정제", "중량이 확인되는 비교 제품은 280~600mg (캡슐 · 츄어블)"),
+        ("고함량도 여러 알로", "쏜리서치는 1,000 · 4,000 · 10,000IU 등 SKU를 나눠 운영, 알고케어는 5.1mm 미니정제 여러 알로 맞춤"),
+      ],
+      core="비교 제품 중 1,000IU 단위 정 수 조절과 단일 배합을 함께 갖춘 제품은 알고케어뿐"),
+ dict(key="calmag", no="12", en="CALCIUM & MAGNESIUM", table="12. 칼슘",
+      name="알고케어 뉴트리션 칼슘&마그네슘", photo="calmag", pillcap="미니정제 135mg",
+      hero="칼슘:마그네슘 2:1,<br>체내 미네랄 균형을 고려한 칼마",
+      stats=[("2 : 1", "", "칼슘 : 마그네슘"), ("300+150", "mg", "1일 14정 기준"), ("23", "정", "최대 조절 (칼슘 약 493mg)")],
+      points=[
+        ("칼슘 : 마그네슘 2 : 1", "흡수에 좋은 비율로 알려진 2:1 설계. 종근당 칼슘 앤 마그네슘 · 아임비타와 같은 비율"),
+        ("1정 칼슘 21.43 · 마그네슘 10.71mg", "1일 14정 기준, 최대 23정까지 정 수로 조절. 비교 제품은 1일 2정 또는 3캡슐 고정"),
+        ("칼슘 · 마그네슘 단일 배합", "비타민D · K · 아연은 멀티 · 비타민D 보틀에 있어 중복 섭취 방지. 국내 비교 제품은 복합 배합"),
+        ("해조칼슘 Aquamin F · 산화마그네슘", "역가가 높아 국내 칼마의 표준인 원료. 해조칼슘 Microferm(영국), 산화마그네슘 CALMAGS(독일)"),
+      ],
+      core="칼슘 · 마그네슘을 정 수로 조절할 수 있는 단일 배합 칼마는 비교 제품 중 알고케어뿐"),
+ dict(key="boswellia", no="13", en="BOSWELLIA", table="13. 보스웰리아",
+      name="알고케어 뉴트리션 보스웰리아", photo="boswellia", pillcap="미니정제 90mg",
+      hero="식약처 개별인정형 원료 SERRATRIN®으로<br>만든 보스웰리아",
+      stats=[("400", "mg", "1일 보스웰리아 추출물"), ("32.8", "mg", "AKBA + KBA"), ("90", "mg", "미니정제 1정 · 1일 8정")],
+      points=[
+        ("개별인정형 SERRATRIN®", "인도 Laila Nutraceuticals 원료, 지표성분 AKBA+KBA 82mg/g 표준화. 종근당 보스웰리아 7Days와 같은 원료"),
+        ("보스웰리아 단일 배합", "비타민D · 아연 · 셀렌 등은 멀티에 있어 중복 섭취 방지. 비교 제품 중 단일 배합은 알고케어 · Pure뿐"),
+        ("관절 건강 기능성", "관절 및 연골 건강에 도움을 줄 수 있음 — 국내 비교 3종과 같은 기능성의 건강기능식품"),
+        ("90mg 미니정제 8정", "한 알 크기 부담이 적음. 국내 비교 제품은 800~900mg대 정제 1~2정"),
+      ],
+      core="식약처 인정 원료 SERRATRIN®을 다른 성분 없이 담은 국내 건강기능식품은 비교 제품 중 알고케어뿐"),
+ dict(key="catechin", no="14", en="GREEN TEA CATECHIN", table="14. 녹차",
+      name="알고케어 뉴트리션 녹차카테킨", photo="catechin", pillcap="미니정제 100mg · 1정 카테킨 42.86mg",
+      hero="체지방 관리가 필요할 때,<br>루틴에 더하는 녹차카테킨 단일 보틀",
+      stats=[("300", "mg", "1일 카테킨 (7정)"), ("42.86", "mg", "1정 카테킨"), ("70", "%", "카테킨 표준화 원료")],
+      points=[
+        ("녹차추출물 단일 배합", "바나바 · 멀티비타민미네랄 보틀과 중복 섭취를 막으려고 코로솔산 · 비타민 · 미네랄을 넣지 않음"),
+        ("카테킨 70% · EGCG 45~55%", "표준화한 녹차추출물 원료 사용 (미국 UNIAREA)"),
+        ("5.1mm 미니정제 7정", "1정 42.86mg 단위. 국내 비교 제품은 1~2정 고정 섭취"),
+        ("비교 제품은 복합 배합", "국내 비교 3종은 코로솔산 · B군 · 비타민C · 셀렌 등을 함께 배합"),
+      ],
+      core="녹차카테킨만 담아, 바나바 · 멀티와 겹치지 않게 더하는 보틀"),
 ]
 
 LOGO_BLACK = (ROOT / "assets" / "algocare.svg").read_text().replace("#FAF9F9", "#0A0909")
@@ -283,7 +365,7 @@ PAGE_NO = [0]
 
 def footer(dark=False, src=True):
     PAGE_NO[0] += 1
-    note = "자료 기준 2026.11.03 · 각 사 공식몰 · GS SHOP · 제품 라벨 표기 기준 · 월 환산가는 조사 시점 판매가 기준으로 변동 가능" if src else ""
+    note = "자료 기준 2026.11.04 · 각 사 공식몰 · GS SHOP · 제품 라벨 표기 기준 · 월 환산가는 조사 시점 판매가 기준으로 변동 가능" if src else ""
     return (f'<footer class="ft"><span class="ft-logo">{logo(dark, 11)}</span>'
             f'<span class="ft-note">{note}</span><span class="ft-no">{PAGE_NO[0]:02d}</span></footer>')
 
@@ -297,9 +379,36 @@ def points_html(points, cols=2):
         f'<div class="pt"><div class="pt-n">{i:02d}</div><div><h4>{html.escape(t)}</h4><p>{html.escape(d)}</p></div></div>'
         for i, (t, d) in enumerate(points, 1)) + "</div>"
 
+# ---------------------------------------------- 히어로 비주얼 시안 (VISUAL=duo|lens|studio)
+# 기본값 classic = 기존 디자인(보틀 사진 + 우하단 알약 썸네일). 시안은 VISUAL 환경변수로만 켜짐.
+import os
+VISUAL = os.environ.get("VISUAL", "classic")
+SUFFIX = "" if VISUAL == "classic" else f"_{VISUAL}"
+
+def photo_visual(b):
+    bt = f'background-image:url(img/{b["photo"]}_bottle.jpg)'
+    pl = f'background-image:url(img/{b["photo"]}_pill.jpg)'
+    cap = html.escape(b.get("pillcap", ""))
+    if VISUAL == "duo":      # A. 세로 2단: 보틀 + 알약 매크로 스트립, 같은 톤·같은 캡션 체계
+        return (f'<div class="visual v-duo"><div class="vd-top" style="{bt}"></div>'
+                f'<div class="vd-bot"><div class="vd-pill" style="{pl}"></div>'
+                f'<div class="vd-cap"><span>INSIDE THE BOTTLE</span><b>{cap}</b></div></div></div>')
+    if VISUAL == "lens":     # B. 보틀 전면 + 원형 매크로 렌즈, 리더 라인과 캡션으로 보틀에 연결
+        return (f'<div class="visual v-lens" style="{bt}"><div class="vl-line"></div>'
+                f'<figure class="vl-fig"><div class="vl-lens" style="{pl}"></div>'
+                f'<figcaption><span>1 UNIT · ACTUAL</span>{cap}</figcaption></figure></div>')
+    if VISUAL == "studio":   # C. 단일 구성 패널: 같은 프레임의 보틀 카드 + 알약 카드 + 캡션
+        return (f'<div class="visual v-studio"><div class="vs-card vs-bottle" style="{bt}"></div>'
+                f'<div class="vs-row"><div class="vs-card vs-pill" style="{pl}"></div>'
+                f'<div class="vs-cap"><span>{b["no"]} · {html.escape(b["en"])}</span><b>{cap}</b>'
+                f'<i>보틀 속 한 알</i></div></div></div>')
+    raise ValueError(VISUAL)
+
 def hero_page(b):
     pre = b.get("prerelease")
-    if b.get("photo"):
+    if b.get("photo") and VISUAL != "classic":
+        visual = photo_visual(b)
+    elif b.get("photo"):
         visual = (f'<div class="visual photo" style="background-image:url(img/{b["photo"]}_bottle.jpg)">'
                   f'<div class="pill" style="background-image:url(img/{b["photo"]}_pill.jpg)"></div></div>')
     else:
@@ -330,16 +439,16 @@ def table_page(b, rows, title_extra=""):
             f'<div class="tp-body">{render_table(rows, dense)}</div>'
             f'<div class="legend"><span class="lg algo"></span>알고케어 '
             + ('<span class="lg algo-pre"></span>알고케어 출시 예정 ' if any("출시 예정" in g for g in rows[0]) else '') +
-            f'<span class="lg gs"></span>GS SHOP 매칭 상품 <span class="lg pharma"></span>제약사 브랜드 인기 · 프리미엄 상품'
+            f'<span class="lg gs"></span>GS SHOP 매칭 상품 <span class="lg pharma"></span>{PHARMA_LABEL}'
             f'<span class="lg-note">「-」 미표기 · 미확인 / 「없음」 해당 성분 없음</span></div>{footer()}</section>')
 
 def cover():
     imgs = "".join(f'<div class="cv-b" style="background-image:url(img/{k}_bottle.jpg)"></div>'
-                   for k in ["omega", "probio", "mela", "coq", "lutein", "mag", "milk", "banaba", "rhod"])
-    return (f'<section class="page cover"><div class="cv-top">{logo(True, 20)}<span>GS SHOP MD TEAM · 2026.11</span></div>'
+                   for k in [b["photo"] for b in BOTTLES if b.get("photo")])
+    return (f'<section class="page cover"><div class="cv-top">{logo(True, 20)}<span>내부용 / 대외비 · 2026.11</span></div>'
             f'<div class="cv-main"><div class="cv-kicker">ALGOCARE NUTRITION BOTTLE</div>'
             f'<h1>알고케어 뉴트리션 보틀<br><b>품질 비교 자료</b></h1>'
-            f'<p>원료사 · 함량 · 제형 · 가격까지, 9종 보틀과 출시 예정 라인을<br>GS SHOP 매칭 상품 · 제약사 브랜드 · 해외 프리미엄 제품과 나란히 비교했습니다.</p></div>'
+            f'<p>원료 · 함량 · 제형 · 가격까지, 14종 보틀과 출시 예정 라인을<br>GS SHOP 매칭 상품 · 제약사 브랜드 · 해외 프리미엄 제품과 나란히 비교했습니다.</p></div>'
             f'<div class="cv-row">{imgs}</div></section>')
 
 def lineup():
@@ -356,12 +465,12 @@ def lineup():
         f'<div class="lu-hero">{hero}</div></div></div>'
         for no, nm, hero, pre in rows)
     return (f'<section class="page lineup"><header class="tp-h"><div class="eyebrow"><b>00</b><span>LINE-UP</span><i>HERO LINES</i></div>'
-            f'<h2>한눈에 보는 알고케어 뉴트리션 라인업</h2></header><div class="lu-grid">{items}</div>{footer()}</section>')
+            f'<h2>한눈에 보는 알고케어 뉴트리션 라인업</h2></header><div class="lu-grid{" dense" if len(rows) > 14 else ""}" style="grid-template-rows:repeat({(len(rows)+1)//2},1fr)">{items}</div>{footer()}</section>')
 
 def closing():
     pillars = [
-        ("SOURCE", "원료사를 밝힙니다", "Polaris · Indena · Kaneka · Albion · 일동바이오사이언스 — 비교 제품 다수가 미표기인 원료사를 공개"),
-        ("DOSE", "알 수로 맞춥니다", "오메가3 · 멜라토닌 · 마그네슘 · 밀크씨슬까지, 고정 1회분이 아닌 정 · 캡슐 단위 조절"),
+        ("SOURCE", "원료부터 고릅니다", "Polaris · Indena · DSM · MenaQ7® · 일동바이오사이언스 · SERRATRIN® — 성분마다 원료를 정해 설계"),
+        ("DOSE", "알 수로 맞춥니다", "오메가3 · 멜라토닌 · 비타민D · 칼슘&마그네슘까지, 고정 1회분이 아닌 정 · 캡슐 단위 조절"),
         ("SYSTEM", "겹치지 않게 설계합니다", "단일 배합 보틀로 멀티비타민미네랄과의 중복 섭취를 막는 알고케어 시스템"),
     ]
     cards = "".join(f'<div class="pl"><div class="pl-en">{e}</div><h3>{t}</h3><p>{html.escape(d)}</p></div>' for e, t, d in pillars)
@@ -369,7 +478,7 @@ def closing():
             f'<h1>같은 이름의 영양제라도,<br><b>설계는 다릅니다.</b></h1><div class="pillars">{cards}</div></div>'
             f'<div class="cl-logo">{logo(True, 22)}</div></section>')
 
-CSS = (ROOT / "deck.css").read_text(encoding="utf-8")
+CSS = (ROOT / "deck.css").read_text(encoding="utf-8") + (ROOT / "visual_options.css").read_text(encoding="utf-8")
 
 pages = [cover(), lineup()]
 for b in BOTTLES:
@@ -394,7 +503,7 @@ document.fonts.ready.then(()=>{{
   document.body.dataset.fitted='1';
 }});
 </script></body></html>"""
-(ROOT / "deck.html").write_text(doc, encoding="utf-8")
+(ROOT / f"deck{SUFFIX}.html").write_text(doc, encoding="utf-8")
 print("pages:", len(pages))
 
 # ---------------------------------------------------------------- 상세판(FULL)
@@ -482,5 +591,5 @@ if os.environ.get("FULL"):
 <title>알고케어 뉴트리션 보틀 품질 비교 자료 (상세판)</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <style>{CSS}{DCSS}</style></head><body>{''.join(pages)}{FIT2}</body></html>"""
-    (ROOT / "deck_full.html").write_text(docf, encoding="utf-8")
+    (ROOT / f"deck_full{SUFFIX}.html").write_text(docf, encoding="utf-8")
     print("full pages:", len(pages))

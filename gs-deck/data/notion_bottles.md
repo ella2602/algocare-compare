@@ -1,6 +1,6 @@
 # GS SHOP MD팀 요청 건 — bottle toggles dump
 
-Source: Notion page 40d9954bcc7b81948cd9e3ec3cb89f5c 「GS SHOP MD팀 요청 건 (지금 백지연 PGM 방송 자료)」, fetched 2026-11-04T02:35:24.668Z.
+Source: Notion page 40d9954bcc7b81948cd9e3ec3cb89f5c 「GS SHOP MD팀 요청 건 (지금 백지연 PGM 방송 자료)」, fetched 2026-11-04T02:47:27.583Z.
 Scope: toggles 「1. 오메가3」 through 「14. 녹차카테킨」 incl. 3-1, plus 「히어로 카피」. The top toggle 「요청 개요 · GS 통화 · 매칭 상품 · 작성 기준」 is excluded.
 Conventions: Notion markdown escapes (\~ \$ \[ \] \.) unescaped; `<b>` rendered as **bold**; `<br />` inside cells rendered as " / "; HTML <ul>/<li> lists converted to markdown bullets with the same nesting. Column colors from the table <colgroup>: orange = Algocare (incl. prestige / USA), blue = GS SHOP 매칭 상품, green = 제약사브랜드 인기 상품 또는 프리미엄급 상품 (해외 제품 포함). In each table the first row is the verbatim group-label row (blank cells = merged-looking empty cells in Notion).
 
@@ -39,7 +39,7 @@ Conventions: Notion markdown escapes (\~ \$ \[ \] \.) unescaped; `<b>` rendered 
 
 Column groups / colors:
 - Col 1 (row header, no color): "구분"
-- Col 2: orange **[ORANGE]** | group label: 알고케어 | product: 알고케어 오메가3
+- Col 2: orange **[ORANGE]** | group label: 알고케어 | product: 알고케어 뉴트리션 장용성 초임계 rTG 오메가3
 - Col 3: blue | group label: GS SHOP 매칭 상품 | product: 종근당건강 프로메가 알티지 오메가3 비타민D
 - Col 4: blue | group label: GS SHOP 매칭 상품 (continued; cell empty) | product: 프롬바이오 초임계 알티지 오메가3
 - Col 5: green | group label: 제약사브랜드 인기 상품 또는 프리미엄급 상품 (해외 제품 포함) | product: 유한양행 유한 알티지 오메가3 미니
@@ -47,7 +47,7 @@ Column groups / colors:
 
 | 구분 | 알고케어 | GS SHOP 매칭 상품 |  | 제약사브랜드 인기 상품 또는 프리미엄급 상품 (해외 제품 포함) |  |
 | --- | --- | --- | --- | --- | --- |
-| 제품 | 알고케어 오메가3 | 종근당건강 프로메가 알티지 오메가3 비타민D | 프롬바이오 초임계 알티지 오메가3 | 유한양행 유한 알티지 오메가3 미니 | Thorne Super EPA |
+| 제품 | 알고케어 뉴트리션 장용성 초임계 rTG 오메가3 | 종근당건강 프로메가 알티지 오메가3 비타민D | 프롬바이오 초임계 알티지 오메가3 | 유한양행 유한 알티지 오메가3 미니 | Thorne Super EPA |
 | 1일 EPA+DHA | 300mg(1알)/600mg(2알) / 900mg(3알) 등 300mg부터 조절 가능 | 500mg (2캡슐) | 600mg (1캡슐) | 600mg (2캡슐) | 1알 695mg (EPA 425 + DHA 270), 1일 2~3알 |
 | 1캡슐 중량 | 377mg | 430mg | 1,007mg | 382mg | - |
 | 농도 | 80% | 약 60% (총중량 기준) | 약 60% (총중량 기준) | 약 80% | - |
@@ -87,7 +87,7 @@ Column groups / colors:
 
 Column groups / colors:
 - Col 1 (row header, no color): "구분"
-- Col 2: orange **[ORANGE]** | group label: 알고케어 | product: 알고케어 프로바이오틱스
+- Col 2: orange **[ORANGE]** | group label: 알고케어 | product: 알고케어 뉴트리션 프로바이오틱스
 - Col 3: blue | group label: GS SHOP 매칭 상품 | product: 덴프스 덴마크 유산균이야기
 - Col 4: blue | group label: GS SHOP 매칭 상품 (continued; cell empty) | product: 종근당건강 락토핏 골드
 - Col 5: green | group label: 제약사브랜드 인기 상품 또는 프리미엄급 상품 (해외 제품 포함) | product: 일동 지큐랩 100억 생유산균 골드
@@ -95,7 +95,7 @@ Column groups / colors:
 
 | 구분 | 알고케어 | GS SHOP 매칭 상품 |  | 제약사브랜드 인기 상품 또는 프리미엄급 상품 (해외 제품 포함) |  |
 | --- | --- | --- | --- | --- | --- |
-| 제품 | 알고케어 프로바이오틱스 | 덴프스 덴마크 유산균이야기 | 종근당건강 락토핏 골드 | 일동 지큐랩 100억 생유산균 골드 | Thorne FloraSport 20B |
+| 제품 | 알고케어 뉴트리션 프로바이오틱스 | 덴프스 덴마크 유산균이야기 | 종근당건강 락토핏 골드 | 일동 지큐랩 100억 생유산균 골드 | Thorne FloraSport 20B |
 | 1일 보장균수 | 100억 CFU (투입 500억) | 100억 CFU (투입 미표기) | 40억 CFU (투입 미표기) | 100억 CFU | 200억 CFU |
 | 형태 | 캡슐 200mg | 캡슐 170mg (병) | 분말 스틱 2g | 캡슐 500mg | 캡슐 (용량 미기재) |
 | 균주 | 5종 (IDCC 3201·4301·3302·2201·4101) | 2종 (LGG®, BB-12®) | 6종, 균주 코드 미공개 | 5종 (IDCC 3201·4301·4101·3501·2102) | 4종, 코드 모두 표기 (UALpc-04·UALa-01·DE111·HN019) |
@@ -130,7 +130,7 @@ Column groups / colors:
 
 Column groups / colors:
 - Col 1 (row header, no color): "구분"
-- Col 2: orange **[ORANGE]** | group label: 알고케어 | product: 알고케어 멜라토닌
+- Col 2: orange **[ORANGE]** | group label: 알고케어 | product: 알고케어 뉴트리션 멜라토닌
 - Col 3: blue | group label: GS SHOP 매칭 상품 | product: 닥터린 하이퍼셀 식물성 멜라토닌 함유 멜라바인 3mg
 - Col 4: blue | group label: GS SHOP 매칭 상품 (continued; cell empty) | product: GNM 식물성 멜라토닌 5mg 마그네슘 테아닌 트립토판
 - Col 5: green | group label: 제약사브랜드 인기 상품 또는 프리미엄급 상품 (해외 제품 포함) | product: 종근당 멜라스피드 구미
@@ -138,7 +138,7 @@ Column groups / colors:
 
 | 구분 | 알고케어 | GS SHOP 매칭 상품 |  | 제약사브랜드 인기 상품 또는 프리미엄급 상품 (해외 제품 포함) |  |
 | --- | --- | --- | --- | --- | --- |
-| 제품 | 알고케어 멜라토닌 | 닥터린 하이퍼셀 식물성 멜라토닌 함유 멜라바인 3mg | GNM 식물성 멜라토닌 5mg 마그네슘 테아닌 트립토판 | 종근당 멜라스피드 구미 | Pure Melatonin 0.5 mg |
+| 제품 | 알고케어 뉴트리션 멜라토닌 | 닥터린 하이퍼셀 식물성 멜라토닌 함유 멜라바인 3mg | GNM 식물성 멜라토닌 5mg 마그네슘 테아닌 트립토판 | 종근당 멜라스피드 구미 | Pure Melatonin 0.5 mg |
 | 1회 멜라토닌 | 0.67mg/정 (정 수로 조절) | 3mg/정 (1정 고정) | 5mg/정 (1정 고정) | 2mg/구미 (1일 1~2구미) | 0.5mg/캡슐 |
 | 원료 | 피스타치오 유래 (melostacio 3%, Botanic Healthcare 인도) | 토마토 유래 SOMATO™ 리포솜, 원료사 미표기 | 세인트존스워트 유래, Lifebloom Corp.(미국) | 토마토 추출물 | - |
 | 함께 든 성분 | 없음 (단일 배합, 테아닌·마그네슘은 별도 보틀) | 치커리추출물 84mg, 트립토판·테아닌·B군·허브 4종 등 (함량 미표기) | 마그네슘 100mg, 테아닌 100mg, 트립토판 50mg + 치커리·허브 등 | 테아닌 100mg, 레몬밤 50mg 등 | 없음 |
@@ -222,7 +222,7 @@ Column groups / colors:
 
 Column groups / colors:
 - Col 1 (row header, no color): "구분"
-- Col 2: orange **[ORANGE]** | group label: 알고케어 | product: 알고케어 코큐텐
+- Col 2: orange **[ORANGE]** | group label: 알고케어 | product: 알고케어 뉴트리션 장용성 코큐텐
 - Col 3: orange **[ORANGE]** | group label: 알고케어 USA (미국 출시 예정) | product: (가칭) 알고케어 USA Vascular/Cardio Prime
 - Col 4: blue | group label: GS SHOP 매칭 상품 | product: 대웅생명과학 코큐텐 100mg 플러스
 - Col 5: blue | group label: GS SHOP 매칭 상품 (continued; cell empty) | product: 올바른 코엔자임Q10 코큐텐 플러스
@@ -231,7 +231,7 @@ Column groups / colors:
 
 | 구분 | 알고케어 | 알고케어 USA (미국 출시 예정) | GS SHOP 매칭 상품 |  | 제약사브랜드 인기 상품 또는 프리미엄급 상품 (해외 제품 포함) |  |
 | --- | --- | --- | --- | --- | --- | --- |
-| 제품 | 알고케어 코큐텐 | (가칭) 알고케어 USA Vascular/Cardio Prime | 대웅생명과학 코큐텐 100mg 플러스 | 올바른 코엔자임Q10 코큐텐 플러스 | 종근당건강 코큐텐 맥스 | Thorne Ubiquinol |
+| 제품 | 알고케어 뉴트리션 장용성 코큐텐 | (가칭) 알고케어 USA Vascular/Cardio Prime | 대웅생명과학 코큐텐 100mg 플러스 | 올바른 코엔자임Q10 코큐텐 플러스 | 종근당건강 코큐텐 맥스 | Thorne Ubiquinol |
 | CoQ10 1일 | 유비퀴논 100mg (최대 300mg) | 유비퀴놀 100mg (Kaneka Ubiquinol®) | 유비퀴논 100mg (순도 98% 이상) | 유비퀴논 100mg (순도 98%) | 유비퀴논 100mg | 유비퀴놀 100mg/캡슐 |
 | 그 밖의 성분 | 없음 (단일 배합, 멀티와 중복 섭취 방지) | 피크노제놀 150mg (Pycnogenol®, Horphag) / 엽산 300mcg DFE (Quatrefolic® 5-MTHF) / B6 5mg (P5P) · B2 2mg (R5P) · B12 250mcg (메틸코발라민) | B군 7종(B6 11mg, 엽산 400㎍ DFE 등) + 아연 8.5mg · 셀렌 55㎍ · 크롬 30㎍ | B군 7종(B6 7mg, 엽산 400㎍ DFE 등) + 아연 4.25mg · 셀렌 27.5㎍ · 크롬 15㎍ | 셀렌, C, E | - |
 | 원료사 | Global Merchant (98%, GMO-Free) | Kaneka · Horphag · Quatrefolic | - | - | - | Kaneka® Ubiquinol |
@@ -266,7 +266,7 @@ Column groups / colors:
 
 Column groups / colors:
 - Col 1 (row header, no color): "구분"
-- Col 2: orange **[ORANGE]** | group label: 알고케어 | product: 알고케어 루테인지아잔틴
+- Col 2: orange **[ORANGE]** | group label: 알고케어 | product: 알고케어 뉴트리션 장용성 루테인지아잔틴
 - Col 3: orange **[ORANGE]** | group label: 알고케어 프레스티지 (출시 예정) | product: 알고케어 프레스티지 루테인지아잔틴
 - Col 4: blue | group label: GS SHOP 매칭 상품 | product: 안국건강 아이원 루테인지아잔틴 미니
 - Col 5: blue | group label: GS SHOP 매칭 상품 (continued; cell empty) | product: 뉴트리원 눈 건강 164 루테인 지아잔틴 GR
@@ -275,7 +275,7 @@ Column groups / colors:
 
 | 구분 | 알고케어 | 알고케어 프레스티지 (출시 예정) | GS SHOP 매칭 상품 |  | 제약사브랜드 인기 상품 또는 프리미엄급 상품 (해외 제품 포함) |  |
 | --- | --- | --- | --- | --- | --- | --- |
-| 제품 | 알고케어 루테인지아잔틴 | 알고케어 프레스티지 루테인지아잔틴 | 안국건강 아이원 루테인지아잔틴 미니 | 뉴트리원 눈 건강 164 루테인 지아잔틴 GR | 일동 마이니 루테인지아잔틴 아스타잔틴 | 고려은단 루테인 지아잔틴 아스타잔틴 |
+| 제품 | 알고케어 뉴트리션 장용성 루테인지아잔틴 | 알고케어 프레스티지 루테인지아잔틴 | 안국건강 아이원 루테인지아잔틴 미니 | 뉴트리원 눈 건강 164 루테인 지아잔틴 GR | 일동 마이니 루테인지아잔틴 아스타잔틴 | 고려은단 루테인 지아잔틴 아스타잔틴 |
 | 루테인 + 지아잔틴 1일 | 10 + 2mg / (20 + 4mg까지 조절 섭취 가능) | 10 + 2mg | 16.5 + 3.5mg | 16 + 4mg | 20.1 + 3.9mg | 18.2 + 1.8mg |
 | 그 밖의 성분 | 없음 (단일 배합, 멀티와 중복 섭취 방지) | 아스타잔틴 6mg / 빌베리추출물 160mg (Indena Mirtoselect®, 개별인정형) / 비타민A 210㎍ RAE | 없음 | 비타민A 210㎍ RAE / C 30mg · D 3㎍ · E 3.3mg / B6 0.45mg · B12 0.72㎍ · 엽산 120㎍ / 아연 2.55mg | 아스타잔틴 6mg | 아스타잔틴 6mg / 비타민A 210㎍ RAE |
 | 원료사 | Lute-gen (Bio-gen Extracts) | 빌베리: Indena (이탈리아) / 루테인: Lute-gen (Bio-gen Extracts) | - | - | OmniActive Lutemax 2020 | - |
@@ -324,7 +324,7 @@ Column groups / colors:
 
 Column groups / colors:
 - Col 1 (row header, no color): "구분"
-- Col 2: orange **[ORANGE]** | group label: 알고케어 | product: 알고케어 시너지마그네슘
+- Col 2: orange **[ORANGE]** | group label: 알고케어 | product: 알고케어 시너지 마그네슘
 - Col 3: orange **[ORANGE]** | group label: 알고케어 프레스티지 (출시 예정) | product: 알고케어 프레스티지 마그네슘
 - Col 4: orange **[ORANGE]** | group label: 알고케어 USA (미국 출시 예정) | product: (가칭) 알고케어 USA Magnesium
 - Col 5: blue | group label: GS SHOP 매칭 상품 | product: 유한양행 유한 마그디 칼슘 K2
@@ -334,7 +334,7 @@ Column groups / colors:
 
 | 구분 | 알고케어 | 알고케어 프레스티지 (출시 예정) | 알고케어 USA (미국 출시 예정) | GS SHOP 매칭 상품 |  | 제약사브랜드 인기 상품 또는 프리미엄급 상품 (해외 제품 포함) |  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 제품 | 알고케어 시너지마그네슘 | 알고케어 프레스티지 마그네슘 | (가칭) 알고케어 USA Magnesium | 유한양행 유한 마그디 칼슘 K2 | 대웅생명과학 대웅 마시는 마그네슘 (액상) | 종근당건강 아임비타 마그네슘 | Thorne Magnesium Glycinate |
+| 제품 | 알고케어 시너지 마그네슘 | 알고케어 프레스티지 마그네슘 | (가칭) 알고케어 USA Magnesium | 유한양행 유한 마그디 칼슘 K2 | 대웅생명과학 대웅 마시는 마그네슘 (액상) | 종근당건강 아임비타 마그네슘 | Thorne Magnesium Glycinate |
 | 마그네슘 1일 | 180mg (최대 385mg 섭취 가능) | 180mg | 200mg | 175mg (2정) | 230mg (1병) | 315mg | 120mg/캡슐 |
 | 그 밖의 성분 | 없음 (단일 배합, 멀티와 중복 섭취 방지) | 없음 (단일 배합, 멀티와 중복 섭취 방지) | 없음 | 칼슘 350mg, 비타민D 15㎍, K2 35㎍ | 아연 8.5mg, B1 3.6mg · B2 4.2mg · B6 4.5mg | B1·B2·B6·D | 없음 |
 | 원료 형태 | Aquamin(해조) + 젖산 + 글루콘산 3종 | 리포좀(메타좀) + 젖산 + 글루콘산 3종 (유기산 유래 Mg 50%, Mg 원소 기준) | 비스글리시네이트 킬레이트 단일 (Mg 약 10%) | 산화마그네슘 1종 | 젖산마그네슘 1종 | 산화마그네슘 | 글리시네이트 |
@@ -362,7 +362,7 @@ Column groups / colors:
 
 Column groups / colors:
 - Col 1 (row header, no color): "구분"
-- Col 2: orange **[ORANGE]** | group label: 알고케어 | product: 알고케어 밀크씨슬
+- Col 2: orange **[ORANGE]** | group label: 알고케어 | product: 알고케어 뉴트리션 밀크씨슬
 - Col 3: blue | group label: GS SHOP 매칭 상품 | product: GNM 건강한 간 밀크씨슬
 - Col 4: blue | group label: GS SHOP 매칭 상품 (continued; cell empty) | product: 대웅제약 에너씨슬
 - Col 5: green | group label: 제약사브랜드 인기 상품 또는 프리미엄급 상품 (해외 제품 포함) | product: 종근당건강 헬씨칸 로얄
@@ -370,7 +370,7 @@ Column groups / colors:
 
 | 구분 | 알고케어 | GS SHOP 매칭 상품 |  | 제약사브랜드 인기 상품 또는 프리미엄급 상품 (해외 제품 포함) |  |
 | --- | --- | --- | --- | --- | --- |
-| 제품 | 알고케어 밀크씨슬 | GNM 건강한 간 밀크씨슬 | 대웅제약 에너씨슬 | 종근당건강 헬씨칸 로얄 | 고려은단 퓨어 밀크씨슬 |
+| 제품 | 알고케어 뉴트리션 밀크씨슬 | GNM 건강한 간 밀크씨슬 | 대웅제약 에너씨슬 | 종근당건강 헬씨칸 로얄 | 고려은단 퓨어 밀크씨슬 |
 | 실리마린 1일 | 130mg | 130mg | 130mg | 130mg | 130mg |
 | 그 밖의 성분 | 없음 (단일 배합, 멀티와 중복 섭취 방지) | B1 1.1mg · B2 1.2mg · 나이아신 13.5mg NE · 판토텐산 4.6mg · B6 1.4mg | B1 1.2mg · B2 1.4mg · B12 35㎍ · 비오틴 35㎍ / 아연 8.5mg | B1·B2·B6·D·E | 없음 |
 | 원료사 | Indena (이탈리아) | 미국산으로만 표기 | 이탈리아산으로만 표기 | 인도산으로만 표기 | - |
@@ -398,7 +398,7 @@ Column groups / colors:
 
 Column groups / colors:
 - Col 1 (row header, no color): "구분"
-- Col 2: orange **[ORANGE]** | group label: 알고케어 | product: 알고케어 바나바
+- Col 2: orange **[ORANGE]** | group label: 알고케어 | product: 알고케어 뉴트리션 바나바
 - Col 3: blue | group label: GS SHOP 매칭 상품 | product: 내츄럴플러스 혈당건강 바나바
 - Col 4: blue | group label: GS SHOP 매칭 상품 (continued; cell empty) | product: GNM 혈당케어 바나바잎 추출물
 - Col 5: green | group label: 제약사브랜드 인기 상품 또는 프리미엄급 상품 (해외 제품 포함) | product: 종근당 혈당건강엔 바나바
@@ -406,7 +406,7 @@ Column groups / colors:
 
 | 구분 | 알고케어 | GS SHOP 매칭 상품 |  | 제약사브랜드 인기 상품 또는 프리미엄급 상품 (해외 제품 포함) |  |
 | --- | --- | --- | --- | --- | --- |
-| 제품 | 알고케어 바나바 | 내츄럴플러스 혈당건강 바나바 | GNM 혈당케어 바나바잎 추출물 | 종근당 혈당건강엔 바나바 | 동화약품 바나바잎 추출물 코로솔산 플러스 크롬 |
+| 제품 | 알고케어 뉴트리션 바나바 | 내츄럴플러스 혈당건강 바나바 | GNM 혈당케어 바나바잎 추출물 | 종근당 혈당건강엔 바나바 | 동화약품 바나바잎 추출물 코로솔산 플러스 크롬 |
 | 코로솔산 1일 | 1.3mg | 1.3mg | 1.3mg | 1.3mg | 1.3mg |
 | 그 밖의 성분 | 크롬 30μg (최소 배합, 멀티와 중복 섭취 방지) | B1 1.2mg · B2 1.4mg · 나이아신 15mg NE · B6 1.5mg · B12 2.4μg / 아연 8.5mg · 셀렌 27.5μg · 크롬 30μg | 셀렌 55μg · 크롬 30μg / B1 1.2mg · B2 1.4mg | 비타민B1·아연·셀렌·크롬 | 크롬 200μg · 아연 8.5mg · 셀렌 55μg / 엽산 400μg DFE · B6 1.5mg · B12 2.4μg |
 | 형태 | 미니정제 | 정제 500mg, 1일 1정 | 연질캡슐 150mg, 1일 1캡슐 | 정제 500mg | 제피정제 800mg, 1일 1정 |
@@ -436,7 +436,7 @@ Column groups / colors:
 
 Column groups / colors:
 - Col 1 (row header, no color): "구분"
-- Col 2: orange **[ORANGE]** | group label: 알고케어 | product: 알고케어 홍경천&테아닌
+- Col 2: orange **[ORANGE]** | group label: 알고케어 | product: 알고케어 뉴트리션 홍경천&테아닌
 - Col 3: blue | group label: GS SHOP 매칭 상품 | product: 모어네이처 스트레스 케어 테아닌 홍경천
 - Col 4: blue | group label: GS SHOP 매칭 상품 (continued; cell empty) | product: 여에스더 스트레스 케어 테아닌
 - Col 5: green | group label: 제약사브랜드 인기 상품 또는 프리미엄급 상품 (해외 제품 포함) | product: 동아제약 셀파렉스 테아닌
@@ -444,7 +444,7 @@ Column groups / colors:
 
 | 구분 | 알고케어 | GS SHOP 매칭 상품 |  | 제약사브랜드 인기 상품 또는 프리미엄급 상품 (해외 제품 포함) |  |
 | --- | --- | --- | --- | --- | --- |
-| 제품 | 알고케어 홍경천&테아닌 | 모어네이처 스트레스 케어 테아닌 홍경천 | 여에스더 스트레스 케어 테아닌 | 동아제약 셀파렉스 테아닌 | 종근당 벤비티 테아닌 구미 |
+| 제품 | 알고케어 뉴트리션 홍경천&테아닌 | 모어네이처 스트레스 케어 테아닌 홍경천 | 여에스더 스트레스 케어 테아닌 | 동아제약 셀파렉스 테아닌 | 종근당 벤비티 테아닌 구미 |
 | 테아닌 | L-테아닌 200mg | L-테아닌 200mg | 250mg | 테아닌 250mg | 200mg |
 | 홍경천추출물 | 200mg (로사빈 4.2mg) | 로사빈 4.4mg (추출물 함량 미표기) | 없음 | 없음 | 없음 |
 | 그 밖의 성분 | 없음 (추가 성분 없음, 멀티와 중복 섭취 방지) | 마그네슘 94.5mg, 비타민D 25㎍ | 마그네슘 315mg · 비타민C 30mg · B6 1.5mg · 아연 8.5mg | 없음 | 없음 |
@@ -507,7 +507,7 @@ Column groups / colors:
 
 Column groups / colors:
 - Col 1 (row header, no color): "구분"
-- Col 2: orange **[ORANGE]** | group label: 알고케어 | product: 알고케어 멀티비타민미네랄
+- Col 2: orange **[ORANGE]** | group label: 알고케어 | product: 알고케어 뉴트리션 멀티비타민미네랄
 - Col 3: orange **[ORANGE]** | group label: 알고케어 프레스티지 (출시 예정) | product: 알고케어 프레스티지 멀티비타민미네랄
 - Col 4: orange **[ORANGE]** | group label: 알고케어 USA (미국 출시 예정) | product: (가칭) 알고케어 USA Essential Mineral Multi
 - Col 5: blue | group label: GS SHOP 매칭 상품 | product: 종근당건강 아임비타 멀티비타민 이뮨샷
@@ -517,7 +517,7 @@ Column groups / colors:
 
 | 구분 | 알고케어 | 알고케어 프레스티지 (출시 예정) | 알고케어 USA (미국 출시 예정) | GS SHOP 매칭 상품 |  | 제약사브랜드 인기 상품 또는 프리미엄급 상품 (해외 제품 포함) |  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 제품 | 알고케어 멀티비타민미네랄 | 알고케어 프레스티지 멀티비타민미네랄 | (가칭) 알고케어 USA Essential Mineral Multi | 종근당건강 아임비타 멀티비타민 이뮨샷 | 동아제약 오쏘몰 이뮨 멀티비타민 | 유한양행 센스밸런스 플러스 | Thorne Basic Nutrients 2/Day |
+| 제품 | 알고케어 뉴트리션 멀티비타민미네랄 | 알고케어 프레스티지 멀티비타민미네랄 | (가칭) 알고케어 USA Essential Mineral Multi | 종근당건강 아임비타 멀티비타민 이뮨샷 | 동아제약 오쏘몰 이뮨 멀티비타민 | 유한양행 센스밸런스 플러스 | Thorne Basic Nutrients 2/Day |
 | 비타민·미네랄 종 수 | 21종 (비타민 13 / 미네랄 8) | 21종 (비타민 13 / 미네랄 8) | 22종 (비타민 13 / 미네랄 9, 붕소 포함) | 18종 (비타민 11 / 미네랄 7, 베타카로틴 포함) / 엽산·나이아신·철 없음 | 18종 표시 (비타민 10 / 미네랄 8, 베타카로틴 포함) / D·B1·B2는 원료에 있으나 함량 미표시, B12 없음 | 16종 (비타민 11 / 미네랄 5) / A·K 없음 | 22종 (비타민 13 / 미네랄 9, 붕소 포함) |
 | 함량 설계 | 차등형: B1·B12 1,000%, 지용성 A·E·K 40%, D 60%, 미량미네랄 60~80% | B군 고함량형: B1 4,167%, B2 3,571%, B12 20,833%. 지용성 A·K 40% 유지 | B군 고함량형: B1 4,167%, B2 1,929%, B12 12,500%. 철·칼슘 제외 | B군 고함량형: B1·B2·B6·B12·비오틴 4,000%, 판토텐산 500%, 아연 200%, 나머지 100% | 고함량형: C 1,000%, E 1,364%, B6 1,533% | 충족형: 대부분 100%, B12 1,200%, B1·B2·B6·비오틴 300% | 고함량형: B12 25,000%, B1 4,167%, K 571% |
 | 비타민D | 6㎍ (240IU, 60%) / 별도 비타민D 보틀로 증량 | 1,000IU (250%) | 500% | 10㎍ (400IU, 100%) | - / (원료에 D3 포함, 함량 미표시) | 10㎍ (400IU, 100%) | 50㎍ (2,000IU, 500%) |
@@ -555,7 +555,7 @@ Column groups / colors:
 
 Column groups / colors:
 - Col 1 (row header, no color): "구분"
-- Col 2: orange **[ORANGE]** | group label: 알고케어 | product: 알고케어 비타민D
+- Col 2: orange **[ORANGE]** | group label: 알고케어 | product: 알고케어 뉴트리션 비타민D3
 - Col 3: blue | group label: GS SHOP 매칭 상품 | product: 종근당건강 아임비타 비타민D 2000IU
 - Col 4: blue | group label: GS SHOP 매칭 상품 (continued; cell empty) | product: 솔가 비타민D3 2200
 - Col 5: green | group label: 제약사브랜드 인기 상품 또는 프리미엄급 상품 (해외 제품 포함) | product: 일동 마이니 비타민D3 5000IU
@@ -563,7 +563,7 @@ Column groups / colors:
 
 | 구분 | 알고케어 | GS SHOP 매칭 상품 |  | 제약사브랜드 인기 상품 또는 프리미엄급 상품 (해외 제품 포함) |  |
 | --- | --- | --- | --- | --- | --- |
-| 제품 | 알고케어 비타민D | 종근당건강 아임비타 비타민D 2000IU | 솔가 비타민D3 2200 | 일동 마이니 비타민D3 5000IU | Thorne Vitamin D-1,000 |
+| 제품 | 알고케어 뉴트리션 비타민D3 | 종근당건강 아임비타 비타민D 2000IU | 솔가 비타민D3 2200 | 일동 마이니 비타민D3 5000IU | Thorne Vitamin D-1,000 |
 | 비타민D 1일 | 1,000IU (25μg, 250%), 1정 / 1정 단위로 4,000IU까지 조절 가능 | 2,000IU (50μg, 500%), 1정 고정 | 2,200IU (55μg, 550%), 1캡슐 고정 | 5,000IU (125μg, 1,250%), 1캡슐 고정 | 1,000IU (25μg), 1캡슐 |
 | 형태 | D3 (원료 유래 -) | D3 (원료 유래 -) | D3 콜레칼시페롤 (원료 유래 -) | D3 (원료 유래 -) | D3 콜레칼시페롤 (원료 유래 -) |
 | 원료사 | DSM Quali®-D (스위스) | DSM Quali®-D (스위스) | - | DSM Quali®-D (스위스) | - |
@@ -603,7 +603,7 @@ Column groups / colors:
 
 Column groups / colors:
 - Col 1 (row header, no color): "구분"
-- Col 2: orange **[ORANGE]** | group label: 알고케어 | product: 알고케어 칼슘&마그네슘
+- Col 2: orange **[ORANGE]** | group label: 알고케어 | product: 알고케어 뉴트리션 칼슘&마그네슘
 - Col 3: blue | group label: GS SHOP 매칭 상품 | product: 주영엔에스 뼈엔 엠비피(MBP)
 - Col 4: blue | group label: GS SHOP 매칭 상품 (continued; cell empty) | product: 종근당 칼슘 앤 마그네슘 비타민D 아연
 - Col 5: green | group label: 제약사브랜드 인기 상품 또는 프리미엄급 상품 (해외 제품 포함) | product: 종근당건강 아임비타 칼슘 마그네슘 비타민D
@@ -611,7 +611,7 @@ Column groups / colors:
 
 | 구분 | 알고케어 | GS SHOP 매칭 상품 |  | 제약사브랜드 인기 상품 또는 프리미엄급 상품 (해외 제품 포함) |  |
 | --- | --- | --- | --- | --- | --- |
-| 제품 | 알고케어 칼슘&마그네슘 | 주영엔에스 뼈엔 엠비피(MBP) | 종근당 칼슘 앤 마그네슘 비타민D 아연 | 종근당건강 아임비타 칼슘 마그네슘 비타민D | Thorne Calcium-Magnesium Malate |
+| 제품 | 알고케어 뉴트리션 칼슘&마그네슘 | 주영엔에스 뼈엔 엠비피(MBP) | 종근당 칼슘 앤 마그네슘 비타민D 아연 | 종근당건강 아임비타 칼슘 마그네슘 비타민D | Thorne Calcium-Magnesium Malate |
 | 칼슘 1일 | 300mg (미니정제 14정) / 최대 23정 약 493mg까지 조절 | 없음 / (칼슘 마그네슘이 메인 성분이 아닌 MBP가 주 구성인 상품) | 300mg | 300mg | 300mg (100mg/캡슐) |
 | 마그네슘 1일 | 150mg (미니정제 14정) / 최대 23정 약 246mg까지 조절 | - | 150mg | 150mg | 300mg (100mg/캡슐) |
 | 원료 형태 | 해조칼슘 Aquamin F / 산화마그네슘 | 유단백추출물 MBP 기반 | 해조칼슘 / 산화마그네슘 | 해조칼슘 / 산화마그네슘 | 말산칼슘 / 말산마그네슘 / (칼슘 말레이트/마그네슘 말레이트) |
@@ -646,7 +646,7 @@ Column groups / colors:
 
 Column groups / colors:
 - Col 1 (row header, no color): "구분"
-- Col 2: orange **[ORANGE]** | group label: 알고케어 | product: 알고케어 보스웰리아
+- Col 2: orange **[ORANGE]** | group label: 알고케어 | product: 알고케어 뉴트리션 보스웰리아
 - Col 3: blue | group label: GS SHOP 매칭 상품 | product: 프롬바이오 관절연골엔 보스웰리아
 - Col 4: blue | group label: GS SHOP 매칭 상품 (continued; cell empty) | product: 여에스더 관절엔 보스웰리아
 - Col 5: green | group label: 제약사브랜드 인기 상품 또는 프리미엄급 상품 (해외 제품 포함) | product: 종근당 관절건강프로젝트365 보스웰리아 7Days
@@ -654,7 +654,7 @@ Column groups / colors:
 
 | 구분 | 알고케어 | GS SHOP 매칭 상품 |  | 제약사브랜드 인기 상품 또는 프리미엄급 상품 (해외 제품 포함) |  |
 | --- | --- | --- | --- | --- | --- |
-| 제품 | 알고케어 보스웰리아 | 프롬바이오 관절연골엔 보스웰리아 | 여에스더 관절엔 보스웰리아 | 종근당 관절건강프로젝트365 보스웰리아 7Days | Pure Boswellia AKBA |
+| 제품 | 알고케어 뉴트리션 보스웰리아 | 프롬바이오 관절연골엔 보스웰리아 | 여에스더 관절엔 보스웰리아 | 종근당 관절건강프로젝트365 보스웰리아 7Days | Pure Boswellia AKBA |
 | 보스웰리아 추출물 1일 | 400mg / AKBA+KBA 32.8mg | 1,000mg / AKBA+KBA 71mg | 추출물 중량 미확인 / AKBA+KBA 42mg (원료 84mg/g) | 추출물 중량 미확인 / AKBA+KBA 32.8mg | 100mg / AKBA 30% 표준화 (AKBA 30mg) |
 | 원료명·원료사 | SERRATRIN (Laila Nutraceuticals, 인도) | 미표기 (인도산만 표기) | BOSMAX® (인도) | SERRATRIN (Laila Nutraceuticals, 인도) | 5-LOXIN (PL Thomas–Laila Nutra) |
 | 그 밖의 성분 | 없음 (단일 배합, 멀티와 중복 섭취 방지) | 비타민D 3μg · 마그네슘 94.5mg · 아연 2.55mg / 셀렌 16.5μg · 망간 0.9mg | B2 1.4mg · 나이아신 15mg NE · B6 1.5mg / 비타민D 10μg · 비타민K 70μg / 아연 8.5mg · 셀렌 55μg · 망간 3mg | B2 1.4mg · 나이아신 15mg NE · B6 1.5mg / 비타민D 10μg · 아연 8.5mg · 셀렌 55μg | 없음 |
@@ -685,7 +685,7 @@ Column groups / colors:
 
 Column groups / colors:
 - Col 1 (row header, no color): "구분"
-- Col 2: orange **[ORANGE]** | group label: 알고케어 | product: 알고케어 녹차카테킨
+- Col 2: orange **[ORANGE]** | group label: 알고케어 | product: 알고케어 뉴트리션 녹차카테킨
 - Col 3: blue | group label: GS SHOP 매칭 상품 | product: 바이탈뷰티 메타그린 슬림업
 - Col 4: blue | group label: GS SHOP 매칭 상품 (continued; cell empty) | product: GNM 그린컷 카테킨 애프터
 - Col 5: green | group label: 제약사브랜드 인기 상품 또는 프리미엄급 상품 (해외 제품 포함) | product: 대웅생명과학 녹차 카테킨 다이어트 플러스
@@ -693,7 +693,7 @@ Column groups / colors:
 
 | 구분 | 알고케어 | GS SHOP 매칭 상품 |  | 제약사브랜드 인기 상품 또는 프리미엄급 상품 (해외 제품 포함) |  |
 | --- | --- | --- | --- | --- | --- |
-| 제품 | 알고케어 녹차카테킨 | 바이탈뷰티 메타그린 슬림업 | GNM 그린컷 카테킨 애프터 | 대웅생명과학 녹차 카테킨 다이어트 플러스 | Thorne Green Tea Phytosome |
+| 제품 | 알고케어 뉴트리션 녹차카테킨 | 바이탈뷰티 메타그린 슬림업 | GNM 그린컷 카테킨 애프터 | 대웅생명과학 녹차 카테킨 다이어트 플러스 | Thorne Green Tea Phytosome |
 | 카테킨 1일 | 300mg (1정 42.86mg × 7정) / 원료 EGCG 45~55% 표준화 | 360mg | 400mg | 300mg | - / (카테킨 미표기, 녹차 피토좀 250mg/캡슐) |
 | 그 밖의 성분 | 없음 (단일 배합, 바나바 잎 추출물 보틀, 멀티비타민보틀과 중복 섭취 방지) | 코로솔산 1.3mg (바나바잎추출물) / 판토텐산 25mg | B1 2.4mg · B2 2.8mg · 나이아신 15mg NE · 판토텐산 10mg · B6 3mg / 엽산 800μg DFE · 비타민C 100mg · 셀레늄 55μg | B1 1.2mg · B2 1.4mg · B6 1.5mg · 판토텐산 5mg / 셀렌 55μg | 없음 |
 | 원료사 | UNIAREA (미국) | 미표기 (인도산만 표기, 아모레퍼시픽 자체 추출 공정 강조) | 미표기 (인도산만 표기) | 미표기 (인도산만 표기) | Indena (Greenselect Phytosome) |
