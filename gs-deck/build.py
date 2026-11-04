@@ -249,7 +249,7 @@ BOTTLES = [
         ("마그네슘 단일 배합", "그 밖의 성분 없이 멀티와 중복 섭취 방지. 국내 비교 3종은 칼슘·비타민D·B군 등 복합 배합"),
         ("1정 25.71mg 단위 조절", "180~385mg까지 조절. 국내 비교 제품은 1회 섭취량 고정(175~315mg)"),
       ],
-      core="유기산 비중을 높인 프레스티지, 킬레이트 마그네슘 USA 라인까지"),
+      core="마그네슘 원료 3종을 한 보틀에 담아 1정 단위로 조절하는, 비교 제품 중 유일한 3종 복합 마그네슘"),
  dict(key="mag-line", no="06-1", en="MAGNESIUM · PRESTIGE & USA", table=None, prerelease=True,
       name="알고케어 프레스티지 마그네슘 · (가칭) 알고케어 USA Magnesium", photo=None, badge="PRESTIGE · USA",
       split=[
