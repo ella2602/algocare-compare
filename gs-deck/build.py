@@ -295,7 +295,7 @@ BOTTLES = [
       name="알고케어 프레스티지 멀티비타민미네랄 · (가칭) 알고케어 USA Essential Mineral Multi", photo=None, badge="PRESTIGE · USA",
       split=[
         dict(label="PRESTIGE", sub="알고케어 프레스티지 멀티비타민미네랄 · 출시 예정",
-             hero="활성형 엽산·메타좀 비타민C·헴철, 한 단계 위의 프리미엄 멀티",
+             hero="Quatrefolic® 활성형 엽산·메타좀 비타민C·헴철, 한 단계 위의 프리미엄 멀티",
              points=[
                ("활성형 엽산 · 메타좀 비타민C · 헴철", "국내 비교 제품 중 활성형 엽산 · 메타좀 비타민C를 사용한 멀티는 없음"),
                ("비타민D 1,000IU · B군 고함량", "D 250%로 별도 비타민D 보틀 없이. B1 · B2 50mg, B12 500㎍"),
