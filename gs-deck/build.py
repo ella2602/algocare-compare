@@ -45,6 +45,7 @@ def cell_html(text):
     t = LINK.sub(lambda m: f'<a href="{m.group(2)}">{m.group(1)}</a>', t)
     t = t.replace(" / ", "<br>")
     t = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", t)
+    t = re.sub(r"(?<=\w)·(?=\w)", "·<wbr>", t)   # 균주 코드 등 긴 ·연결 문자열이 셀 밖으로 넘치지 않게 줄바꿈 허용
     return t
 
 # ------------------------------------------------- 공식 제품명(위키 정본 기준)
