@@ -375,7 +375,7 @@ Column groups / colors:
 | 그 밖의 성분 | 없음 (단일 배합, 멀티와 중복 섭취 방지) | B1 1.1mg · B2 1.2mg · 나이아신 13.5mg NE · 판토텐산 4.6mg · B6 1.4mg | B1 1.2mg · B2 1.4mg · B12 35㎍ · 비오틴 35㎍ / 아연 8.5mg | B1·B2·B6·D·E | 없음 |
 | 원료사 | Indena (이탈리아) | 미국산으로만 표기 | 이탈리아산으로만 표기 | 인도산으로만 표기 | - |
 | 형태 | 미니정제 | 정제 500mg | 식물성 연질캡슐 700mg | 연질캡슐 830mg | 미니정제 350mg |
-| 제조 | 서흥헬스케어 | 대원헬스케어 2공장 (라벨 기준, GS 고시는 극동에치팜) | 코스맥스바이오 (GS 고시 기준, 식약처 신고는 알피바이오) | - | 고려은단헬스케어 |
+| 제조 | 서흥헬스케어 | 대원헬스케어 2공장 (라벨 기준, GS 고시는 극동에치팜) | 알피바이오 | - | 고려은단헬스케어 |
 | 월 환산가 | 월 10,200원, 자사몰 | 월 약 5,270원 (GS 6박스 31,600원, 쿠폰가) | 월 13,900원 (GS 1개) | 월 5,660원 (30캡슐, 다나와 최저가) | 월 약 3,800원 (180정 22,900원) |
 | 판매 링크 | [알고케어 자사몰](https://www.algocare.ai/products/milk-thistle) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=18559942) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1043112860) | [종근당건강 공식](https://www.ckdhc.com/product/productView.do?prodCode=CHC0000058) | [네이버 스토어](https://smartstore.naver.com/main/products/11243018665) |
 
