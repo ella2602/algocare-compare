@@ -553,8 +553,8 @@ def lineup(appendix=None):
         f'<div class="lu-hero">{hero}</div></div></div>'
         for no, nm, hero, pre in rows)
     if appendix:   # 상세판: 본문 뒤 APPENDIX가 있음을 라인업(목차)에서 알림
-        items += (f'<div class="lu lu-ax"><div class="lu-no">참고]</div><div class="lu-tx">'
-                  f'<div class="lu-nm">APPENDIX · p.{appendix[0]:02d}–{appendix[1]:02d}<span class="ax-sub">보틀별 비교 상세</span></div>'
+        items += (f'<div class="lu lu-ax"><div class="lu-no">별첨]</div><div class="lu-tx">'
+                  f'<div class="lu-nm">APPENDIX · p.{appendix[0]:02d}–{appendix[1]:02d}<span class="ax-sub">보틀별 상세 비교 정보</span></div>'
                   f'</div></div>')
         rows = rows + [None]
     return (f'<section class="page lineup"><header class="tp-h">'
