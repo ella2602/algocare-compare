@@ -288,9 +288,9 @@ BOTTLES = [
       hero="스트레스 관리에 집중한<br>홍경천·테아닌 보틀",
       stats=[("200", "mg", "홍경천 추출물"), ("200", "mg", "L-테아닌"), ("4.2", "mg", "로사빈")],
       points=[
-        ("홍경천 + 테아닌 한 보틀", "비교 제품 중 둘을 함께 담은 제품은 모어네이처와 알고케어 2종뿐"),
+        ("홍경천 + 테아닌 한 보틀", "비교 제품 중 둘을 함께 담은 제품은 모어네이처와 알고케어 2종"),
         ("홍경천 200mg · L-테아닌 200mg", "홍경천은 스페인 Nektium, 테아닌은 인도 Molecules bio labs 원료", "nektium"),
-        ("두 성분 외 배합 없음", "마그네슘 · 비타민B군 · 아연은 알고케어 별도 보틀로 제공해 중복 섭취 방지"),
+        ("홍경천 · 테아닌 배합으로 스트레스 관리에 집중", "테아닌: 스트레스로 인한 긴장완화에 도움을 줄 수 있음 / 홍경천 추출물: 스트레스로 인한 피로 개선에 도움을 줄 수 있음"),
       ],
       core="Nektium 홍경천 200mg과 L-테아닌 200mg을 한 보틀에 담은 스트레스 관리 집중 보틀"),
  dict(key="multi", no="10", en="MULTIVITAMIN & MINERAL", table="10. 멀티",
@@ -419,8 +419,8 @@ def desc_html(d):
     # "본문 || 보충 설명" → 보충 설명은 작은 회색 괄호 글씨
     if "||" in d:
         body, note = (x.strip() for x in d.split("||", 1))
-        return f'{html.escape(body)} <span class="pt-note">({html.escape(note)})</span>'
-    return html.escape(d)
+        return f'{html.escape(body).replace(" / ", "<br>")} <span class="pt-note">({html.escape(note)})</span>'
+    return html.escape(d).replace(" / ", "<br>")
 
 def points_html(points, cols=2):
     return f'<div class="points cols{cols}">' + "".join(
