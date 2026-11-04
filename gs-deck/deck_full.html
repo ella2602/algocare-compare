@@ -154,9 +154,10 @@ table.cmp.dense th.grp{padding-top:.6em;padding-bottom:.6em}
 .cover .cv-meta{margin-top:4mm;font-size:7.5pt;letter-spacing:.32em;color:#9a928a;font-weight:500}
 .cover.cv-dark{background:#0A0909}
 .cover.cv-dark .cv-photo::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#0A0909 0%,rgba(10,9,9,0) 22%)}
-.cover.cv-pills{background:#efe6da;color:#0A0909}
+.cover.cv-pills{background:linear-gradient(180deg,#ebddd0 0%,#e1d3c6 22%,#e0d2c5 60%,#e2d4c7 100%);color:#0A0909}
 .cover.cv-pills .cv-photo{width:130mm}
-.cover.cv-pills .cv-photo::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#efe6da 0%,rgba(239,230,218,0) 18%)}
+.cover.cv-pills .cv-photo::before{display:none}
+.cover.cv-pills .cv-photo{-webkit-mask-image:linear-gradient(90deg,rgba(0,0,0,0) 0%,#000 14%);mask-image:linear-gradient(90deg,rgba(0,0,0,0) 0%,#000 14%)}
 .cover.cv-pills h1{color:#0A0909}
 .cover.cv-pills .cv-top span,.cover.cv-pills .cv-meta{color:#7a7068}
 /* ---------- 히어로 비주얼 시안 (build.py VISUAL=duo|lens|studio). classic(기본)에는 영향 없음 ---------- */
