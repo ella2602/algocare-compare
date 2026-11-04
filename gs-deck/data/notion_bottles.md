@@ -234,7 +234,7 @@ Column groups / colors:
 | 제품 | 알고케어 뉴트리션 장용성 코큐텐 | (가칭) 알고케어 USA Vascular/Cardio Prime | 대웅생명과학 코큐텐 100mg 플러스 | 올바른 코엔자임Q10 코큐텐 플러스 | 종근당건강 코큐텐 맥스 | Thorne Ubiquinol |
 | CoQ10 1일 | 유비퀴논 100mg (최대 300mg) | 유비퀴놀 100mg (Kaneka Ubiquinol®) | 유비퀴논 100mg (순도 98% 이상) | 유비퀴논 100mg (순도 98%) | 유비퀴논 100mg | 유비퀴놀 100mg/캡슐 |
 | 그 밖의 성분 | 없음 (단일 배합, 멀티와 중복 섭취 방지) | 피크노제놀 150mg (Pycnogenol®, Horphag) / 엽산 300mcg DFE (Quatrefolic® 5-MTHF) / B6 5mg (P5P) · B2 2mg (R5P) · B12 250mcg (메틸코발라민) | B군 7종(B6 11mg, 엽산 400㎍ DFE 등) + 아연 8.5mg · 셀렌 55㎍ · 크롬 30㎍ | B군 7종(B6 7mg, 엽산 400㎍ DFE 등) + 아연 4.25mg · 셀렌 27.5㎍ · 크롬 15㎍ | 셀렌, C, E | - |
-| 원료사 | Global Merchant (98%, GMO-Free) | Kaneka · Horphag · Quatrefolic | - | - | - | Kaneka® Ubiquinol |
+| 원료사 | Global Merchant (98%, GMO-Free) | Kaneka® Ubiquinol · Horphag Pycnogenol® · Quatrefolic® | - | - | - | Kaneka® Ubiquinol |
 | 캡슐 | 장용 연질캡슐 300mg | (개발 중) | 식물성 연질캡슐 750mg | 연질캡슐 500mg | 연질캡슐 500mg | 연질캡슐 |
 | 장용 | 장용 | (개발 중) | - | - | - | - |
 | 제조 | 서흥헬스케어 | (개발 중) | 한국씨엔에스팜 | 대원헬스케어 2공장 (라벨 기준, GS 고시는 한풍네이처팜) | - | - |
