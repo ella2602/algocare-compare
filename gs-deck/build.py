@@ -232,7 +232,7 @@ BOTTLES = [
       core="Lute-gen® 개별인정형 원료를 장용 연질캡슐에 담은, 비교 제품 중 유일한 장용 루테인"),
  dict(key="lutein-pre", no="05-1", en="EYE PRESTIGE", table=None, prerelease=True,
       name="알고케어 프레스티지 루테인지아잔틴", photo=None, badge="PRESTIGE",
-      hero="Indena Mirtoselect® 빌베리와<br>아스타잔틴을 더한 프리미엄 눈 건강",
+      hero="Indena Mirtoselect® 빌베리와<br>아스타잔틴을 더한 프리미엄 눈 건강 보틀",
       stats=[("160", "mg", "Mirtoselect® 빌베리"), ("6", "mg", "아스타잔틴"), ("3", "가지", "기능성 함량 성분")],
       points=[
         ("황반 관리 + 눈 피로 관리", "루테인지아잔틴에 아스타잔틴 · 빌베리를 한 보틀에 담은 프레스티지 눈 케어 라인"),
