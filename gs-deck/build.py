@@ -306,7 +306,7 @@ BOTTLES = [
       core="DSM · MenaQ7® 등 글로벌 원료사와 중성 비타민C로 완성한 데일리 멀티비타민미네랄"),
  dict(key="multi-usa", no="10-1", en="MULTI · USA", table=None, prerelease=True,
       name="알고케어 USA Essential Mineral Multi", photo=None, badge="USA",
-      hero="Albion TRAACS® 킬레이트 미네랄과 Quatrefolic® 활성형 엽산,<br>글로벌 프리미엄 기준에 맞춘 멀티",
+      hero="글로벌 프리미엄 기준에 맞춘<br>멀티미네랄비타민",
       stats=[("7", "종", "Albion TRAACS® 킬레이트 미네랄"), ("4", "종", "활성형 엽산 · B군"), ("22", "종", "비타민 · 미네랄")],
       points=[
         ("Albion TRAACS® 킬레이트 7종", "세계적인 킬레이트 미네랄 원료사 Albion의 TRAACS® 킬레이트 미네랄 사용", "albion"),
