@@ -181,7 +181,7 @@ BOTTLES = [
       core="국내 비교 제품은 멜라토닌에 테아닌 · 트립토판 · 마그네슘 구성, 알고케어 프레스티지는 Lactium® · Shoden®까지"),
  dict(key="coq", no="04", en="COENZYME Q10", table="4. 코큐텐",
       name="알고케어 뉴트리션 장용성 코큐텐", photo="coq", pillcap="장용 연질캡슐 300mg",
-      hero="장용성으로 완성한 코큐텐",
+      hero="장용성으로 완성한 Global Merchant사의 순도 98% 코큐텐",
       stats=[("장용", "", "연질캡슐 300mg"), ("98", "%", "고순도 · GMO-Free"), ("100~300", "mg", "1일 조절 범위")],
       points=[
         ("장용성 연질캡슐", "위장 편안함을 고려한 설계. 장용성 연질캡슐 제형을 갖춘 유일한 제품"),
@@ -202,7 +202,7 @@ BOTTLES = [
       core="미국 출시 예정 · 유비퀴놀에 혈관 건강 원료를 더한 복합 설계"),
  dict(key="lutein", no="05", en="LUTEIN & ZEAXANTHIN", table="5. 루테인",
       name="알고케어 뉴트리션 장용성 루테인지아잔틴", photo="lutein", pillcap="장용 연질캡슐 300mg",
-      hero="매일 챙기는 눈 건강 기본 루틴",
+      hero="Lute-gen 개별인정형 원료로 매일 챙기는 눈 건강 기본 루틴",
       stats=[("10+2", "mg", "루테인 + 지아잔틴"), ("2", "캡슐", "최대 20+4mg까지"), ("장용", "", "연질캡슐 300mg")],
       points=[
         ("루테인 10 + 지아잔틴 2mg 단일 배합", "부담 없이 시작할 수 있는 눈 영양제 포지션"),
@@ -522,13 +522,28 @@ def table_page(b, rows, title_extra=""):
             f'<span class="lg-note">「-」 미표기 · 미확인 / 「없음」 해당 성분 없음</span></div>{footer()}</section>')
 
 def cover():
-    imgs = "".join(f'<div class="cv-b" style="background-image:url(img/{k}_bottle.jpg)"></div>'
-                   for k in [b["photo"] for b in BOTTLES if b.get("photo")])
-    return (f'<section class="page cover"><div class="cv-top">{logo(True, 20)}<span>내부용 / 대외비 · 2026.11</span></div>'
+    # 무대형 구성: Drive 공식 누끼 5병을 중앙(멀티) 기준 좌우 대칭·원근으로 배치 + 바닥 반사
+    order = ["coq", "mela", "multi", "rhod", "milk"]
+    H = {0: 104, 1: 86, 2: 70}          # 중앙에서 떨어진 정도별 높이(mm)
+    X = {0: 0, 1: 31, 2: 57}            # 중앙 기준 x 오프셋(mm)
+    cx, floor = 210, 166                        # 무대 중심 x, 바닥선 y (mm)
+    items = []
+    for i, k in enumerate(order):
+        d = i - 2; a = abs(d)
+        h = H[a]; w = h * 0.41
+        left = cx + (X[a] if d > 0 else -X[a]) - w / 2
+        z = 10 - a
+        br = [1, .86, .72][a]
+        st = f"left:{left:.1f}mm;top:{floor - h:.1f}mm;width:{w:.1f}mm;height:{h:.1f}mm;z-index:{z};filter:brightness({br})"
+        rf = f"left:{left:.1f}mm;top:{floor:.1f}mm;width:{w:.1f}mm;height:{h:.1f}mm;z-index:{z};filter:brightness({br * .8})"
+        items.append(f'<img class="cv-bt" src="img/cut/{k}_bottle.png" style="{st}">'
+                     f'<img class="cv-rf" src="img/cut/{k}_bottle.png" style="{rf}">')
+    return (f'<section class="page cover"><div class="cv-glow"></div><div class="cv-floor"></div>'
+            f'<div class="cv-top">{logo(True, 20)}<span>내부용 / 대외비 · 2026.11</span></div>'
             f'<div class="cv-main"><div class="cv-kicker">ALGOCARE NUTRITION BOTTLE</div>'
             f'<h1>알고케어 뉴트리션 보틀<br><b>품질 비교 자료</b></h1>'
-            f'<p>원료 · 함량 · 제형 · 가격까지, 14종 보틀과 출시 예정 라인을<br>GS SHOP 매칭 상품 · 제약사 브랜드 · 해외 프리미엄 제품과 나란히 비교했습니다.</p></div>'
-            f'<div class="cv-row">{imgs}</div></section>')
+            f'<div class="cv-rule"></div><div class="cv-meta">14 BOTTLES · 2026.11</div></div>'
+            f'<div class="cv-stage">{"".join(items)}</div></section>')
 
 def lineup():
     rows = []
