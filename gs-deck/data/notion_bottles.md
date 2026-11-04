@@ -1,6 +1,6 @@
 # GS SHOP MD팀 요청 건 — bottle toggles dump
 
-Source: Notion page 40d9954bcc7b81948cd9e3ec3cb89f5c 「GS SHOP MD팀 요청 건 (지금 백지연 PGM 방송 자료)」, fetched 2026-11-04T02:53:22.410Z.
+Source: Notion page 40d9954bcc7b81948cd9e3ec3cb89f5c 「GS SHOP MD팀 요청 건 (지금 백지연 PGM 방송 자료)」, fetched 2026-11-04T03:57:10.041Z.
 Scope: toggles 「1. 오메가3」 through 「14. 녹차카테킨」 incl. 3-1, plus 「히어로 카피」. The top toggle 「요청 개요 · GS 통화 · 매칭 상품 · 작성 기준」 is excluded.
 Conventions: Notion markdown escapes (\~ \$ \[ \] \.) unescaped; `<b>` rendered as **bold**; `<br />` inside cells rendered as " / "; HTML <ul>/<li> lists converted to markdown bullets with the same nesting. Column colors from the table <colgroup>: orange = Algocare (incl. prestige / USA), blue = GS SHOP 매칭 상품, green = 제약사브랜드 인기 상품 또는 프리미엄급 상품 (해외 제품 포함). In each table the first row is the verbatim group-label row (blank cells = merged-looking empty cells in Notion).
 
@@ -527,7 +527,7 @@ Column groups / colors:
 | 마그네슘 | 없음 (시너지 마그네슘·칼슘&마그네슘 보틀 별도, 중복 섭취 방지) | - | - | 없음 | 없음 | 95mg (30%) | 20mg (6%) |
 | A / E / K (지용성 비타민 기준치%) | 40 / 40 / 40 | 40 / 109 / 40 | 150 / 182 / 171 (K1 60 + K2 MK-7 60㎍) | 베타카로틴 6mg (A 기준치% 미표시) / 100 / 100 | 67 / 1,364 / 114 (+ 베타카로틴 6mg) | 없음 / 100 / 없음 | 214 / 150 / 571 (K1 200 + K2 MK-4 200㎍) |
 | 활성형/원료 형태 | B군 일반형 (B1질산염·B6염산염), 엽산 일반형 / 중성 비타민C (L-아스코브산칼슘) / K1 + K2 MenaQ7® / 산화아연 + 글루콘산아연, 푸마르산제일철 | 활성형 엽산(5-MTHF) / 메타좀 비타민C / K2 MenaQ7® / 글루콘산아연 / 헴철 | 활성형 엽산(Quatrefolic® 5-MTHF), 메틸코발라민, P5P, R5P / 미네랄 7종 Albion TRAACS® 킬레이트 | B군 일반형 (B1염산염·B6염산염) / 비타민C (형태 미표기) / K1만 / 글루콘산아연 | B군 일반형 (B1질산염·B6염산염), 엽산 일반형 / 비타민C (형태 미표기) / K1만 / 황산아연, 글루콘산철 | B군 일반형 (B1질산염·B6염산염), 엽산 일반형 / 비타민C (형태 미표기) / K 없음 / 산화아연, 산화마그네슘, 푸마르산제일철 | 비타민C 아스코르브산 / 활성형 엽산(L-5-MTHF), 메틸코발라민, P5P, R5P / 미네랄 7종 킬레이트·글리시네이트 (아연·구리·망간·마그네슘·셀렌·크롬·붕소) / K1 + K2 MK-4 |
-| 원료사 | 전 성분 공개 / DSM 10종 (A·B군 5종·C·D·E·K1), Gnosis MenaQ7®(이탈리아), Jost Chemical(미국) 등 | 기획 단계 (원료사 미정) | 프리미엄 원료사 지정 / Albion 킬레이트 미네랄 / DSM 비타민 / GNOSIS 활성형 엽산(Quatrefolic®)·MenaQ7® / Matrix Life Science, Jubilant 등 | 비타민만 DSM 표기 / 미네랄 원료사 미표기 | - |  | 킬레이트 미네랄 : Albion TRAACS® |
+| 원료사 | 전 성분 공개 / DSM 10종 (A·B군 5종·C·D·E·K1), Gnosis MenaQ7®(이탈리아), Jost Chemical(미국) 등 | 기획 단계 (원료사 미정) | 프리미엄 원료사 지정 / Albion 킬레이트 미네랄 / DSM 비타민 / GNOSIS 활성형 엽산(Quatrefolic®)·MenaQ7® / Matrix Life Science, Jubilant 등 | 비타민만 DSM 표기 / 미네랄 원료사 미표기 | - | - | 킬레이트 미네랄 : Albion TRAACS® |
 | 형태 | 미니정제 120mg, 1일 6정 (15정까지 조절 가능) | 미니정제 | 미니정제 | 액상 20mL + 정제 2정 (700mg + 600mg), 1일 1병 | 액상 20mL + 정제 2정 (919mg), 1일 1병 | 정제 550mg, 1일 1정 | 캡슐, 1일 2캡슐 |
 | 제조 | 서흥헬스케어 | (개발 중) | (개발 중) | 네추럴웨이 포천 제2공장 | Orthomol (독일), 수입판매원 오쏘몰·동아제약 | 코스맥스엔비티 (식약처 신고 기준) | - |
 | 월 환산가 | 월 18,400원, 자사몰 | (개발 중) | (개발 중) | 월 약 68,700원 (GS 10병 22,900원) | 월 124,300원 (GS 30병 124,300원) | 월 17,000원 (유한양행 공식몰 30정) | 월 $40 ($40/60캡슐, 1일 2캡슐) |

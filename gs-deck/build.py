@@ -390,13 +390,14 @@ SUFFIX = "" if VISUAL == DEFAULT_VISUAL else f"_{VISUAL}"
 # 실물 크기(1:1) 알약 — 1일 섭취 알 수: algocare-bottle-info 스킬 references/bottle-spec-and-dosage.md 「허가서상 1일 섭취량」
 # 치수 출처: 정제 5.1mm 구형 = 같은 문서 제형 열 · 노션 위키 「알고케어 영양제 3D 렌더 기준」(지름 확인)
 #           #3 경질캡슐 15.9×5.8mm = 위키 값(3호 기준) + 업계 규격표(Lonza Vcaps Ø5.57/5.83mm, 닫힌 길이 15.7~15.9mm)
-#           연질캡슐 OV 7.5 / OV2 10.5×6.8mm = 위키의 사진 비율 추정값(미확인) → 캡션에 '확인 중' 표시, 눈금자 생략
+#           연질캡슐 OV 7.5 약 12.6×7.6mm = 업계 표준(ChinaHealthSource 소프트젤 몰드 표 7.5 Oval 0.38~0.46mL, TES/Technophar 표 6.2~7.5 minims). 길이 12.6mm에 맞춤
+#           연질캡슐 OV2 = mm 출처 없음 → 캡션 '확인 중', 눈금자 생략 (렌더 크기는 위키 추정 10.5mm)
 PILLSPEC = {  # key: (1일 알 수, 종류, 길이 mm, 확정 여부)
     "multi": (6, "tab", 5.1, True), "rhod": (6, "tab", 5.1, True), "milk": (3, "tab", 5.1, True),
     "vitd": (1, "tab", 5.1, True), "banaba": (1, "tab", 5.1, True), "mag": (7, "tab", 5.1, True),
     "calmag": (14, "tab", 5.1, True), "catechin": (7, "tab", 5.1, True), "boswellia": (8, "tab", 5.1, True),
     "mela": (3, "tab", 5.1, True),
-    "omega": (3, "soft", 10.5, False), "coq": (1, "soft", 10.5, False), "lutein": (1, "soft", 10.5, False),
+    "omega": (3, "soft", 12.6, True), "coq": (1, "soft", 12.6, True), "lutein": (1, "soft", 10.5, False),
     "probio": (1, "hard", 15.9, True),
 }
 
@@ -414,6 +415,8 @@ def real_pills(k):
         cap = f"실물 크기 · Ø5.1mm · 1일 {n}{unit}"
     elif kind == "hard":
         cap = f"실물 크기 · 15.9×5.8mm · 1일 {n}{unit}"
+    elif ok:
+        cap = f"실물 크기 · 약 12.6×7.6mm (업계 표준 7.5 Oval) · 1일 {n}{unit}"
     else:
         cap = f"1일 {n}{unit} · 캡슐 실측 치수 확인 중"
     scale = ('<div class="rp-scale"><i></i><span>0</span><span>10mm</span></div>' if ok else "")
