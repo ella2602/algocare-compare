@@ -191,11 +191,10 @@ BOTTLES = [
  dict(key="sleep", no="03-1", en="SLEEP PRESTIGE", table="3-1.", prerelease=True,
       name="알고케어 프레스티지 수면", photo=None, badge="PRESTIGE",
       hero="멜라토닌에<br>Lactium®·아쉬와간다 Shoden®,<br>테아닌·GABA까지 하나로 설계한 나이트 보틀",
-      stats=[("5", "종", "핵심 성분 배합"), ("200", "mg", "테아닌 (Pure의 4배)"), ("300", "mg", "Lactium®")],
+      stats=[("5", "종", "핵심 성분 배합"), ("300", "mg", "Lactium®"), ("120", "mg", "아쉬와간다 Shoden®"), ("200", "mg", "테아닌"), ("50", "mg", "GABA")],
       points=[
         ("하나로 설계한 토탈 나이트 보틀", "멜라토닌 3mg + Lactium® 300mg + GABA 50mg + 테아닌 200mg + 아쉬와간다 Shoden® 120mg"),
         ("Lactium® · Shoden® 배합", "인체 대상 수면 시험 결과가 있는 두 원료를 더함. 국내 비교 제품에는 없는 구성", ("lactium", "shoden")),
-        ("테아닌 200mg", "허브 중심 배합인 Pure Best-Rest(테아닌 50mg)의 4배"),
       ],
       core="국내 비교 제품은 멜라토닌에 테아닌 · 트립토판 · 마그네슘 구성, 알고케어 프레스티지는 Lactium® · Shoden®까지"),
  dict(key="coq", no="04", en="COENZYME Q10", table="4. 코큐텐",
@@ -390,7 +389,7 @@ def footer(dark=False, src=True):
             f'<span class="ft-note">{note}</span><span class="ft-no">{PAGE_NO[0]:02d}</span></footer>')
 
 def stats_html(stats):
-    return '<div class="stats">' + "".join(
+    return f'<div class="stats{" many" if len(stats) > 3 else ""}">' + "".join(
         f'<div class="stat"><div class="sv">{html.escape(v)}<small>{html.escape(u)}</small></div>'
         f'<div class="sl">{html.escape(l)}</div></div>' for v, u, l in stats) + "</div>"
 
