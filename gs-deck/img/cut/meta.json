@@ -1,0 +1,66 @@
+{
+ "vitd": {
+  "tint": "#909090",
+  "ratio": 0.4052,
+  "pill_ratio": 1.0302
+ },
+ "coq": {
+  "tint": "#a27e21",
+  "ratio": 0.4098,
+  "pill_ratio": 0.8425
+ },
+ "mela": {
+  "tint": "#486256",
+  "ratio": 0.4083,
+  "pill_ratio": 1.0226
+ },
+ "milk": {
+  "tint": "#ab851e",
+  "ratio": 0.4145,
+  "pill_ratio": 1.0448
+ },
+ "rhod": {
+  "tint": "#41584f",
+  "ratio": 0.4103,
+  "pill_ratio": 1.0066
+ },
+ "calmag": {
+  "tint": "#898886",
+  "ratio": 0.4066,
+  "pill_ratio": 0.9825
+ },
+ "lutein": {
+  "tint": "#5a5d62",
+  "ratio": 0.4086,
+  "pill_ratio": 1.0019
+ },
+ "catechin": {
+  "tint": "#666a6f",
+  "ratio": 0.4098,
+  "pill_ratio": 1.0183
+ },
+ "multi": {
+  "tint": "#8e8d8c",
+  "ratio": 0.4025,
+  "pill_ratio": 0.9849
+ },
+ "boswellia": {
+  "tint": "#6a6e72",
+  "ratio": 0.4079,
+  "pill_ratio": 1.0105
+ },
+ "banaba": {
+  "tint": "#5f6369",
+  "ratio": 0.4081,
+  "pill_ratio": 0.9229
+ },
+ "omega": {
+  "pill_ratio": 1.0651
+ },
+ "mag": {
+  "pill_ratio": 1.019
+ },
+ "probio": {
+  "pill_ratio": 1.0199
+ }
+}

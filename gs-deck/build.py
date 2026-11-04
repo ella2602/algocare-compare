@@ -148,7 +148,7 @@ BOTTLES = [
       core="Polaris 원료 · 농도 80% · rTG · EPA:DHA 비율 표기 — 네 가지를 모두 갖춘 제품은 비교 제품 중 알고케어뿐"),
  dict(key="probio", no="02", en="PROBIOTICS", table="2. 프로바이오틱스",
       name="알고케어 뉴트리션 프로바이오틱스", photo="probio", pillcap="장용 캡슐 200mg",
-      hero="일동바이오사이언스 유산균,<br>특허 4중 코팅에 장용성 캡슐까지",
+      hero="일동바이오사이언스 유산균,<br>특허받은 4중 코팅에 장용성 캡슐까지",
       stats=[("500", "억", "투입 균수 (보장 100억)"), ("5", "종", "특허 균주 IDCC"), ("4중+장용", "", "이중 보호 설계")],
       points=[
         ("일동바이오사이언스 특허 균주 5종", "한국인 대상 인체 적용 연구가 있는 IDCC 3201·4301·3302·2201·4101"),
@@ -402,7 +402,50 @@ def photo_visual(b):
                 f'<div class="vs-row"><div class="vs-card vs-pill" style="{pl}"></div>'
                 f'<div class="vs-cap"><span>{b["no"]} · {html.escape(b["en"])}</span><b>{cap}</b>'
                 f'<i>보틀 속 한 알</i></div></div></div>')
+    if VISUAL == "scene":    # D. 단일 연출 장면: Drive 보틀 누끼 + 바닥의 알약 누끼 3~5알, 공통 접지 그림자·반사
+        return scene_visual(b)
     raise ValueError(VISUAL)
+
+import json
+CUT = ROOT / "img" / "cut"
+CUTMETA = json.loads((CUT / "meta.json").read_text()) if (CUT / "meta.json").exists() else {}
+# 알약 배치 (중심 x mm, 바닥 y mm, 크기 mm, 회전) — 모든 보틀 공통
+SCENE_PILLS = [(22, 187, 21, -14), (81, 181, 16, 18), (12, 166, 10, 32), (67, 167, 11.5, -24), (90, 161, 7, 6)]
+SCENE_FALLBACK = {"probio": "photo"}   # 보틀 누끼 없음 + Drive 알약 누끼가 자사몰 실물(흰 캡슐)과 달라 자사몰 보틀 사진 사용
+
+def _rgba(hexc, a):
+    h = hexc.lstrip("#"); return f"rgba({int(h[0:2],16)},{int(h[2:4],16)},{int(h[4:6],16)},{a})"
+
+def scene_visual(b):
+    k = b["photo"]; m = CUTMETA.get(k, {})
+    tint = m.get("tint", "#d8d0c6")
+    style = f'--tint:{_rgba(tint, .20)};--tint2:{_rgba(tint, .08)}'
+    cap = f'<div class="sc-cap">{html.escape(b.get("pillcap", ""))}</div>'
+    pill = f"img/cut/{k}_pill.png"
+    pr = m.get("pill_ratio", 1)
+    def pills(spec):
+        out = []
+        for i, (x, y, sz, rot) in enumerate(spec):
+            w = sz * min(pr, 1) if pr < 1 else sz; h = w / pr * .8
+            out.append(f'<div class="sc-p d{i}" style="left:{x - w/2:.1f}mm;top:{y - h:.1f}mm;width:{w:.1f}mm;height:{h:.1f}mm">'
+                       f'<img src="{pill}" style="transform:rotate({rot}deg)"></div>')
+        return "".join(out)
+    if (CUT / f"{k}_bottle.png").exists():
+        bw = 112 * m["ratio"]
+        bot = (f'<div class="sc-bottle" style="left:{(104 - bw)/2:.1f}mm;width:{bw:.1f}mm">'
+               f'<img class="sc-b" src="img/cut/{k}_bottle.png"><img class="sc-r" src="img/cut/{k}_bottle.png"></div>'
+               f'<div class="sc-shadow"></div>')
+        return f'<div class="visual v-scene" style="{style}"><div class="sc-floor"></div>{bot}{pills(SCENE_PILLS)}{cap}</div>'
+    if SCENE_FALLBACK.get(k) == "photo" or not (CUT / f"{k}_pill.png").exists():
+        return (f'<div class="visual v-scene sc-photo" style="{style}"><div class="sc-ph" '
+                f'style="background-image:url(img/{k}_bottle.jpg)"></div>{cap}</div>')
+    # 보틀 누끼가 없는 보틀: 알약 하나를 크게 세운 같은 장면 (pill-only)
+    big = 56 if pr >= .8 else 44
+    hw = big * (pr if pr < 1 else 1); hh = hw / pr
+    hero = (f'<div class="sc-hero" style="left:{(104 - hw)/2:.1f}mm;top:{150 - hh:.1f}mm;width:{hw:.1f}mm;height:{hh:.1f}mm">'
+            f'<img class="sc-b" src="{pill}"><img class="sc-r" src="{pill}"></div><div class="sc-shadow sm"></div>')
+    return (f'<div class="visual v-scene sc-pillonly" style="{style}"><div class="sc-floor"></div>{hero}'
+            f'{pills([SCENE_PILLS[0], SCENE_PILLS[1], SCENE_PILLS[2], SCENE_PILLS[4]])}{cap}</div>')
 
 def hero_page(b):
     pre = b.get("prerelease")

@@ -33,3 +33,28 @@
 .v-studio .vs-cap span{font-size:5.2pt;letter-spacing:.22em;color:var(--orange-d);font-weight:600;line-height:1.5}
 .v-studio .vs-cap b{font-size:7.6pt;font-weight:600;color:var(--ink);line-height:1.4;letter-spacing:-0.02em}
 .v-studio .vs-cap i{font-style:normal;font-size:6.2pt;color:var(--mute)}
+
+/* D. scene — 하나의 연출 장면: 공통 웜그레이 그라데이션 + 라벨 색 은은한 틴트, 보틀 누끼 + 바닥 알약 3~5알 */
+.v-scene{background:
+   radial-gradient(70% 38% at 50% 40%,var(--tint) 0%,transparent 70%),
+   linear-gradient(180deg,#F4F1EC 0%,#ECE6DF 58%,#E3DCD3 100%);overflow:hidden}
+.v-scene .sc-floor{position:absolute;left:0;right:0;top:146mm;bottom:0;
+  background:linear-gradient(180deg,rgba(255,255,255,0) 0%,var(--tint2) 30%,rgba(120,105,90,.10) 100%)}
+.v-scene .sc-floor::before{content:"";position:absolute;left:0;right:0;top:0;height:0.4pt;background:linear-gradient(90deg,transparent,rgba(10,9,9,.08),transparent)}
+.v-scene .sc-bottle{position:absolute;top:46mm;height:112mm;z-index:2}
+.v-scene .sc-bottle img,.v-scene .sc-hero img{position:absolute;left:0;width:100%;height:100%;object-fit:contain}
+.v-scene .sc-b{top:0}
+.v-scene .sc-r{top:100%;transform:scaleY(-1);opacity:.16;filter:blur(.25mm);
+  -webkit-mask-image:linear-gradient(0deg,rgba(0,0,0,1) 0%,rgba(0,0,0,0) 28%);mask-image:linear-gradient(0deg,rgba(0,0,0,1) 0%,rgba(0,0,0,0) 28%)}
+.v-scene .sc-shadow{position:absolute;left:24mm;width:56mm;top:155mm;height:6mm;z-index:1;
+  background:radial-gradient(50% 50% at 50% 50%,rgba(40,30,20,.42) 0%,rgba(40,30,20,.16) 45%,transparent 72%);filter:blur(.8mm)}
+.v-scene .sc-shadow.sm{left:30mm;width:44mm;top:147mm}
+.v-scene .sc-hero{position:absolute;z-index:2}
+.v-scene .sc-p{position:absolute;z-index:3}
+.v-scene .sc-p img{position:absolute;inset:0;width:100%;height:100%;object-fit:fill;filter:drop-shadow(0 .5mm .5mm rgba(40,30,20,.18))}
+.v-scene .sc-p::after{content:"";position:absolute;left:4%;right:4%;bottom:-9%;height:24%;z-index:-1;
+  background:radial-gradient(50% 50% at 50% 50%,rgba(40,30,20,.40),transparent 72%);filter:blur(.5mm)}
+.v-scene .sc-p.d2,.v-scene .sc-p.d4{filter:saturate(.9) brightness(1.02) blur(.12mm);z-index:1}
+.v-scene .sc-cap{position:absolute;left:0;right:0;bottom:9mm;text-align:center;font-size:6.4pt;letter-spacing:.06em;color:var(--mute);z-index:4}
+.v-scene.sc-photo .sc-ph{position:absolute;inset:0;background-size:cover;background-position:center 62%}
+.v-scene.sc-photo .sc-cap{color:var(--ink2)}
