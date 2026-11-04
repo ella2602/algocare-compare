@@ -229,7 +229,7 @@ BOTTLES = [
         ("최대 2캡슐까지 조절", "필요에 따라 루테인 20mg · 지아잔틴 4mg까지"),
         ("장용 연질캡슐", "위 부담을 덜어 주는 장용 연질캡슐을 갖춘 유일한 제품"),
       ],
-      core="눈 피로 관리까지 원하는 고객에게는 프레스티지 라인을 제안"),
+      core="Lute-gen® 개별인정형 원료를 장용 연질캡슐에 담은, 비교 제품 중 유일한 장용 루테인"),
  dict(key="lutein-pre", no="05-1", en="EYE PRESTIGE", table=None, prerelease=True,
       name="알고케어 프레스티지 루테인지아잔틴", photo=None, badge="PRESTIGE",
       hero="Indena Mirtoselect® 빌베리와<br>아스타잔틴을 더한 프리미엄 눈 건강",
