@@ -529,7 +529,7 @@ def table_page(b, rows, title_extra=""):
             f'<span class="lg gs"></span>GS SHOP 매칭 상품 <span class="lg pharma"></span>{PHARMA_LABEL}'
             f'<span class="lg-note">「-」 미표기 · 미확인 / 「없음」 해당 성분 없음</span></div>{footer()}</section>')
 
-COVER = os.environ.get("COVER", "dark")   # dark: 오메가3·바나바 다크 연출컷 / pills: 알약 원형 배치(룩북)
+COVER = os.environ.get("COVER", "pills")   # dark: 오메가3·바나바 다크 연출컷 / pills: 알약 원형 배치(룩북)
 
 def cover():
     img = {"dark": "cover_dark", "pills": "cover_pills"}[COVER]
