@@ -25,3 +25,5 @@
 - Pycnogenol®/Horphag: 공식 로고 키트(https://www.pycnogenol.com/media/infographics-photos-logos/)는 받았지만, 세로형 배지라 4~5mm에서 글자를 읽을 수 없어 넣지 않음
 - CALMAGS(https://www.calmags.com 로고): 받았지만 칼마 04 포인트가 두 로고를 넣기에 좁아서 Aquamin 하나만 넣음
 - NOVICHEM, Novotech, Superior Powders, Molecules bio labs: 히어로 페이지 포인트 제목에 나오지 않거나 쓸 만한 공식 마크가 없음
+
+| Shoden® | https://nxtingredients.com/wp-content/uploads/2025/04/SHODEN-BY-ARJUNA-NATURAL-LOGO-min.png (Arjuna Natural 공식 유통사 NXT Ingredients 게시 브랜드 로고, 하단 태그라인 잘라냄·흰 배경 투명화) |

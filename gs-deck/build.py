@@ -75,7 +75,7 @@ ROW_LABEL = {"판매 링크": "판매처"}
 # 비교표 원료사 행(알고케어 열)에 원료사 공식 마크를 붙임: 셀 문구에 나오는 원료사만
 TABLE_LOGO_KW = [("Polaris", "polaris"), ("일동바이오사이언스", "ildong"), ("Kaneka", "kaneka"),
                  ("Lute-gen", "lutegen"), ("Indena", "indena"), ("Aquamin", "aquamin"), ("아쿠아민", "aquamin"),
-                 ("Albion", "albion"), ("Nektium", "nektium"), ("DSM", "dsm"), ("Laila", "laila"), ("Lactium", "lactium")]
+                 ("Albion", "albion"), ("Nektium", "nektium"), ("DSM", "dsm"), ("Laila", "laila"), ("Lactium", "lactium"), ("Shoden", "shoden")]
 
 def table_logos(label, cell):
     if "원료사" not in label:
@@ -190,11 +190,11 @@ BOTTLES = [
       core="국내 비교군 중 최저용량 멜라토닌으로 개인별 맞춤이 가능한 유일한 제품"),
  dict(key="sleep", no="03-1", en="SLEEP PRESTIGE", table="3-1.", prerelease=True,
       name="알고케어 프레스티지 수면", photo=None, badge="PRESTIGE",
-      hero="멜라토닌에 Lactium®·아쉬와간다 Shoden®,<br>테아닌·GABA까지 하나로 설계한 나이트 보틀",
+      hero="멜라토닌에<br>Lactium®·아쉬와간다 Shoden®,<br>테아닌·GABA까지 하나로 설계한 나이트 보틀",
       stats=[("5", "종", "핵심 성분 배합"), ("200", "mg", "테아닌 (Pure의 4배)"), ("300", "mg", "Lactium®")],
       points=[
         ("하나로 설계한 토탈 나이트 보틀", "멜라토닌 3mg + Lactium® 300mg + GABA 50mg + 테아닌 200mg + Shoden® 120mg"),
-        ("Lactium® · Shoden® 배합", "인체 대상 수면 시험 결과가 있는 두 원료를 더함. 국내 비교 제품에는 없는 구성", "lactium"),
+        ("Lactium® · Shoden® 배합", "인체 대상 수면 시험 결과가 있는 두 원료를 더함. 국내 비교 제품에는 없는 구성", ("lactium", "shoden")),
         ("테아닌 200mg", "허브 중심 배합인 Pure Best-Rest(테아닌 50mg)의 4배"),
       ],
       core="국내 비교 제품은 멜라토닌에 테아닌 · 트립토판 · 마그네슘 구성, 알고케어 프레스티지는 Lactium® · Shoden®까지"),
@@ -400,6 +400,7 @@ LOGOS = {   # 4번째 값: 밝은 색 마크를 다른 로고와 같은 회색 �
     "polaris": ("polaris.png", 3.6, "Polaris", "dark"),
     "ildong":  ("ildong.png", 2.8, "Ildong Bioscience", "dark"),
     "lactium": ("lactium.png", 5.6, "Lactium", ""),
+    "shoden":  ("shoden.png", 3.2, "Shoden", ""),
     "kaneka":  ("kaneka.svg", 5.0, "Kaneka Nutrients", "dark"),
     "lutegen": ("lutegen.png", 6.2, "Lute-gen", "dark"),
     "indena":  ("indena.svg", 4.4, "Indena", ""),
