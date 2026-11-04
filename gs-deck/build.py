@@ -401,8 +401,10 @@ LOGOS = {   # 4번째 값: 밝은 색 마크를 다른 로고와 같은 회색 �
     "laila":   ("laila.png", 6.8, "Laila Nutra", "dark"),
 }
 
+POINT_LOGOS_ON = False   # 요약 장 포인트 제목 옆 원료사 로고 표시 여부 (v3부터 끔)
+
 def logos_html(keys):
-    if not keys:
+    if not POINT_LOGOS_ON or not keys:
         return ""
     if isinstance(keys, str):
         keys = (keys,)
