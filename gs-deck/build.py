@@ -366,7 +366,7 @@ PAGE_NO = [0]
 
 def footer(dark=False, src=True):
     PAGE_NO[0] += 1
-    note = "자료 기준 2026.11.04 · 각 사 공식몰 · GS SHOP · 제품 라벨 표기 기준 · 월 환산가는 조사 시점 판매가 기준으로 변동 가능" if src else ""
+    note = "자료 기준 2026.11.05" if src else ""
     return (f'<footer class="ft"><span class="ft-logo">{logo(dark, 11)}</span>'
             f'<span class="ft-note">{note}</span><span class="ft-no">{PAGE_NO[0]:02d}</span></footer>')
 
