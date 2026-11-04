@@ -317,12 +317,12 @@ BOTTLES = [
       core="미국 출시 예정 · 킬레이트 미네랄과 활성형 비타민을 원하는 고관여 고객을 위한 USA 라인"),
  dict(key="vitd", no="11", en="VITAMIN D3", table="11. 비타민D",
       name="알고케어 뉴트리션 비타민D3", photo="vitd", pillcap="미니정제 95mg · 1정 1,000IU",
-      hero="DSM Quali®-D, 1,000IU부터 4,000IU까지<br>나에게 맞추는 비타민D",
+      hero="DSM Quali®-D,<br>1,000IU부터 4,000IU까지 나에게 맞추는 비타민D", hero_fs="23pt",
       stats=[("1,000", "IU", "1정 비타민D3"), ("1~4", "정", "1,000~4,000IU 조절"), ("95", "mg", "미니정제 1정")],
       points=[
         ("1정 1,000IU, 정 수로 조절", "청소년 · 임산부 · 고령자 등 필요에 따라 1,000~4,000IU. 국내 · GS 비교 제품은 1정(캡슐) 고정"),
         ("DSM Quali®-D 원료", "국내 비타민D 표준 원료. 국내 비교 제품도 모두 DSM 원료 사용", "dsm"),
-        ("95mg 미니정제", "중량이 확인되는 비교 제품은 280~600mg (캡슐 · 츄어블)"),
+        ("95mg 미니정제", "중량이 확인되는 비교 제품 중 가장 적은 중량 (비교 제품군: 280~600mg)"),
         ("고함량도 여러 알로", "쏜리서치는 1,000 · 4,000 · 10,000IU 등 SKU를 나눠 운영, 알고케어는 5.1mm 미니정제 여러 알로 맞춤"),
       ],
       core="1,000IU 단위 정 수 조절과 단일 배합을 함께 갖춘 유일한 제품"),
@@ -555,7 +555,7 @@ def hero_page(b):
     else:
         content = (f'<div class="eyebrow"><b>{b["no"]}</b><span>{b["en"]}</span>{"<em>출시 예정</em>" if pre else ""}</div>'
                    + ("" if (VISUAL == "duo" and b.get("photo")) else f'<div class="pname">{html.escape(b["name"])}</div>') +
-                   f'<h1 class="hero">{b["hero"]}</h1>'
+                   f'<h1 class="hero"{f' style="font-size:{b["hero_fs"]};white-space:nowrap"' if b.get("hero_fs") else ""}>{b["hero"]}</h1>'
                    f'{stats_html(b["stats"])}'
                    + (f'<div class="core-wrap top"><div class="core"><span>KEY</span>{html.escape(b["core"])}</div></div>'
                       f'{points_html(b["points"])}' if (KEY_TOP == "ALL" or b["key"] in KEY_TOP) else
