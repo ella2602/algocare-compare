@@ -553,7 +553,7 @@ def lineup(appendix=None):
         f'<div class="lu-hero">{hero}</div></div></div>'
         for no, nm, hero, pre in rows)
     if appendix:   # 상세판: 본문 뒤 APPENDIX가 있음을 라인업(목차)에서 알림
-        items += (f'<div class="lu lu-ax"><div class="lu-no">A</div><div class="lu-tx">'
+        items += (f'<div class="lu lu-ax"><div class="lu-no">참고]</div><div class="lu-tx">'
                   f'<div class="lu-nm">APPENDIX · p.{appendix:02d}~</div>'
                   f'<div class="lu-hero">보틀별 상세 비교 포인트 (비교표 근거 전체)</div></div></div>')
         rows = rows + [None]
@@ -596,7 +596,7 @@ document.fonts.ready.then(()=>{{
   document.body.dataset.fitted='1';
 }});
 </script></body></html>"""
-(ROOT / f"deck{SUFFIX}.html").write_text(doc, encoding="utf-8")
+(ROOT / f"deck{SUFFIX}.html").write_text(re.sub(r"\(가칭\)\s*", "", doc), encoding="utf-8")
 print("pages:", len(pages))
 
 # ---------------------------------------------------------------- 상세판(FULL)
@@ -702,5 +702,5 @@ if os.environ.get("FULL"):
 <title>알고케어 뉴트리션 보틀 품질 비교 자료 (상세판)</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <style>{CSS}{DCSS}</style></head><body>{''.join(pages)}{FIT2}</body></html>"""
-    (ROOT / f"deck_full{SUFFIX}.html").write_text(docf, encoding="utf-8")
+    (ROOT / f"deck_full{SUFFIX}.html").write_text(re.sub(r"\(가칭\)\s*", "", docf), encoding="utf-8")
     print("full pages:", len(pages))
