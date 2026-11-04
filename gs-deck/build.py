@@ -253,7 +253,7 @@ BOTTLES = [
       core="비교 제품 중 유일하게 마그네슘 원료 3종을 복합으로 배합하여, 1정 단위로 조절하는 제품"),
  dict(key="mag-line", no="06-1", en="MAGNESIUM · USA", table=None, prerelease=True,
       name="알고케어 USA Magnesium", photo=None, badge="USA",
-      hero="글로벌 킬레이트 원료사 Albion TRAACS®,<br>비스글리시네이트 킬레이트 마그네슘 200mg",
+      hero="Albion TRAACS®<br>비스글리시네이트 마그네슘",
       stats=[("200", "mg", "킬레이트 마그네슘 1일"), ("1", "종", "비스글리시네이트 단일 배합"), ("TRAACS®", "", "Albion 킬레이트 원료")],
       points=[
         ("Albion TRAACS® 비스글리시네이트", "세계적인 킬레이트 미네랄 원료사 Albion의 Magnesium Bisglycinate Chelate", "albion"),
