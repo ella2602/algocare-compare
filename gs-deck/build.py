@@ -383,8 +383,41 @@ def points_html(points, cols=2):
 # ---------------------------------------------- 히어로 비주얼 시안 (VISUAL=duo|lens|studio)
 # 기본값 classic = 기존 디자인(보틀 사진 + 우하단 알약 썸네일). 시안은 VISUAL 환경변수로만 켜짐.
 import os
-VISUAL = os.environ.get("VISUAL", "classic")
-SUFFIX = "" if VISUAL == "classic" else f"_{VISUAL}"
+DEFAULT_VISUAL = "duo"   # 2026-11-04 사용자 선택: A안(duo) + 실물 크기 알약
+VISUAL = os.environ.get("VISUAL", DEFAULT_VISUAL)
+SUFFIX = "" if VISUAL == DEFAULT_VISUAL else f"_{VISUAL}"
+
+# 실물 크기(1:1) 알약 — 1일 섭취 알 수: algocare-bottle-info 스킬 references/bottle-spec-and-dosage.md 「허가서상 1일 섭취량」
+# 치수 출처: 정제 5.1mm 구형 = 같은 문서 제형 열 · 노션 위키 「알고케어 영양제 3D 렌더 기준」(지름 확인)
+#           #3 경질캡슐 15.9×5.8mm = 위키 값(3호 기준) + 업계 규격표(Lonza Vcaps Ø5.57/5.83mm, 닫힌 길이 15.7~15.9mm)
+#           연질캡슐 OV 7.5 / OV2 10.5×6.8mm = 위키의 사진 비율 추정값(미확인) → 캡션에 '확인 중' 표시, 눈금자 생략
+PILLSPEC = {  # key: (1일 알 수, 종류, 길이 mm, 확정 여부)
+    "multi": (6, "tab", 5.1, True), "rhod": (6, "tab", 5.1, True), "milk": (3, "tab", 5.1, True),
+    "vitd": (1, "tab", 5.1, True), "banaba": (1, "tab", 5.1, True), "mag": (7, "tab", 5.1, True),
+    "calmag": (14, "tab", 5.1, True), "catechin": (7, "tab", 5.1, True), "boswellia": (8, "tab", 5.1, True),
+    "mela": (3, "tab", 5.1, True),
+    "omega": (3, "soft", 10.5, False), "coq": (1, "soft", 10.5, False), "lutein": (1, "soft", 10.5, False),
+    "probio": (1, "hard", 15.9, True),
+}
+
+def real_pills(k):
+    n, kind, L, ok = PILLSPEC[k]
+    gap = 1.5 if kind == "tab" else 2.2
+    per = n if n <= 8 else -(-n // 2)
+    if kind == "hard":   # 자사몰 실물은 흰 캡슐, Drive 누끼(노란 정제)는 불일치 → 중립 실루엣
+        one = f'<i class="rp-hard" style="width:{L}mm;height:5.8mm"></i>'
+    else:
+        one = f'<img class="rp" src="img/cut/{k}_pill11.png" style="width:{L}mm">'
+    pills = f'<div class="rp-row" style="width:{per * (L + gap):.2f}mm;gap:{gap}mm {gap}mm">' + one * n + "</div>"
+    unit = "정" if kind == "tab" else "캡슐"
+    if kind == "tab":
+        cap = f"실물 크기 · Ø5.1mm · 1일 {n}{unit}"
+    elif kind == "hard":
+        cap = f"실물 크기 · 15.9×5.8mm · 1일 {n}{unit}"
+    else:
+        cap = f"1일 {n}{unit} · 캡슐 실측 치수 확인 중"
+    scale = ('<div class="rp-scale"><i></i><span>0</span><span>10mm</span></div>' if ok else "")
+    return f'<div class="vd-real">{pills}{scale}<div class="vd-cap"><span>{"ACTUAL SIZE · 1:1" if ok else "DAILY SERVING"}</span><b>{cap}</b></div></div>'
 
 def photo_visual(b):
     bt = f'background-image:url(img/{b["photo"]}_bottle.jpg)'
@@ -392,8 +425,7 @@ def photo_visual(b):
     cap = html.escape(b.get("pillcap", ""))
     if VISUAL == "duo":      # A. 세로 2단: 보틀 + 알약 매크로 스트립, 같은 톤·같은 캡션 체계
         return (f'<div class="visual v-duo"><div class="vd-top" style="{bt}"></div>'
-                f'<div class="vd-bot"><div class="vd-pill" style="{pl}"></div>'
-                f'<div class="vd-cap"><span>INSIDE THE BOTTLE</span><b>{cap}</b></div></div></div>')
+                f'<div class="vd-bot">{real_pills(b["photo"])}</div></div>')
     if VISUAL == "lens":     # B. 보틀 전면 + 원형 매크로 렌즈, 리더 라인과 캡션으로 보틀에 연결
         return (f'<div class="visual v-lens" style="{bt}"><div class="vl-line"></div>'
                 f'<figure class="vl-fig"><div class="vl-lens" style="{pl}"></div>'

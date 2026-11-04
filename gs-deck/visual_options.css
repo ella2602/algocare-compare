@@ -1,17 +1,29 @@
 /* ---------- 히어로 비주얼 시안 (build.py VISUAL=duo|lens|studio). classic(기본)에는 영향 없음 ---------- */
 :root{ --pillbg:#E1CFBB; }
 
-/* A. duo — 세로 2단: 보틀 위, 알약 매크로 스트립 아래. 보틀 배경이 알약 톤으로 이어지는 그라데이션 */
+/* A. duo — 세로 2단: 보틀 사진 위, 실물 크기(1:1, CSS mm) 알약 띠 아래. 보틀 배경이 띠 톤으로 이어짐 */
 .v-duo{background:var(--pillbg)}
-.v-duo .vd-top{position:absolute;left:0;right:0;top:0;height:67%;background-size:cover;background-position:center 64%}
+.v-duo .vd-top{position:absolute;left:0;right:0;top:0;height:77%;background-size:cover;background-position:center 64%}
 .v-duo .vd-top::after{content:"";position:absolute;inset:0;
-  background:linear-gradient(180deg,rgba(225,207,187,0) 58%,rgba(225,207,187,.65) 92%,var(--pillbg) 100%)}
-.v-duo .vd-bot{position:absolute;left:0;right:0;top:67%;bottom:0;background:var(--pillbg)}
+  background:linear-gradient(180deg,rgba(225,207,187,0) 62%,rgba(225,207,187,.6) 93%,var(--pillbg) 100%)}
+.v-duo .vd-bot{position:absolute;left:0;right:0;top:77%;bottom:0;background:var(--pillbg)}
 .v-duo .vd-bot::before{content:"";position:absolute;left:10mm;right:10mm;top:0;height:0.5pt;background:rgba(10,9,9,.22)}
-.v-duo .vd-pill{position:absolute;right:6mm;top:-2mm;width:46mm;bottom:0;background-size:118% auto;background-position:50% 47%;background-repeat:no-repeat;-webkit-mask-image:radial-gradient(60% 55% at 50% 50%,#000 60%,transparent 100%);mask-image:radial-gradient(60% 55% at 50% 50%,#000 60%,transparent 100%)}
-.v-duo .vd-cap{position:absolute;left:10mm;bottom:12mm;width:44mm;display:flex;flex-direction:column;gap:1.6mm}
-.v-duo .vd-cap span{font-size:5.6pt;letter-spacing:.32em;color:var(--orange-d);font-weight:600}
-.v-duo .vd-cap b{font-size:8.6pt;font-weight:600;color:var(--ink);line-height:1.4;letter-spacing:-0.02em}
+.v-duo .vd-real{position:absolute;left:10mm;right:10mm;top:6.5mm;bottom:9mm;display:flex;flex-direction:column;justify-content:flex-end}
+.v-duo .rp-row{display:flex;flex-wrap:wrap;align-items:center}
+.v-duo .rp{display:block;height:auto;filter:drop-shadow(0 .35mm .35mm rgba(60,40,20,.28))}
+.v-duo .rp-hard{display:block;border-radius:3mm;
+  background:linear-gradient(90deg,#ECECEA 0 54%,#DCDCD9 54% 100%);
+  box-shadow:inset 0 -.7mm 1mm rgba(0,0,0,.12),inset 0 .5mm .7mm rgba(255,255,255,.8),0 .35mm .45mm rgba(60,40,20,.25)}
+.v-duo .rp-scale{position:relative;margin-top:2.6mm;width:10.15mm;height:4.2mm}
+.v-duo .rp-scale i{position:absolute;left:0;top:0;width:10.15mm;height:1.3mm;
+  background:repeating-linear-gradient(90deg,rgba(10,9,9,.7) 0 .15mm,transparent .15mm 1mm);border-bottom:.15mm solid rgba(10,9,9,.7)}
+.v-duo .rp-scale i::before,.v-duo .rp-scale i::after{content:"";position:absolute;top:-.9mm;width:.15mm;height:2.2mm;background:rgba(10,9,9,.7)}
+.v-duo .rp-scale i::before{left:0}.v-duo .rp-scale i::after{left:10mm}
+.v-duo .rp-scale span{position:absolute;top:1.9mm;font-size:4.6pt;color:var(--ink2);letter-spacing:.02em}
+.v-duo .rp-scale span:first-of-type{left:-.4mm}.v-duo .rp-scale span:last-of-type{left:8.4mm}
+.v-duo .vd-cap{margin-top:2.4mm;display:flex;flex-direction:column;gap:1.1mm}
+.v-duo .vd-cap span{font-size:5.4pt;letter-spacing:.3em;color:var(--orange-d);font-weight:600}
+.v-duo .vd-cap b{font-size:8pt;font-weight:600;color:var(--ink);line-height:1.35;letter-spacing:-0.02em}
 
 /* B. lens — 보틀 전면 + 원형 매크로 렌즈가 보틀 어깨에 걸침, 리더 라인 + 캡션 */
 .v-lens{background-size:cover;background-position:72% 62%}
