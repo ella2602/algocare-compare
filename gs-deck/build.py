@@ -491,7 +491,7 @@ def scene_visual(b):
     return (f'<div class="visual v-scene sc-pillonly" style="{style}"><div class="sc-floor"></div>{hero}'
             f'{pills([SCENE_PILLS[0], SCENE_PILLS[1], SCENE_PILLS[2], SCENE_PILLS[4]])}{cap}</div>')
 
-KEY_TOP = {"omega"}   # KEY 박스를 수치 바로 아래(포인트 위)로 올리는 보틀 — 미리보기: 오메가3
+KEY_TOP = "ALL"   # KEY 박스를 수치 바로 아래(포인트 위)로 올림. "ALL" 또는 보틀 key 집합
 
 def hero_page(b):
     pre = b.get("prerelease")
@@ -517,7 +517,7 @@ def hero_page(b):
                    f'<h1 class="hero">{b["hero"]}</h1>'
                    f'{stats_html(b["stats"])}'
                    + (f'<div class="core-wrap top"><div class="core"><span>KEY</span>{html.escape(b["core"])}</div></div>'
-                      f'{points_html(b["points"])}' if b["key"] in KEY_TOP else
+                      f'{points_html(b["points"])}' if (KEY_TOP == "ALL" or b["key"] in KEY_TOP) else
                       f'{points_html(b["points"])}'
                       f'<div class="core-wrap"><div class="core"><span>KEY</span>{html.escape(b["core"])}</div></div>'))
     return f'<section class="page hp">{visual}<div class="content">{content}</div>{footer()}</section>'
