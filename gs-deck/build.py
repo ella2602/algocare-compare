@@ -72,6 +72,23 @@ PHARMA_LABEL = "제약사 브랜드 인기 · 프리미엄 상품 (해외 제품
 # 표에서 인쇄물에 맞지 않는 행 라벨 정리
 ROW_LABEL = {"판매 링크": "판매처"}
 
+# 비교표 원료사 행(알고케어 열)에 원료사 공식 마크를 붙임: 셀 문구에 나오는 원료사만
+TABLE_LOGO_KW = [("Polaris", "polaris"), ("일동바이오사이언스", "ildong"), ("Kaneka", "kaneka"),
+                 ("Lute-gen", "lutegen"), ("Indena", "indena"), ("Aquamin", "aquamin"), ("아쿠아민", "aquamin"),
+                 ("Albion", "albion"), ("Nektium", "nektium"), ("DSM", "dsm"), ("Laila", "laila"), ("Lactium", "lactium")]
+
+def table_logos(label, cell):
+    if "원료사" not in label:
+        return ""
+    keys = []
+    for kw, k in TABLE_LOGO_KW:
+        if kw in cell and k not in keys and k in LOGOS:
+            keys.append(k)
+    if not keys:
+        return ""
+    return '<span class="td-logo">' + "".join(
+        f'<img src="img/logos/{LOGOS[k][0]}" alt="{html.escape(LOGOS[k][2])}" style="height:{LOGOS[k][1] * .8:.2f}mm">' for k in keys) + "</span>"
+
 def render_table(rows, dense=False):
     # 글자 수가 매우 많은 표(멀티 8열 등)만 셀 여백을 줄여 자동 맞춤 글자 크기를 확보
     dense = sum(len(c) for r in rows for c in r) > 2600
@@ -129,7 +146,8 @@ def render_table(rows, dense=False):
             plain = re.sub(r"\s+", "", c)
             if plain in ("-", "없음") or plain.startswith("(개발중)"):
                 cls += " mute"
-            h.append(f'<td class="{cls}">{cell_html(c)}</td>')
+            mark = table_logos(lab, c) if kinds[i].startswith("algo") else ""
+            h.append(f'<td class="{cls}">{cell_html(c)}{mark}</td>')
         h.append("</tr>")
     h.append("</tbody></table>")
     return "".join(h)
