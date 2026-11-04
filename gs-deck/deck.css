@@ -168,3 +168,5 @@ table.cmp.dense th.grp{padding-top:.6em;padding-bottom:.6em}
 .ax .ax-row b{width:10mm;color:var(--orange);font-weight:700}
 .ax .ax-row span{flex:1;color:var(--ink);font-weight:500}
 .ax .ax-row i{font-style:normal;color:var(--ink2);font-variant-numeric:tabular-nums}
+.lu.lu-ax .lu-no{color:var(--ink)}
+.lu.lu-ax .lu-nm{color:var(--orange-d,#c95f0c);font-weight:600;letter-spacing:.06em}

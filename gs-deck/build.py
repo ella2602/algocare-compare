@@ -539,7 +539,7 @@ def cover():
             f'<h1>알고케어 뉴트리션 보틀<br><b>품질 비교 자료</b></h1>'
             f'<div class="cv-rule"></div><div class="cv-meta">14 BOTTLES · 2026.11</div></div></section>')
 
-def lineup():
+def lineup(appendix=None):
     rows = []
     for b in BOTTLES:
         if b.get("split"):
@@ -552,6 +552,11 @@ def lineup():
         f'<div class="lu-nm">{html.escape(nm)}{"<em>출시 예정</em>" if pre else ""}</div>'
         f'<div class="lu-hero">{hero}</div></div></div>'
         for no, nm, hero, pre in rows)
+    if appendix:   # 상세판: 본문 뒤 APPENDIX가 있음을 라인업(목차)에서 알림
+        items += (f'<div class="lu lu-ax"><div class="lu-no">A</div><div class="lu-tx">'
+                  f'<div class="lu-nm">APPENDIX · p.{appendix:02d}~</div>'
+                  f'<div class="lu-hero">보틀별 상세 비교 포인트 (비교표 근거 전체)</div></div></div>')
+        rows = rows + [None]
     return (f'<section class="page lineup"><header class="tp-h"><div class="eyebrow"><b>00</b><span>LINE-UP</span><i>HERO LINES</i></div>'
             f'<h2>한눈에 보는 알고케어 뉴트리션 라인업</h2></header><div class="lu-grid{" dense" if len(rows) > 14 else ""}" style="grid-template-rows:repeat({(len(rows)+1)//2},1fr)">{items}</div>{footer()}</section>')
 
@@ -645,7 +650,15 @@ if os.environ.get("FULL"):
 
     PAGE_NO[0] = 0
     # 본문(간단판과 동일) → 마무리 → APPENDIX(보틀별 상세 비교 포인트 모음)
-    pages = [cover(), lineup()]
+    PAGE_NO[0] = 0                               # 1차: APPENDIX 구분 장 번호 계산
+    cover(); lineup(1)
+    for b in BOTTLES:
+        hero_page(b)
+        if b["table"]: table_page(b, tbl(b["table"]))
+    closing()
+    ax_no = PAGE_NO[0] + 1
+    PAGE_NO[0] = 0
+    pages = [cover(), lineup(ax_no)]
     for b in BOTTLES:
         pages.append(hero_page(b))
         if b["table"]:
