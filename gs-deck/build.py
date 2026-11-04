@@ -141,7 +141,7 @@ BOTTLES = [
       hero="글로벌 프리미엄 프랑스 Polaris사,<br>rTG 80% 고순도를 장용성 캡슐에",
       stats=[("80", "%", "오메가3 농도"), ("377", "mg", "소형 캡슐 1알"), ("3 : 2", "", "EPA : DHA 함량 표기")],
       points=[
-        ("프랑스 Polaris 원료", "IFOS 5-Star 인증으로 순도·안전성·품질을 검증받은 프리미엄 오메가3 원료사"),
+        ("프랑스 Polaris 원료", "IFOS 5-Star 인증으로 순도·안전성·품질을 검증받은 프리미엄 오메가3 원료사", "polaris"),
         ("오메가3 농도 80%", "비교 제품 중 최상위(유한과 동률). 그 외 제품은 60% 또는 농도 미표기"),
         ("rTG · 377mg 소형 캡슐", "1알 EPA+DHA 300mg. 2~3알로 식약처 기능성 용량(500·600·900mg)에 맞춰 섭취"),
         ("장용 캡슐 · EPA:DHA 각각 표기", "어취와 더부룩함을 줄인 장용 캡슐. EPA 180 : DHA 120mg으로 쏜리서치 Super EPA와 같은 3:2"),
@@ -152,7 +152,7 @@ BOTTLES = [
       hero="일동바이오사이언스 유산균,<br>특허받은 4중 코팅에 장용성 캡슐까지",
       stats=[("500", "억", "투입 균수 (보장 100억)"), ("5", "종", "특허 균주 IDCC"), ("4중+장용", "", "이중 보호 설계")],
       points=[
-        ("일동바이오사이언스 특허 균주 5종", "한국인 대상 인체 적용 연구가 있는 IDCC 3201·4301·3302·2201·4101"),
+        ("일동바이오사이언스 특허 균주 5종", "한국인 대상 인체 적용 연구가 있는 IDCC 3201·4301·3302·2201·4101", "ildong"),
         ("보장균수 100억, 투입 500억", "보장균수의 5배를 투입. 투입 균수까지 확인 가능한 유일한 제품"),
         ("균체 4중 코팅 + 장용 캡슐", "위산을 지나 장까지 닿도록 이중 보호. 두 기술을 함께 갖춘 유일한 제품"),
         ("캡슐 수로 균수 조절", "쏜리서치 200억처럼 높은 균수가 필요하면 영양 설계 알고리즘에 따라 캡슐 수를 늘려 대응"),
@@ -175,7 +175,7 @@ BOTTLES = [
       stats=[("5", "종", "핵심 성분 배합"), ("200", "mg", "테아닌 (Pure의 4배)"), ("300", "mg", "Lactium®")],
       points=[
         ("하나로 설계한 토탈 나이트 보틀", "멜라토닌 3mg + Lactium® 300mg + GABA 50mg + 테아닌 200mg + Shoden® 120mg"),
-        ("Lactium® · Shoden® 배합", "인체 대상 수면 시험 결과가 있는 두 원료를 더함. 국내 비교 제품에는 없는 구성"),
+        ("Lactium® · Shoden® 배합", "인체 대상 수면 시험 결과가 있는 두 원료를 더함. 국내 비교 제품에는 없는 구성", "lactium"),
         ("테아닌 200mg", "허브 중심 배합인 Pure Best-Rest(테아닌 50mg)의 4배"),
       ],
       core="국내 비교 제품은 멜라토닌에 테아닌 · 트립토판 · 마그네슘 구성, 알고케어 프레스티지는 Lactium® · Shoden®까지"),
@@ -194,7 +194,7 @@ BOTTLES = [
       hero="Kaneka 유비퀴놀에 Pycnogenol®까지,<br>혈관 케어 프리미엄 보틀",
       stats=[("100", "mg", "Kaneka Ubiquinol®"), ("150", "mg", "Pycnogenol®"), ("4", "종", "활성형 B군")],
       points=[
-        ("Kaneka Ubiquinol® 100mg", "미국 프리미엄 시장의 대표 유비퀴놀 원료. 쏜리서치 유비퀴놀과 같은 원료"),
+        ("Kaneka Ubiquinol® 100mg", "미국 프리미엄 시장의 대표 유비퀴놀 원료. 쏜리서치 유비퀴놀과 같은 원료", "kaneka"),
         ("Pycnogenol® 150mg", "Horphag 피크노제놀을 더한 복합 설계"),
         ("활성형 B군", "엽산(Quatrefolic® 5-MTHF) · B6(P5P) · B2(R5P) · B12(메틸코발라민)"),
         ("미국용 · 국내 직구 고객용", "유비퀴놀 형태를 선호하는 해외 직구 고객층의 니즈를 반영한 설계"),
@@ -206,7 +206,7 @@ BOTTLES = [
       stats=[("10+2", "mg", "루테인 + 지아잔틴"), ("2", "캡슐", "최대 20+4mg까지"), ("장용", "", "연질캡슐 300mg")],
       points=[
         ("루테인 10 + 지아잔틴 2mg 단일 배합", "부담 없이 시작할 수 있는 눈 영양제 포지션"),
-        ("개별인정형 Lute-gen® 원료", "Lute-gen®(Bio-gen Extracts)의 개별인정형 원료 사용"),
+        ("개별인정형 Lute-gen® 원료", "Lute-gen®(Bio-gen Extracts)의 개별인정형 원료 사용", "lutegen"),
         ("최대 2캡슐까지 조절", "필요에 따라 루테인 20mg · 지아잔틴 4mg까지"),
         ("장용 연질캡슐", "위 부담을 덜어 주는 장용 연질캡슐을 갖춘 유일한 제품"),
       ],
@@ -217,7 +217,7 @@ BOTTLES = [
       stats=[("160", "mg", "Mirtoselect® 빌베리"), ("6", "mg", "아스타잔틴"), ("3", "가지", "기능성 함량 성분")],
       points=[
         ("황반 관리 + 눈 피로 관리", "루테인지아잔틴에 아스타잔틴 · 빌베리를 한 보틀에 담은 프레스티지 눈 케어 라인"),
-        ("Indena Mirtoselect® 빌베리 160mg", "이탈리아 Indena의 빌베리를 개별인정형 기능성 함량으로 배합. 비교 제품 중 빌베리를 기능성 함량으로 넣은 제품 없음"),
+        ("Indena Mirtoselect® 빌베리 160mg", "이탈리아 Indena의 빌베리를 개별인정형 기능성 함량으로 배합. 비교 제품 중 빌베리를 기능성 함량으로 넣은 제품 없음", "indena"),
         ("3가지 모두 기능성 함량", "루테인 · 아스타잔틴 · 빌베리를 모두 기능성 함량으로 갖춘 유일한 제품"),
       ],
       core="일동 마이니 · 고려은단은 루테인지아잔틴 + 아스타잔틴 2가지 배합"),
@@ -226,7 +226,7 @@ BOTTLES = [
       hero="아쿠아민·젖산·글루콘산,<br>3종 마그네슘을 한 보틀에",
       stats=[("3", "종", "마그네슘 원료 복합"), ("25.71", "mg", "1정 단위 조절"), ("180~385", "mg", "1일 조절 범위")],
       points=[
-        ("마그네슘 3종 복합 설계", "Aquamin(해조) + 젖산(유기산) + 글루콘산(유기산). 비교 제품은 원료 1종만 사용"),
+        ("마그네슘 3종 복합 설계", "Aquamin(해조) + 젖산(유기산) + 글루콘산(유기산). 비교 제품은 원료 1종만 사용", "aquamin"),
         ("마그네슘 단일 배합", "그 밖의 성분 없이 멀티와 중복 섭취 방지. 국내 비교 3종은 칼슘·비타민D·B군 등 복합 배합"),
         ("1정 25.71mg 단위 조절", "180~385mg까지 조절. 국내 비교 제품은 1회 섭취량 고정(175~315mg)"),
       ],
@@ -244,7 +244,7 @@ BOTTLES = [
         dict(label="USA", sub="(가칭) 알고케어 USA Magnesium · 미국 출시 예정",
              hero="글로벌 킬레이트 원료사 Albion TRAACS® 비스글리시네이트, 킬레이트 마그네슘 200mg",
              points=[
-               ("Albion TRAACS®", "세계적인 킬레이트 미네랄 원료사 Albion의 Magnesium Bisglycinate Chelate"),
+               ("Albion TRAACS®", "세계적인 킬레이트 미네랄 원료사 Albion의 Magnesium Bisglycinate Chelate", "albion"),
                ("비스글리시네이트 단일 배합", "다른 형태를 섞지 않은 단일 배합 — 미국 프리미엄 마그네슘의 표준"),
                ("직구 고객 니즈 반영", "국내 규정상 킬레이트 마그네슘은 원료로 사용 불가. 해외 직구 수요에 대응"),
              ]),
@@ -254,7 +254,7 @@ BOTTLES = [
       hero="글로벌 프리미엄 허브 이탈리아 원료사<br>Indena의 밀크씨슬",
       stats=[("60", "%", "실리마린 순도"), ("130", "mg", "1일 실리마린 (기능성 함량)"), ("43.33", "mg", "1정 실리마린")],
       points=[
-        ("Indena(이탈리아) 원료", "세계적인 허브 추출물 원료사 Indena의 순도 60% 밀크씨슬"),
+        ("Indena(이탈리아) 원료", "세계적인 허브 추출물 원료사 Indena의 순도 60% 밀크씨슬", "indena"),
         ("실리마린 130mg", "식약처 기능성 함량에 맞춘 설계 (비교 제품도 모두 130mg)"),
         ("1정 43.33mg 단위 맞춤", "개인별 미량 맞춤 가능. 비교 제품은 1알 130mg으로 1회 복용량 고정"),
         ("밀크씨슬 단일 배합", "그 밖의 성분 없이 멀티와 중복 섭취 방지. 국내 비교 3종은 비타민 B군 등 복합 배합"),
@@ -276,7 +276,7 @@ BOTTLES = [
       stats=[("200", "mg", "홍경천 추출물"), ("200", "mg", "L-테아닌"), ("4.2", "mg", "로사빈")],
       points=[
         ("홍경천 + 테아닌 한 보틀", "비교 제품 중 둘을 함께 담은 제품은 모어네이처와 알고케어 2종뿐"),
-        ("홍경천 200mg · L-테아닌 200mg", "홍경천은 스페인 Nektium, 테아닌은 인도 Molecules bio labs 원료"),
+        ("홍경천 200mg · L-테아닌 200mg", "홍경천은 스페인 Nektium, 테아닌은 인도 Molecules bio labs 원료", "nektium"),
         ("두 성분 외 배합 없음", "마그네슘 · 비타민B군 · 아연은 알고케어 별도 보틀로 제공해 중복 섭취 방지"),
       ],
       core="여에스더 · 동아 · 종근당은 홍경천 없는 테아닌 중심 제품"),
@@ -286,7 +286,7 @@ BOTTLES = [
       stats=[("21", "종", "비타민 13 · 미네랄 8"), ("40", "%", "지용성 A · E · K 기준치"), ("4~15", "정", "고객별 1일 섭취 범위")],
       points=[
         ("필요한 만큼 다르게, 차등 설계", "B1 · B12 1,000%로 높이고 지용성 A · E · K 40%, 비타민D 60%, 미량미네랄 60~80%"),
-        ("DSM 비타민 10종 · MenaQ7® K2", "DSM(A · B군 5종 · C · D · E · K1), 이탈리아 Gnosis MenaQ7®, 미국 Jost Chemical 미네랄"),
+        ("DSM 비타민 10종 · MenaQ7® K2", "DSM(A · B군 5종 · C · D · E · K1), 이탈리아 Gnosis MenaQ7®, 미국 Jost Chemical 미네랄", "dsm"),
         ("중성 비타민C · K1+K2", "위장관 부담까지 고려한 L-아스코브산칼슘. 국내 비교 제품 중 MenaQ7® K2를 갖춘 유일한 제품"),
         ("칼슘 · 마그네슘은 별도 보틀", "시너지 마그네슘 · 칼슘&마그네슘 보틀로 나눠 중복 섭취 방지. 120mg 미니정제로 정 수 조절"),
       ],
@@ -304,7 +304,7 @@ BOTTLES = [
         dict(label="USA", sub="(가칭) 알고케어 USA Essential Mineral Multi · 미국 출시 예정",
              hero="Albion TRAACS® 킬레이트 미네랄과 Quatrefolic® 활성형 엽산, 글로벌 프리미엄 기준에 맞춘 멀티",
              points=[
-               ("Albion TRAACS® 킬레이트 미네랄 7종", "국내 건강기능식품 규정상 쓸 수 없는 킬레이트 미네랄을 미국용 라인에 적용"),
+               ("Albion TRAACS® 킬레이트 미네랄 7종", "국내 건강기능식품 규정상 쓸 수 없는 킬레이트 미네랄을 미국용 라인에 적용", "albion"),
                ("활성형 엽산 · 활성형 B군", "Quatrefolic® 5-MTHF, 메틸코발라민 · P5P · R5P"),
                ("비타민 · 미네랄 22종", "붕소 포함 22종, 철 · 칼슘 제외. 쏜리서치 수준의 프리미엄 품질"),
              ]),
@@ -315,7 +315,7 @@ BOTTLES = [
       stats=[("1,000", "IU", "1정 비타민D3"), ("1~4", "정", "1,000~4,000IU 조절"), ("95", "mg", "미니정제 1정")],
       points=[
         ("1정 1,000IU, 정 수로 조절", "청소년 · 임산부 · 고령자 등 필요에 따라 1,000~4,000IU. 국내 · GS 비교 제품은 1정(캡슐) 고정"),
-        ("DSM Quali®-D 원료", "국내 비타민D 표준 원료. 국내 비교 제품도 모두 DSM 원료 사용"),
+        ("DSM Quali®-D 원료", "국내 비타민D 표준 원료. 국내 비교 제품도 모두 DSM 원료 사용", "dsm"),
         ("95mg 미니정제", "중량이 확인되는 비교 제품은 280~600mg (캡슐 · 츄어블)"),
         ("고함량도 여러 알로", "쏜리서치는 1,000 · 4,000 · 10,000IU 등 SKU를 나눠 운영, 알고케어는 5.1mm 미니정제 여러 알로 맞춤"),
       ],
@@ -328,7 +328,7 @@ BOTTLES = [
         ("칼슘 : 마그네슘 2 : 1", "흡수에 좋은 비율로 알려진 2:1 설계. 종근당 칼슘 앤 마그네슘 · 아임비타와 같은 비율"),
         ("1정 칼슘 21.43 · 마그네슘 10.71mg", "1일 14정 기준, 최대 23정까지 정 수로 조절. 비교 제품은 1일 2정 또는 3캡슐 고정"),
         ("칼슘 · 마그네슘 단일 배합", "비타민D · K · 아연은 멀티 · 비타민D 보틀에 있어 중복 섭취 방지. 국내 비교 제품은 복합 배합"),
-        ("해조칼슘 Aquamin F · 산화마그네슘", "역가가 높아 국내 칼마의 표준인 원료. 해조칼슘 Microferm(영국), 산화마그네슘 CALMAGS(독일)"),
+        ("해조칼슘 Aquamin F · 산화마그네슘", "역가가 높아 국내 칼마의 표준인 원료. 해조칼슘 Microferm(영국), 산화마그네슘 CALMAGS(독일)", "aquamin"),
       ],
       core="칼슘 · 마그네슘을 정 수로 조절 가능한 유일한 단일 배합 제품"),
  dict(key="boswellia", no="13", en="BOSWELLIA", table="13. 보스웰리아",
@@ -336,7 +336,7 @@ BOTTLES = [
       hero="식약처 개별인정형 원료 SERRATRIN®으로<br>만든 보스웰리아",
       stats=[("400", "mg", "1일 보스웰리아 추출물"), ("32.8", "mg", "AKBA + KBA"), ("90", "mg", "미니정제 1정 · 1일 8정")],
       points=[
-        ("개별인정형 SERRATRIN®", "인도 Laila Nutraceuticals 원료, 지표성분 AKBA+KBA 82mg/g 표준화. 종근당 보스웰리아 7Days와 같은 원료"),
+        ("개별인정형 SERRATRIN®", "인도 Laila Nutraceuticals 원료, 지표성분 AKBA+KBA 82mg/g 표준화. 종근당 보스웰리아 7Days와 같은 원료", "laila"),
         ("보스웰리아 단일 배합", "비타민D · 아연 · 셀렌 등은 멀티에 있어 중복 섭취 방지. 비교 제품 중 단일 배합은 알고케어 · Pure뿐"),
         ("관절 건강 기능성", "관절 및 연골 건강에 도움을 줄 수 있음 — 국내 비교 3종과 같은 기능성의 건강기능식품"),
         ("90mg 미니정제 8정", "한 알 크기 부담이 적음. 국내 비교 제품은 800~900mg대 정제 1~2정"),
@@ -375,10 +375,36 @@ def stats_html(stats):
         f'<div class="stat"><div class="sv">{html.escape(v)}<small>{html.escape(u)}</small></div>'
         f'<div class="sl">{html.escape(l)}</div></div>' for v, u, l in stats) + "</div>"
 
+# 원료사 로고(공식 마크 원본 · 출처는 img/logos/SOURCES.md). 포인트 튜플의 3번째 값(키 또는 키 튜플)로 지정
+# key: (파일, 높이 mm — 워드마크/심벌 비율 차이를 눈으로 맞춘 값, 대체 텍스트)
+LOGOS = {   # 4번째 값: 밝은 색 마크를 다른 로고와 같은 회색 농도로 맞추는 보정(필터) — 형태·비율은 원본 그대로
+    "polaris": ("polaris.png", 3.6, "Polaris", "dark"),
+    "ildong":  ("ildong.png", 2.6, "Ildong Bioscience", ""),
+    "lactium": ("lactium.png", 5.6, "Lactium", ""),
+    "kaneka":  ("kaneka.svg", 5.0, "Kaneka Nutrients", ""),
+    "lutegen": ("lutegen.png", 6.2, "Lute-gen", "dark"),
+    "indena":  ("indena.svg", 4.4, "Indena", ""),
+    "aquamin": ("aquamin.png", 5.4, "Aquamin", "soft"),
+    "albion":  ("albion.svg", 5.0, "Albion Minerals", ""),
+    "nektium": ("nektium.png", 3.4, "Nektium", ""),
+    "dsm":     ("dsm.svg", 2.6, "dsm-firmenich", ""),
+    "laila":   ("laila.png", 6.4, "Laila Nutra", "dark"),
+}
+
+def logos_html(keys):
+    if not keys:
+        return ""
+    if isinstance(keys, str):
+        keys = (keys,)
+    imgs = "".join(f'<img class="{LOGOS[k][3]}" src="img/logos/{LOGOS[k][0]}" alt="{html.escape(LOGOS[k][2])}" style="height:{LOGOS[k][1]}mm">'
+                   for k in keys if k in LOGOS)
+    return f'<span class="pt-logo">{imgs}</span>' if imgs else ""
+
 def points_html(points, cols=2):
     return f'<div class="points cols{cols}">' + "".join(
-        f'<div class="pt"><div class="pt-n">{i:02d}</div><div><h4>{html.escape(t)}</h4><p>{html.escape(d)}</p></div></div>'
-        for i, (t, d) in enumerate(points, 1)) + "</div>"
+        f'<div class="pt"><div class="pt-n">{i:02d}</div><div><h4><span class="pt-t">{html.escape(p[0])}</span>{logos_html(p[2] if len(p) > 2 else None)}</h4>'
+        f'<p>{html.escape(p[1])}</p></div></div>'
+        for i, p in enumerate(points, 1)) + "</div>"
 
 # ---------------------------------------------- 히어로 비주얼 시안 (VISUAL=duo|lens|studio)
 # 기본값 classic = 기존 디자인(보틀 사진 + 우하단 알약 썸네일). 시안은 VISUAL 환경변수로만 켜짐.
