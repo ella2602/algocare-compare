@@ -190,7 +190,7 @@ BOTTLES = [
       core="국내 비교군 중 최저용량 멜라토닌으로 개인별 맞춤이 가능한 유일한 제품"),
  dict(key="sleep", no="03-1", en="SLEEP PRESTIGE", table="3-1.", prerelease=True,
       name="알고케어 프레스티지 수면", photo=None, badge="PRESTIGE",
-      hero="멜라토닌에 글로벌 프리미엄 수면 원료 4종을<br>하나로 설계한 나이트 보틀",
+      hero="멜라토닌에 글로벌 프리미엄<br>수면 원료들을 더한 나이트 보틀",
       stats=[("5", "종", "핵심 성분 배합"), ("300", "mg", "Lactium®"), ("120", "mg", "아쉬와간다 Shoden®"), ("200", "mg", "테아닌"), ("50", "mg", "GABA")],
       points=[
         ("수면 도움을 주는 핵심 5종 배합", "멜라토닌 3mg + Lactium® 300mg + GABA 50mg + 테아닌 200mg + 아쉬와간다 Shoden® 120mg"),
