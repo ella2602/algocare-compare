@@ -138,7 +138,7 @@ def render_table(rows, dense=False):
 BOTTLES = [
  dict(key="omega", no="01", en="OMEGA-3", table="1. 오메가3",
       name="알고케어 뉴트리션 장용성 초임계 rTG 오메가3", photo="omega", pillcap="rTG 소형 캡슐 377mg",
-      hero="글로벌 프리미엄 원료사 프랑스 Polaris,<br>80% 고농도 rTG를 작은 한 알에",
+      hero="글로벌 프리미엄 프랑스 Polaris사,<br>rTG 고순도 80%를 작은 한 알에",
       stats=[("80", "%", "오메가3 농도"), ("377", "mg", "소형 캡슐 1알"), ("3 : 2", "", "EPA : DHA 함량 표기")],
       points=[
         ("프랑스 Polaris 원료", "IFOS 5-Star 인증으로 순도·안전성·품질을 검증받은 프리미엄 오메가3 원료사"),
