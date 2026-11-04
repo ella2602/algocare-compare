@@ -207,7 +207,7 @@ Column groups / colors:
 - 장용성 연질 캡슐로 위장 편안함을 고려한 설계
   - 비교 제품 중 장용성 연질 캡슐 제형을 적용한 유일한 제품
 
-**[알고케어 USA Vascular/Cardio Prime 제품의 특징] (미국 출시 예정) - 미국용 및 국내 소비자 직구용, 코큐텐 형태: 유비퀴놀**
+**[알고케어 Ubiquinol Q10 USA 제품의 특징] (미국 출시 예정) - 미국용 및 국내 소비자 직구용, 코큐텐 형태: 유비퀴놀**
 
 - 배경
   - 미국에도 유비퀴논 형태의 코큐텐이 대중적이지만, 유비퀴놀을 선택한 이유
@@ -223,7 +223,7 @@ Column groups / colors:
 Column groups / colors:
 - Col 1 (row header, no color): "구분"
 - Col 2: orange **[ORANGE]** | group label: 알고케어 | product: 알고케어 뉴트리션 장용성 코큐텐
-- Col 3: orange **[ORANGE]** | group label: 알고케어 USA (미국 출시 예정) | product: (가칭) 알고케어 USA Vascular/Cardio Prime
+- Col 3: orange **[ORANGE]** | group label: 알고케어 USA (미국 출시 예정) | product: 알고케어 Ubiquinol Q10 USA
 - Col 4: blue | group label: GS SHOP 매칭 상품 | product: 대웅생명과학 코큐텐 100mg 플러스
 - Col 5: blue | group label: GS SHOP 매칭 상품 (continued; cell empty) | product: 올바른 코엔자임Q10 코큐텐 플러스
 - Col 6: green | group label: 제약사브랜드 인기 상품 또는 프리미엄급 상품 (해외 제품 포함) | product: 종근당건강 코큐텐 맥스
@@ -231,7 +231,7 @@ Column groups / colors:
 
 | 구분 | 알고케어 | 알고케어 USA (미국 출시 예정) | GS SHOP 매칭 상품 |  | 제약사브랜드 인기 상품 또는 프리미엄급 상품 (해외 제품 포함) |  |
 | --- | --- | --- | --- | --- | --- | --- |
-| 제품 | 알고케어 뉴트리션 장용성 코큐텐 | (가칭) 알고케어 USA Vascular/Cardio Prime | 대웅생명과학 코큐텐 100mg 플러스 | 올바른 코엔자임Q10 코큐텐 플러스 | 종근당건강 코큐텐 맥스 | Thorne Ubiquinol |
+| 제품 | 알고케어 뉴트리션 장용성 코큐텐 | 알고케어 Ubiquinol Q10 USA | 대웅생명과학 코큐텐 100mg 플러스 | 올바른 코엔자임Q10 코큐텐 플러스 | 종근당건강 코큐텐 맥스 | Thorne Ubiquinol |
 | CoQ10 1일 | 유비퀴논 100mg (최대 300mg) | 유비퀴놀 100mg (Kaneka Ubiquinol®) | 유비퀴논 100mg (순도 98% 이상) | 유비퀴논 100mg (순도 98%) | 유비퀴논 100mg | 유비퀴놀 100mg/캡슐 |
 | 그 밖의 성분 | 없음 (단일 배합, 멀티와 중복 섭취 방지) | 피크노제놀 150mg (Pycnogenol®, Horphag) / 엽산 300mcg DFE (Quatrefolic® 5-MTHF) / B6 5mg (P5P) · B2 2mg (R5P) · B12 250mcg (메틸코발라민) | B군 7종(B6 11mg, 엽산 400㎍ DFE 등) + 아연 8.5mg · 셀렌 55㎍ · 크롬 30㎍ | B군 7종(B6 7mg, 엽산 400㎍ DFE 등) + 아연 4.25mg · 셀렌 27.5㎍ · 크롬 15㎍ | 셀렌, C, E | - |
 | 원료사 | Global Merchant (98%, GMO-Free) | Kaneka® Ubiquinol · Horphag Pycnogenol® · Quatrefolic® | - | - | - | Kaneka® Ubiquinol |

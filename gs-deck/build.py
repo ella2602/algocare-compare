@@ -209,7 +209,7 @@ BOTTLES = [
       ],
       core="장용성 연질캡슐에 98% 고순도 코큐텐만 담은, 비교 제품 중 유일한 장용 코큐텐"),
  dict(key="coq-usa", no="04-1", en="COENZYME Q10 · USA", table=None, prerelease=True,
-      name="(가칭) 알고케어 USA Vascular/Cardio Prime", photo=None, badge="USA",
+      name="알고케어 Ubiquinol Q10 USA", photo=None, badge="USA",
       hero="Kaneka 유비퀴놀에 Pycnogenol®까지,<br>혈관 케어 프리미엄 보틀",
       stats=[("100", "mg", "Kaneka Ubiquinol®"), ("150", "mg", "Pycnogenol®"), ("4", "종", "활성형 B군")],
       points=[
