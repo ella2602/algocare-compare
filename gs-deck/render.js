@@ -6,7 +6,7 @@ const path = require('path');
   const shots = process.argv[3]; // 미리보기 폴더(선택)
   const src = process.argv[4] || 'deck.html';
   const browser = await chromium.launch();
-  const page = await browser.newPage();
+  const page = await browser.newPage({ deviceScaleFactor: Number(process.env.SCALE || 1) });
   await page.goto('file://' + path.resolve(__dirname, src), { waitUntil: 'networkidle' });
   await page.waitForFunction(() => document.body.dataset.fitted === '1');
   await page.emulateMedia({ media: 'print' });
