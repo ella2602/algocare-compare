@@ -254,7 +254,7 @@ BOTTLES = [
  dict(key="mag-line", no="06-1", en="MAGNESIUM · USA", table=None, prerelease=True,
       name="알고케어 USA Magnesium", photo=None, badge="USA",
       hero="Albion TRAACS®<br>비스글리시네이트 마그네슘",
-      stats=[("200", "mg", "킬레이트 마그네슘 1일"), ("1", "종", "비스글리시네이트 단일 배합"), ("TRAACS®", "", "Albion 킬레이트 원료")],
+      stats=[("200", "mg", "킬레이트 마그네슘 1일"), ("TRAACS®", "", "Albion 킬레이트 원료")],
       points=[
         ("Albion TRAACS® 비스글리시네이트", "세계적인 킬레이트 미네랄 원료사 Albion의 Magnesium Bisglycinate Chelate", "albion"),
         ("킬레이트 Mg 단일 배합", "다른 마그네슘 형태를 섞지 않은 비스글리시네이트 단일 배합"),
