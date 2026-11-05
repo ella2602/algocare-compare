@@ -142,8 +142,12 @@ def render_table(rows, dense=False):
     prod = body[0]
     h.append('<tr class="prod"><th class="rl">제품</th>')
     for i, c in enumerate(prod[1:], start=1):
+        crown = ""
+        if c.endswith("[[BEST OVERALL]]"):
+            c = c[:-len("[[BEST OVERALL]]")].rstrip()
+            crown = '<span class="overall">BEST OVERALL</span>'
         name = OFFICIAL.get(c, c)
-        h.append(f'<th class="{kinds[i]}">{cell_html(name)}</th>')
+        h.append(f'<th class="{kinds[i]}">{cell_html(name)}{crown}</th>')
     h.append("</tr></thead><tbody>")
     for r in body[1:]:
         lab = ROW_LABEL.get(r[0], r[0])
