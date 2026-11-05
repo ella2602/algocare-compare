@@ -55,10 +55,10 @@ Column groups / colors:
 | 원료사 | Polaris (프랑스) [[베스트]] | KD Pharma (독일) [[베스트]] | Solutex (스페인) [[베스트]] | Polaris (프랑스) [[베스트]] | Polaris (프랑스) [[베스트]] |
 | 원산지 | 프랑스 정제 (페루 멸치) | 독일 정제 (남태평양 멸치) | 스페인 정제 (어종 미표기) | 프랑스 | - |
 | 제조 | 서흥헬스케어 | 종근당건강 자체 공장 | 우리바이오 | 코스맥스엔비티 | 알파바이오 |
-| 월 환산가 | 월 19,757원(600mg) / 29,636원(900mg), 자사몰 | 월 9,900원 (GS TV 10박스 99,000원) | 월 약 5,817원 (GS 6박스 34,900원) | 월 47,400원 (60캡슐, 정가 79,000원) | 월 28,000원 (30캡슐, YDY 공식몰) |
-| 100mg당 가격 | 약 110원 [[베스트]] | 약 66원 / 자사 제품 대비 품질 열위 [[비교불가]] | 약 32원 / 자사 제품 대비 품질 열위 [[비교불가]] | 약 176원 [[열위]] | 약 93원 |
+| 월 환산가 | 월 19,757원(600mg) / 29,636원(900mg), 자사몰 | 월 9,900원 (GS TV 10박스 99,000원) | 월 약 5,817원 (GS 6박스 34,900원) | 월 47,400원 (60캡슐, 정가 79,000원) | 월 42,000원 (30캡슐, 다나와 최저가) |
+| 100mg당 가격 | 약 110원 [[베스트]] | 약 66원 / 자사 제품 대비 품질 열위 [[비교불가]] | 약 32원 / 자사 제품 대비 품질 열위 [[비교불가]] | 약 176원 [[열위]] | 약 140원 [[열위]] |
 | 참고 | Polaris사 80% rTG 고순도 원료로, 동품질 대비 가격 우세 | 순도 60% 원료로, 자사 제품과 품질 차이로 단순 비교 불가 | 순도 60% 원료로, 자사 제품과 품질 차이로 단순 비교 불가 | 자사 제품과 동급의 프리미엄 원료를 사용하였으나, 가격이 EPA+DHA 100mg당 약 1.6배 | 자사 제품과 동급의 프리미엄 원료를 사용하였으나, 가격이 EPA+DHA 100mg당 약 1.3배 |
-| 판매 링크 | [알고케어 자사몰](https://www.algocare.ai/products/omega-3) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1101555012) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1036883468) | [현대웰니스](https://www.hyundaiwellness.com/goods/goods_view.php?goodsNo=1000000992) | [YDY 공식몰](https://ydymall.com/product/ydy-%ED%8F%B4%EB%9D%BC%EC%B4%88%EC%9E%84%EA%B3%84%EC%98%A4%EB%A9%94%EA%B0%803-30%EC%BA%A1%EC%8A%901%EA%B0%9C%EC%9B%94%EB%B6%84/40/) |
+| 판매 링크 | [알고케어 자사몰](https://www.algocare.ai/products/omega-3) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1101555012) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1036883468) | [현대웰니스](https://www.hyundaiwellness.com/goods/goods_view.php?goodsNo=1000000992) | [다나와](https://prod.danawa.com/info/?pcode=20717864) |
 
 ---
 
