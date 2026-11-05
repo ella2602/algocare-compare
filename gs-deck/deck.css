@@ -210,3 +210,4 @@ td.note{font-size:.92em;color:var(--ink2);background-image:none}
 .rc.long{display:block}
 .rc.long>span:first-child{display:block}
 .rc.long .rate{margin:.45em 0 0!important}
+.cs{font-size:.82em;white-space:nowrap;color:var(--ink2)}
