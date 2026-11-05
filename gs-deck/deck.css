@@ -204,3 +204,4 @@ table.cmp.dense th.grp{padding-top:.6em;padding-bottom:.6em}
 .r-mid{background:#EFECE8;color:#8A837B}
 .r-low{background:#3B3733;color:#fff}
 td.note{font-size:.92em;color:var(--ink2);background-image:none}
+.r-na{border:0.6pt dashed #B5AEA6;color:#9A938B}

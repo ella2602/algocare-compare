@@ -91,9 +91,9 @@ def table_logos(label, cell):
     return '<span class="td-logo">' + "".join(
         f'<img src="img/logos/{LOGOS[k][0]}" alt="{html.escape(LOGOS[k][2])}" style="height:{LOGOS[k][1] * .8:.2f}mm">' for k in keys) + "</span>"
 
-# 비교표 칸 평가 표시: 셀 끝에 [[베스트]] [[우수]] [[동급]] [[평범]] [[열위]]
-RATE = {"베스트": "best", "우수": "good", "동급": "eq", "평범": "mid", "열위": "low"}
-RATE_RE = re.compile(r"\s*\[\[(베스트|우수|동급|평범|열위)\]\]\s*$")
+# 비교표 칸 평가 표시: 셀 끝에 [[베스트]] [[우수]] [[동급]] [[평범]] [[열위]] [[비교불가]]
+RATE = {"베스트": "best", "우수": "good", "동급": "eq", "평범": "mid", "열위": "low", "비교불가": "na"}
+RATE_RE = re.compile(r"\s*\[\[(베스트|우수|동급|평범|열위|비교불가)\]\]\s*$")
 
 def render_table(rows, dense=False):
     # 글자 수가 매우 많은 표(멀티 8열 등)만 셀 여백을 줄여 자동 맞춤 글자 크기를 확보
