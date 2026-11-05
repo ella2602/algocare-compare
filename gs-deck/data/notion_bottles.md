@@ -58,7 +58,7 @@ Column groups / colors:
 | 월 환산가 | 월 19,757원(600mg) - 29,636원(900mg) | 월 9,900원 (10박스 구매 기준) | 월 약 5,817원 (6박스 구매 기준) | 월 47,400원 | 월 42,000원 |
 | 100mg당 가격 | 약 110원 [[베스트]] | 약 66원 / {자사 제품 대비 품질 열위} [[비교불가]] | 약 32원 / {자사 제품 대비 품질 열위} [[비교불가]] | 약 176원 [[열위]] | 약 140원 [[열위]] |
 | 종합 평가 | Polaris사 80% rTG 고순도 원료로, 동품질 대비 가격 우세 | 순도 60% 원료로, 자사 제품과 품질 차이로 단순 비교 불가 | 순도 60% 원료로, 자사 제품과 품질 차이로 단순 비교 불가 | 자사 제품과 동급의 프리미엄 원료를 사용하였으나, 가격이 EPA+DHA 100mg당 약 1.6배 | 자사 제품과 동급의 프리미엄 원료를 사용하였으나, 가격이 EPA+DHA 100mg당 약 1.3배 |
-| 판매 링크 | [알고케어 자사몰](https://www.algocare.ai/products/omega-3) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1101555012) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1036883468) | [현대웰니스](https://www.hyundaiwellness.com/goods/goods_view.php?goodsNo=1000000992) | [다나와](https://prod.danawa.com/info/?pcode=20717864) |
+| 판매 링크 | [알고케어 자사몰](https://www.algocare.ai/products/omega-3) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1101555012) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1036883468) | [현대웰니스](https://www.hyundaiwellness.com/goods/goods_view.php?goodsNo=1000000992) | [G마켓](https://item.gmarket.co.kr/Item?goodscode=2933980863) |
 
 ---
 
