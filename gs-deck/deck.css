@@ -107,7 +107,7 @@ td a{border-bottom:0.5pt solid currentColor}
 .lg.algo-pre{background:var(--ink2);box-shadow:inset 0 0.8mm 0 #F3A54E}
 .lg.gs{background:#E7E5E2;box-shadow:inset 0 0.8mm 0 #BEB9B3}
 .lg.pharma{background:#EFEDEA;box-shadow:inset 0 0.8mm 0 #D6D1CA}
-.lg-note{margin-left:auto}
+.lg-note{margin-left:auto;text-align:right;line-height:1.5}
 
 /* ---------- cover ---------- */
 .cover{background:radial-gradient(140% 100% at 85% 0%,#2b2724 0%,#121010 50%,#0A0909 100%);color:#FEFEFE}

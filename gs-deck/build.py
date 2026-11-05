@@ -618,7 +618,7 @@ def table_page(b, rows, title_extra=""):
             f'<div class="legend"><span class="lg algo"></span>알고케어 '
             + ('<span class="lg algo-pre"></span>알고케어 출시 예정 ' if any("출시 예정" in g for g in rows[0]) else '') +
             f'<span class="lg gs"></span>GS SHOP 판매 상품 <span class="lg pharma"></span>{PHARMA_LABEL}'
-            f'<span class="lg-note">제조 베스트: 식약처 2025 건강기능식품 생산실적 상위 20개사(법인 기준) / 「-」 미표기 · 미확인 / 「없음」 해당 성분 없음</span></div>{footer()}</section>')
+            f'<span class="lg-note">GS SHOP 판매 상품 월 환산가는 GS SHOP 판매가 기준(구매 단위에 따라 상이), 묶음 구매 시 더 낮아질 수 있음<br>제조 베스트: 식약처 2025 건강기능식품 생산실적 상위 20개사(법인 기준) / 「-」 미표기 · 미확인 / 「없음」 해당 성분 없음</span></div>{footer()}</section>')
 
 COVER = os.environ.get("COVER", "pills")   # dark: 오메가3·바나바 다크 연출컷 / pills: 알약 원형 배치(룩북)
 
