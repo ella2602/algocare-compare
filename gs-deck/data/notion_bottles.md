@@ -652,7 +652,6 @@ Column groups / colors:
 | 보스웰리아 추출물 1일 | 400mg / AKBA+KBA 32.8mg | 1,000mg / AKBA+KBA 71mg | 추출물 중량 미확인 / AKBA+KBA 42mg (원료 84mg/g) | 추출물 중량 미확인 / AKBA+KBA 32.8mg | 100mg / AKBA 30% 표준화 (AKBA 30mg) |
 | 원료명·원료사 | SERRATRIN (Laila Nutraceuticals, 인도) | 미표기 (인도산만 표기) | BOSMAX® (인도) | SERRATRIN (Laila Nutraceuticals, 인도) | 5-LOXIN (PL Thomas–Laila Nutra) |
 | 그 밖의 성분 | 없음 (단일 배합) / {비타민 · 미네랄은 멀티비타민미네랄 보틀로 별도 제공. 중복 우려 없음} | 비타민D 3μg · 마그네슘 94.5mg · 아연 2.55mg / 셀렌 16.5μg · 망간 0.9mg | B2 1.4mg · 나이아신 15mg NE · B6 1.5mg / 비타민D 10μg · 비타민K 70μg / 아연 8.5mg · 셀렌 55μg · 망간 3mg | B2 1.4mg · 나이아신 15mg NE · B6 1.5mg / 비타민D 10μg · 아연 8.5mg · 셀렌 55μg | 없음 |
-| 제형 | 미니정제 90mg, 1일 8정 | 정제 850mg, 1일 2정 (PTP) | 제피정제 900mg, 1일 1정 | 제피정제 800mg, 1일 1정 (PTP) | 식물성 캡슐, 1일 1캡슐 |
 | 제조 | 서흥헬스케어 | 노바렉스 | 코스맥스바이오 (식약처 신고 기준, GS 고시 제조사 항목은 한미양행) | 코스맥스엔비티 | - |
 | 월 환산가 | 월 22,800원 | 월 37,500원 (6개월분 구매 기준) | 월 14,850원 (1개 구매 기준) | 월 17,950원 (2개월분 구매 기준) | 월 $17 |
 | 판매 링크 | [알고케어 자사몰](https://www.algocare.ai/products/boswellia) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=34174792) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1052402166) | [종근당몰](https://www.ckdmall.co.kr/product/detail.html?product_no=301) | [Pure 공식몰](https://pureforyou.com/products/boswellia-akba-60) |
