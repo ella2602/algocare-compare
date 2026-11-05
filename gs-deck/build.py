@@ -170,13 +170,13 @@ def render_table(rows, dense=False):
 BOTTLES = [
  dict(key="omega", no="01", en="OMEGA-3", table="1. 오메가3",
       name="알고케어 뉴트리션 장용성 초임계 rTG 오메가3", photo="omega", pillcap="rTG 소형 캡슐 377mg",
-      hero="글로벌 프리미엄 프랑스 Polaris사,<br>rTG 80% 고순도를 장용성 캡슐에",
+      hero="글로벌 프리미엄 프랑스 Polaris사,<br>rTG 80% 고순도를 장용성 코팅 캡슐에",
       stats=[("80", "%", "오메가3 농도"), ("377", "mg", "소형 캡슐 1알"), ("3 : 2", "", "EPA : DHA 함량 별도 관리")],
       points=[
         ("프랑스 Polaris 원료", "IFOS 5-Star 인증으로 순도·안전성·품질을 검증받은 프리미엄 오메가3 원료사", "polaris"),
         ("오메가3 농도 80%", "비교 제품 중 최상위(솔가 · YDY 제품과 동급). GS 판매 제품은 60%"),
         ("rTG · 377mg 소형 캡슐", "1알 EPA+DHA 300mg. 2~3알로 식약처 기능성 용량(500·600·900mg)에 맞춰 섭취"),
-        ("장용 캡슐 · EPA:DHA 함량 별도 관리", "어취와 더부룩함을 줄인 장용 캡슐. EPA 180 : DHA 120mg으로 쏜리서치 Super EPA와 같은 3:2"),
+        ("장용성 코팅 · EPA:DHA 함량 별도 관리", "어취와 더부룩함을 줄인 장용성 코팅. EPA 180 : DHA 120mg으로 쏜리서치 Super EPA와 같은 3:2"),
       ],
       core="Polaris 원료 · 농도 80% · rTG · EPA:DHA 함량 별도 관리, 네 가지를 모두 갖춘 유일한 제품"),
  dict(key="probio", no="02", en="PROBIOTICS", table="2. 프로바이오틱스",
