@@ -110,6 +110,8 @@ def seal_svg():
             '<text x="60" y="52" font-size="16" font-weight="800" text-anchor="middle" fill="#fff" letter-spacing="1.5">BEST</text>'
             '<text x="60" y="66" font-size="9" font-weight="700" text-anchor="middle" fill="#F47B1A" letter-spacing=".6">OVERALL</text></svg>')
 
+SUMMARY_ROWS = ("요약", "종합 평가")   # 결론 행: 표에서 강조
+
 def render_table(rows, dense=False):
     # 글자 수가 매우 많은 표(멀티 8열 등)만 셀 여백을 줄여 자동 맞춤 글자 크기를 확보
     dense = sum(len(c) for r in rows for c in r) > 2600
@@ -166,7 +168,7 @@ def render_table(rows, dense=False):
     h.append("</tr></thead><tbody>")
     for r in body[1:]:
         lab = ROW_LABEL.get(r[0], r[0])
-        h.append(f'<tr><th class="rl">{html.escape(lab)}</th>')
+        h.append(f'<tr{" class=\"summary\"" if lab in SUMMARY_ROWS else ""}><th class="rl">{html.escape(lab)}</th>')
         for i, c in enumerate(r[1:], start=1):
             cls = kinds[i]
             plain = re.sub(r"\s+", "", c)
@@ -178,7 +180,7 @@ def render_table(rows, dense=False):
             if m:
                 c = c[:m.start()].rstrip()
                 badge = f'<span class="rate r-{RATE[m.group(1)]}">{html.escape(m.group(2) or m.group(1))}</span>'
-            if lab in ("참고", "요약"):
+            if lab in ("참고",) + SUMMARY_ROWS:
                 cls += " note"
             long_badge = bool(m and m.group(2))
             body_html = (f'<div class="rc{" long" if long_badge else ""}"><span>{cell_html(c)}</span>{badge}</div>') if badge else cell_html(c)

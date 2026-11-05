@@ -215,3 +215,9 @@ td.note{font-size:.92em;color:var(--ink2);background-image:none}
 .th-seal{display:flex;align-items:center;justify-content:space-between;gap:2mm}
 .th-seal svg.seal{flex:none;width:12.5mm;height:12.5mm;margin:-1.5mm 0}
 .th-seal svg.laurel{width:15mm;height:12.5mm}
+/* ---------- 종합 평가 행 강조 ---------- */
+table.cmp tr.summary th,table.cmp tr.summary td{border-top:1pt solid var(--orange);border-bottom:1pt solid var(--orange);background:#FDF1E6}
+table.cmp tr.summary th.rl{color:var(--orange-d);font-weight:800}
+table.cmp tr.summary td.algo{background:#141210;color:#fff;font-weight:700;font-size:1.04em}
+table.cmp tr.summary td.note{color:var(--ink2)}
+table.cmp tr.summary td.algo.note{color:#fff}
