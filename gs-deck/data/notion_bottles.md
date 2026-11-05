@@ -453,7 +453,7 @@ Column groups / colors:
 | 제조 | 서흥헬스케어 | 광동헬스바이오 | 바이오360 | 코스맥스엔비티 | 씨이에스팜 |
 | 월 환산가 | 월 42,600원 [[베스트]] | 월 26,900원 / {원료사 미표기로 비교 불가} [[비교불가]] | 월 35,000원 / {홍경천 없어 비교 불가} [[비교불가]] | 월 60,000원 [[열위]] | 월 79,800원 [[열위]] |
 | 종합 평가 | 홍경천 Nektium · 테아닌 원료사를 공개하고, 정 단위 맞춤 조절 가능으로, 동품질 대비 가격 우세 | 원료사 미표기에 1회량 고정, 자사 제품과 단순 가격 비교 불가 | 홍경천 없는 테아닌 제품으로, 자사 제품과 단순 가격 비교 불가 | 원료사 미표기에 1회량 고정, 월 가격이 약 1.4배 | 원료사 미표기에 1회량 고정, 월 가격이 약 1.9배 |
-| 판매 링크 | [알고케어 자사몰](https://www.algocare.ai/products/rhodiola-theanine) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1049322752) | [에스더몰](https://esthermall.co.kr/goods/goods_view.php?goodsNo=1000001578) | 덴프스 | 로에닉 |
+| 판매 링크 | [알고케어 자사몰](https://www.algocare.ai/products/rhodiola-theanine) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1049322752) | [에스더몰](https://esthermall.co.kr/goods/goods_view.php?goodsNo=1000001578) | [롯데ON](https://www.lotteon.com/p/product/LO2434395410) | 로에닉 |
 
 ---
 
