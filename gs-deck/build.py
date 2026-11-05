@@ -206,7 +206,7 @@ BOTTLES = [
  dict(key="probio", no="02", en="PROBIOTICS", table="2. 프로바이오틱스",
       name="알고케어 뉴트리션 프로바이오틱스", photo="probio", pillcap="장용 코팅 캡슐 200mg",
       hero="일동바이오사이언스 국내 특허 균주 5종,<br>균체 4중 코팅(Q-Shield®)에 장용 코팅까지",
-      stats=[("500억 / 100억", "", "투입균수 / 보장균수"), ("5", "종", "특허 균주 IDCC"), ("4중+장용", "", "이중 보호 설계")],
+      stats=[("500억 / 100억", "", "투입균수 / 보장균수", 1.15), ("5", "종", "특허 균주 IDCC", 0.55), ("4중 균체 코팅 + 장용 코팅 캡슐", "", "이중 보호 설계", 1.75, 0.7)],
       points=[
         ("일동바이오사이언스 특허 균주 5종", "한국인 대상 인체 적용 연구가 있는 IDCC 3201·4301·3302·2201·4101", "ildong"),
         ("보장균수 100억, 투입 500억", "보장균수의 5배를 투입하고, 투입 균수를 그대로 공개"),
@@ -403,9 +403,14 @@ def footer(dark=False, src=True):
             f'<span class="ft-note">{note}</span><span class="ft-no">{PAGE_NO[0]:02d}</span></footer>')
 
 def stats_html(stats):
-    return f'<div class="stats{" many" if len(stats) > 3 else ""}">' + "".join(
-        f'<div class="stat"><div class="sv">{html.escape(v)}<small>{html.escape(u)}</small></div>'
-        f'<div class="sl">{html.escape(l)}</div></div>' for v, u, l in stats) + "</div>"
+    # 튜플 (값, 단위, 설명[, 칸 너비 비율[, 값 글자 배율]]) — 긴 값은 칸을 넓히고 글자를 줄여 한 줄 유지
+    def one(t):
+        v, u, l, *opt = t
+        st = f' style="flex:{opt[0]}"' if opt else ""
+        vs = f' style="font-size:min({2 * opt[1]:.2f}em,{24 * opt[1]:.1f}pt);white-space:nowrap;line-height:{1.1 / opt[1]:.2f}"' if len(opt) > 1 else ""
+        return (f'<div class="stat"{st}><div class="sv"{vs}>{html.escape(v)}<small>{html.escape(u)}</small></div>'
+                f'<div class="sl">{html.escape(l)}</div></div>')
+    return f'<div class="stats{" many" if len(stats) > 3 else ""}">' + "".join(one(t) for t in stats) + "</div>"
 
 # 원료사 로고(공식 마크 원본 · 출처는 img/logos/SOURCES.md). 포인트 튜플의 3번째 값(키 또는 키 튜플)로 지정
 # key: (파일, 높이 mm — 워드마크/심벌 비율 차이를 눈으로 맞춘 값, 대체 텍스트)
