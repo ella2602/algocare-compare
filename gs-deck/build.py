@@ -224,7 +224,8 @@ BOTTLES = [
         ("개인별 수면 리듬에 맞춘 멜라토닌 용량", "알고케어 섭취자들은 0.67~5mg 범위 내에서 정 수를 달리해 각자 맞춤 양을 섭취 중"),
         ("멜라토닌 단일 배합", "국내 3종은 모두 타성분 복합 배합. 알고케어는 테아닌/마그네슘 등 별도 보틀 운영"),
       ],
-      core="국내 비교군 중 최저용량 멜라토닌으로 개인별 맞춤이 가능한 유일한 제품"),
+      core="국내 비교군 중 최저용량 멜라토닌으로 개인별 맞춤이 가능한 유일한 제품",
+      next="멜라토닌에 글로벌 프리미엄 수면 원료를 더한 <b>프레스티지 수면</b> 출시 예정 · 03-1 참고"),
  dict(key="sleep", no="03-1", en="SLEEP PRESTIGE", table=None, prerelease=True,
       name="알고케어 프레스티지 수면", photo=None, badge="PRESTIGE",
       hero="멜라토닌에 글로벌 프리미엄<br>수면 원료들을 더한 나이트 보틀",
@@ -594,6 +595,8 @@ def hero_page(b):
                       f'{points_html(b["points"])}' if (KEY_TOP == "ALL" or b["key"] in KEY_TOP) else
                       f'{points_html(b["points"])}'
                       f'<div class="core-wrap"><div class="core"><span>KEY</span>{html.escape(b["core"])}</div></div>'))
+    if b.get("next"):
+        content += f'<div class="nextline"><i>▶</i><span>{b["next"]}</span></div>'
     return f'<section class="page hp">{visual}<div class="content">{content}</div>{footer()}</section>'
 
 def table_page(b, rows, title_extra=""):
