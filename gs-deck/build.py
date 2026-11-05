@@ -180,7 +180,7 @@ BOTTLES = [
         ("rTG · 377mg 소형 캡슐", "1알 EPA+DHA 300mg. 2~3알로 식약처 기능성 용량(500·600·900mg)에 맞춰 섭취"),
         ("장용성 코팅 · EPA:DHA 함량 별도 관리", "어취와 더부룩함을 줄인 장용성 코팅. EPA 180 : DHA 120mg으로 각각의 함량을 별도 관리(3:2)"),
       ],
-      core="Polaris 원료 · 농도 80% · rTG · EPA:DHA 함량 별도 관리, 네 가지를 모두 갖춘 유일한 제품"),
+      core="Polaris 원료 · 농도 80% · rTG · 장용성 코팅 · EPA:DHA 함량 별도 관리, 다섯 가지를 모두 갖춘 유일한 제품"),
  dict(key="probio", no="02", en="PROBIOTICS", table="2. 프로바이오틱스",
       name="알고케어 뉴트리션 프로바이오틱스", photo="probio", pillcap="장용 캡슐 200mg",
       hero="일동바이오사이언스 국내 특허 균주 5종,<br>4중 코팅(Q-Shield®)에 장용성 캡슐까지",
