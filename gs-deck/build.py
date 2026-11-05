@@ -160,7 +160,9 @@ def render_table(rows, dense=False):
                 badge = f'<span class="rate r-{RATE[m.group(1)]}">{html.escape(m.group(2) or m.group(1))}</span>'
             if lab == "참고":
                 cls += " note"
-            h.append(f'<td class="{cls}">{cell_html(c)}{badge}{mark}</td>')
+            long_badge = bool(m and m.group(2))
+            body_html = (f'<div class="rc{" long" if long_badge else ""}"><span>{cell_html(c)}</span>{badge}</div>') if badge else cell_html(c)
+            h.append(f'<td class="{cls}">{body_html}{mark}</td>')
         h.append("</tr>")
     h.append("</tbody></table>")
     return "".join(h)
