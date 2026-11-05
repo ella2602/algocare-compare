@@ -160,7 +160,7 @@ def render_table(rows, dense=False):
                 badge = f'<span class="rate r-{RATE[m.group(1)]}">{m.group(1)}</span>'
             if lab == "참고":
                 cls += " note"
-            h.append(f'<td class="{cls}">{badge}{cell_html(c)}{mark}</td>')
+            h.append(f'<td class="{cls}">{cell_html(c)}{badge}{mark}</td>')
         h.append("</tr>")
     h.append("</tbody></table>")
     return "".join(h)
