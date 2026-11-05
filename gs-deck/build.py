@@ -93,8 +93,8 @@ def table_logos(label, cell):
         f'<img src="img/logos/{LOGOS[k][0]}" alt="{html.escape(LOGOS[k][2])}" style="height:{LOGOS[k][1] * .8:.2f}mm">' for k in keys) + "</span>"
 
 # 비교표 칸 평가 표시: 셀 끝에 [[베스트]] [[우수]] [[동급]] [[평범]] [[열위]] [[비교불가]]
-RATE = {"베스트": "best", "우수": "good", "동급": "eq", "평범": "mid", "열위": "low", "비교불가": "na"}
-RATE_RE = re.compile(r"\s*\[\[(베스트|우수|동급|평범|열위|비교불가)(?:\|([^\]]+))?\]\]\s*$")  # [[종류|표시 문구]]
+RATE = {"베스트": "best", "우수": "good", "동급": "eq", "동일": "eq", "평범": "mid", "열위": "low", "비교불가": "na"}
+RATE_RE = re.compile(r"\s*\[\[(베스트|우수|동급|동일|평범|열위|비교불가)(?:\|([^\]]+))?\]\]\s*$")  # [[종류|표시 문구]]
 
 def seal_svg():
     """BEST OVERALL 월계관 마크"""
