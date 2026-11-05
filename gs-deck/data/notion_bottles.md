@@ -650,11 +650,11 @@ Column groups / colors:
 | --- | --- | --- | --- | --- | --- |
 | 제품 | 알고케어 뉴트리션 보스웰리아 [[BEST OVERALL]] | 프롬바이오 관절연골엔 보스웰리아 | 여에스더 관절엔 보스웰리아 | 우리바이오 관절스타 | 보령 관절 연골엔 보스웰리아 퀵 |
 | AKBA+KBA 1일 | 32.8mg / {보스웰리아 추출물 400mg} [[동일|동등]] | 71mg / {다른 인정 원료로 기준 함량 상이} [[비교불가]] | 42mg / {다른 인정 원료로 기준 함량 상이} [[비교불가]] | 32.8mg [[동일|동등]] | 32.8mg [[동일|동등]] |
-| 원료명 · 원료사 | SERRATRIN / {Laila Nutraceuticals} [[베스트]] | 원료사 미표기 / {인도산만 표기} [[열위]] | BOSMAX® / {원료사 미표기} [[열위]] | SERRATRIN / {Laila Nutraceuticals} [[베스트]] | SERRATRIN / {Laila Nutraceuticals} [[베스트]] |
+| 원료명 · 원료사 | SERRATRIN / {Laila Nutraceuticals} [[베스트]] | 원료사 미표기 / {인도산만 표기} [[열위]] | BOSMAX® [[베스트]] | SERRATRIN / {Laila Nutraceuticals} [[베스트]] | SERRATRIN / {Laila Nutraceuticals} [[베스트]] |
 | 그 밖의 성분 | 없음 / {비타민 · 미네랄은 멀티비타민미네랄 보틀로 별도 제공. 중복 우려 없음} [[비교불가]] | 비타민D, 마그네슘 · 아연 · 셀렌 · 망간 [[비교불가]] | 비타민 B2 · B6 · D · K, 나이아신, 아연 · 셀렌 · 망간 [[비교불가]] | 비타민 B2 · B6 · D, 나이아신, 아연 · 셀렌 [[비교불가]] | 비타민D, 아연 · 셀렌 [[비교불가]] |
 | 월 환산가 | 월 22,800원 [[베스트]] | 월 37,500원 [[열위]] | 월 14,850원 / {다른 개별인정형 원료로 비교 불가} [[비교불가]] | 월 38,500원 [[열위]] | 월 29,000원 [[열위]] |
 | 제조 | 서흥헬스케어 | 노바렉스 | 코스맥스바이오 | 우리바이오 | 노바렉스 |
-| 종합 평가 | SERRATRIN 원료와 Laila 원료사를 공개하고, 비타민 · 미네랄 중복 없이 동품질 대비 가격 우세 | 원료사 미표기, 월 가격이 약 1.6배 | 원료사 미표기, 자사 제품과 단순 가격 비교 불가 | 자사 제품과 같은 SERRATRIN 원료이나, 월 가격이 약 1.7배 | 자사 제품과 같은 SERRATRIN 원료이나, 월 가격이 약 1.3배 |
+| 종합 평가 | SERRATRIN 원료와 Laila 원료사를 공개하고, 비타민 · 미네랄 중복 없이 동품질 대비 가격 우세 | 원료사 미표기, 월 가격이 약 1.6배 | 다른 개별인정형 원료로, 자사 제품과 단순 가격 비교 불가 | 자사 제품과 같은 SERRATRIN 원료이나, 월 가격이 약 1.7배 | 자사 제품과 같은 SERRATRIN 원료이나, 월 가격이 약 1.3배 |
 | 판매 링크 | [알고케어 자사몰](https://www.algocare.ai/products/boswellia) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=34174792) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1052402166) | 우리바이오 | [보령몰](https://www.boryungmall.com/product/detail.html?product_no=1609) |
 
 ---
