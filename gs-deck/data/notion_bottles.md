@@ -646,15 +646,16 @@ Column groups / colors:
 - Col 5: green | group label: 제약사브랜드 인기 상품 또는 프리미엄급 상품 (해외 제품 포함) | product: 종근당 관절건강프로젝트365 보스웰리아 7Days
 - Col 6: green | group label: 제약사브랜드 인기 상품 또는 프리미엄급 상품 (해외 제품 포함) (continued; cell empty) | product: Pure Boswellia AKBA
 
-| 구분 | 알고케어 | GS SHOP 판매 상품 |  | 제약사브랜드 인기 상품 또는 프리미엄급 상품 (해외 제품 포함) |  |
+| 구분 | 알고케어 | GS SHOP 판매 상품 |  | 제약사브랜드 인기 상품 또는 프리미엄급 상품 |  |
 | --- | --- | --- | --- | --- | --- |
-| 제품 | 알고케어 뉴트리션 보스웰리아 | 프롬바이오 관절연골엔 보스웰리아 | 여에스더 관절엔 보스웰리아 | 종근당 관절건강프로젝트365 보스웰리아 7Days | Pure Boswellia AKBA |
-| 보스웰리아 추출물 1일 | 400mg / AKBA+KBA 32.8mg | 1,000mg / AKBA+KBA 71mg | 추출물 중량 미확인 / AKBA+KBA 42mg (원료 84mg/g) | 추출물 중량 미확인 / AKBA+KBA 32.8mg | 100mg / AKBA 30% 표준화 (AKBA 30mg) |
-| 원료명·원료사 | SERRATRIN (Laila Nutraceuticals, 인도) | 미표기 (인도산만 표기) | BOSMAX® (인도) | SERRATRIN (Laila Nutraceuticals, 인도) | 5-LOXIN (PL Thomas–Laila Nutra) |
-| 그 밖의 성분 | 없음 (단일 배합) / {비타민 · 미네랄은 멀티비타민미네랄 보틀로 별도 제공. 중복 우려 없음} | 비타민D 3μg · 마그네슘 94.5mg · 아연 2.55mg / 셀렌 16.5μg · 망간 0.9mg | B2 1.4mg · 나이아신 15mg NE · B6 1.5mg / 비타민D 10μg · 비타민K 70μg / 아연 8.5mg · 셀렌 55μg · 망간 3mg | B2 1.4mg · 나이아신 15mg NE · B6 1.5mg / 비타민D 10μg · 아연 8.5mg · 셀렌 55μg | 없음 |
-| 제조 | 서흥헬스케어 | 노바렉스 | 코스맥스바이오 (식약처 신고 기준, GS 고시 제조사 항목은 한미양행) | 코스맥스엔비티 | - |
-| 월 환산가 | 월 22,800원 | 월 37,500원 (6개월분 구매 기준) | 월 14,850원 (1개 구매 기준) | 월 17,950원 (2개월분 구매 기준) | 월 $17 |
-| 판매 링크 | [알고케어 자사몰](https://www.algocare.ai/products/boswellia) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=34174792) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1052402166) | [종근당몰](https://www.ckdmall.co.kr/product/detail.html?product_no=301) | [Pure 공식몰](https://pureforyou.com/products/boswellia-akba-60) |
+| 제품 | 알고케어 뉴트리션 보스웰리아 [[BEST OVERALL]] | 프롬바이오 관절연골엔 보스웰리아 | 여에스더 관절엔 보스웰리아 | 우리바이오 관절스타 | 보령 관절 연골엔 보스웰리아 퀵 |
+| AKBA+KBA 1일 | 32.8mg / {보스웰리아 추출물 400mg} [[동일|동등]] | 71mg / {다른 인정 원료로 기준 함량 상이} [[비교불가]] | 42mg / {다른 인정 원료로 기준 함량 상이} [[비교불가]] | 32.8mg [[동일|동등]] | 32.8mg [[동일|동등]] |
+| 원료명 · 원료사 | SERRATRIN / {Laila Nutraceuticals (인도)} [[베스트]] | 원료사 미표기 / {인도산만 표기} [[열위]] | BOSMAX® / {원료사 미표기} [[열위]] | SERRATRIN / {Laila Nutraceuticals (라벨 표기)} [[베스트]] | SERRATRIN / {원료사 미표기} [[우수]] |
+| 그 밖의 성분 | 없음 / {비타민 · 미네랄은 멀티비타민미네랄 보틀로 별도 제공. 중복 우려 없음} [[비교불가]] | 비타민D, 마그네슘 · 아연 · 셀렌 · 망간 [[비교불가]] | 비타민 B2 · B6 · D · K, 나이아신, 아연 · 셀렌 · 망간 [[비교불가]] | 비타민 B2 · B6 · D, 나이아신, 아연 · 셀렌 [[비교불가]] | 비타민D, 아연 · 셀렌 [[비교불가]] |
+| 월 환산가 | 월 22,800원 [[베스트]] | 월 37,500원 [[열위]] | 월 14,850원 / {원료사 미표기로 비교 불가} [[비교불가]] | 월 38,500원 [[열위]] | 월 29,000원 [[열위]] |
+| 제조 | 서흥헬스케어 | 노바렉스 | 코스맥스바이오 | 우리바이오 | 노바렉스 |
+| 종합 평가 | SERRATRIN 원료와 Laila 원료사를 공개하고, 비타민 · 미네랄 중복 없이 동품질 대비 가격 우세 | 원료사 미표기, 월 가격이 약 1.6배 | 원료사 미표기, 자사 제품과 단순 가격 비교 불가 | 자사 제품과 같은 SERRATRIN 원료이나, 월 가격이 약 1.7배 | 자사 제품과 같은 SERRATRIN 원료이나 원료사 미표기, 월 가격이 약 1.3배 |
+| 판매 링크 | [알고케어 자사몰](https://www.algocare.ai/products/boswellia) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=34174792) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1052402166) | 우리바이오 | [보령몰](https://www.boryungmall.com/product/detail.html?product_no=1609) |
 
 ---
 
