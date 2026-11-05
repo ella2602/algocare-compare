@@ -55,7 +55,7 @@ Column groups / colors:
 | 원료사 | Polaris (프랑스) [[베스트]] | KD Pharma (독일) [[베스트]] | Solutex (스페인) [[베스트]] | Polaris (프랑스) [[베스트]] | Polaris (프랑스) [[베스트]] |
 | 원산지 | 프랑스 정제 (페루 멸치) | 독일 정제 (남태평양 멸치) | 스페인 정제 (어종 미표기) | 프랑스 | - |
 | 제조 | 서흥헬스케어 | 종근당건강 자체 공장 | 우리바이오 | 코스맥스엔비티 | 알파바이오 |
-| 월 환산가 | 월 19,757원(600mg) / 29,636원(900mg), 자사몰 | 월 9,900원 (10박스 구매 기준) | 월 약 5,817원 (6박스 구매 기준) | 월 47,400원 | 월 42,000원 |
+| 월 환산가 | 월 19,757원(600mg) - 29,636원(900mg) | 월 9,900원 (10박스 구매 기준) | 월 약 5,817원 (6박스 구매 기준) | 월 47,400원 | 월 42,000원 |
 | 100mg당 가격 | 약 110원 [[베스트]] | 약 66원 / {자사 제품 대비 품질 열위} [[비교불가]] | 약 32원 / {자사 제품 대비 품질 열위} [[비교불가]] | 약 176원 [[열위]] | 약 140원 [[열위]] |
 | 요약 | Polaris사 80% rTG 고순도 원료로, 동품질 대비 가격 우세 | 순도 60% 원료로, 자사 제품과 품질 차이로 단순 비교 불가 | 순도 60% 원료로, 자사 제품과 품질 차이로 단순 비교 불가 | 자사 제품과 동급의 프리미엄 원료를 사용하였으나, 가격이 EPA+DHA 100mg당 약 1.6배 | 자사 제품과 동급의 프리미엄 원료를 사용하였으나, 가격이 EPA+DHA 100mg당 약 1.3배 |
 | 판매 링크 | [알고케어 자사몰](https://www.algocare.ai/products/omega-3) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1101555012) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1036883468) | [현대웰니스](https://www.hyundaiwellness.com/goods/goods_view.php?goodsNo=1000000992) | [다나와](https://prod.danawa.com/info/?pcode=20717864) |
@@ -101,7 +101,7 @@ Column groups / colors:
 | 균주 원료사 | 일동바이오사이언스 | Chr. Hansen (덴마크) | - | 일동바이오사이언스 | - |
 | 코팅·캡슐 | 균체 4중 코팅 + 장용 캡슐 | - | - | 4중 코팅 | 서방형 캡슐 |
 | 제조 | 서흥헬스케어 | BIOFARMA (이탈리아), 수입 | 종근당건강 당진공장 | 노바렉스 | - |
-| 월 환산가 | 월 18,840원, 자사몰 | 월 약 17,000원 (GS 8개월분 136,000원) | 월 약 6,540원 (GS 150일분 32,700원) | 월 14,450원 (일동몰 60캡슐 28,900원, 2개월분) | 월 $42 (30캡슐, 1일 1캡슐) |
+| 월 환산가 | 월 18,840원 | 월 약 17,000원 (8개월분 구매 기준) | 월 약 6,540원 (150일분 구매 기준) | 월 14,450원 (2개월분 구매 기준) | 월 $42 |
 | 판매 링크 | [알고케어 자사몰](https://www.algocare.ai/products/probiotics) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1046922909) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=21227155) | [일동몰](https://www.ildongmall.co.kr/goods/goods_view.php?goodsNo=1000000045) | [Thorne 공식몰](https://www.thorne.com/products/dp/florasport-20b) |
 
 ---
@@ -145,7 +145,7 @@ Column groups / colors:
 | 식품유형 | 식품 | 식품 | 식품 | 캔디류 | dietary supplement |
 | 판매원 | 알고케어 | 코스네이처 | 지엔엠라이프 | ㈜종근당 | Pure Encapsulations |
 | 제조 | 서흥헬스케어 | 서흥 | 콜마비앤에이치 | 에스디푸드 | - |
-| 월 환산가 | 월 13,500원, 자사몰 | 월 17,380원 (GS 5박스 86,900원) | 월 17,380원 (GS 5박스 86,900원, 현재 일시품절) | 월 약 12,540~25,080원 | 월 약 $6.25 ($12.5/60캡슐, 1일 1캡슐) |
+| 월 환산가 | 월 13,500원 | 월 17,380원 (5박스 구매 기준) | 월 17,380원 (5박스 구매 기준) | 월 약 12,540~25,080원 | 월 약 $6.25 |
 | 판매 링크 | [알고케어 자사몰](https://www.algocare.ai/products/melatonin) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1106390450) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1101181053) | [종근당몰](https://www.ckdmall.co.kr/product/detail.html?product_no=540) | [Pure 공식몰](https://pureforyou.com/products/melatonin-60) |
 
 ---
@@ -184,7 +184,7 @@ Column groups / colors:
 | 트립토판 | 없음 | 함유 (함량 미표기) | 50mg | 함유 (함량 미표기) | 없음 |
 | 마그네슘 | 없음 (마그네슘 보틀 별도) | 없음 | 100mg | 글루콘산마그네슘 함유 (함량 미표기) | 없음 |
 | 형태·유형 | 식품 | 정제 400mg, 식품 | 정제 900mg, 식품 | 젤리 4g, 캔디류 | 캡슐 (1회 2캡슐), dietary supplement |
-| 월 환산가 | (개발 중) | 월 17,380원 (GS 5박스 86,900원) | 월 17,380원 (GS 5박스 86,900원) | 월 약 12,540~25,080원 | 월 $37 |
+| 월 환산가 | (개발 중) | 월 17,380원 (5박스 구매 기준) | 월 17,380원 (5박스 구매 기준) | 월 약 12,540~25,080원 | 월 $37 |
 | 판매 링크 | (개발 중) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1106390450) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1101181053) | [종근당몰](https://www.ckdmall.co.kr/product/detail.html?product_no=540) | [Pure 공식몰](https://pureforyou.com/products/best-rest-formula) |
 
 ---
@@ -237,7 +237,7 @@ Column groups / colors:
 | 캡슐 | 장용 연질캡슐 300mg | 식물성 연질캡슐 750mg | 연질캡슐 500mg | 연질캡슐 500mg | 연질캡슐 |
 | 장용 | 장용 | - | - | - | - |
 | 제조 | 서흥헬스케어 | 한국씨엔에스팜 | 대원헬스케어 2공장 (라벨 기준, GS 고시는 한풍네이처팜) | - | - |
-| 월 환산가 | 월 14,800원, 자사몰 | 월 약 7,690원 (GS 10개월분 76,900원) | 월 약 4,483원 (GS 6개월분 26,900원) | 월 약 7,633원 (종근당건강몰 3박스 22,900원, 핫딜가) | 월 $39 ($78/60젤캡, 1일 1캡슐) |
+| 월 환산가 | 월 14,800원 | 월 약 7,690원 (10개월분 구매 기준) | 월 약 4,483원 (6개월분 구매 기준) | 월 약 7,633원 (3박스 구매 기준) | 월 $39 |
 | 판매 링크 | [알고케어 자사몰](https://www.algocare.ai/products/coenzyme-q10) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1054850729) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1052999544) | [종근당건강 공식](https://www.ckdhc.com/product/productView.do?prodCode=CHC0000253) | [Thorne 공식몰](https://www.thorne.com/products/dp/ubiquinol) |
 
 ---
@@ -280,7 +280,7 @@ Column groups / colors:
 | 원료사 | Lute-gen® (Bio-gen Extracts) | 빌베리: Indena (이탈리아) / 루테인: Lute-gen® (Bio-gen Extracts) | - | - | OmniActive Lutemax 2020 | - |
 | 캡슐 | 장용 연질캡슐 300mg | 장용 연질캡슐 예정 | 미니 식물성 연질캡슐 151mg | 식물성 연질캡슐 500mg | 미니 연질캡슐 250mg | 연질캡슐 160mg |
 | 장용 | 장용 | 장용 (예정) | - | - | - | - |
-| 월 환산가 | 월 13,200원, 자사몰 | (개발 중) | 월 약 7,040원 (GS 3개월분 21,120원, 쿠폰 적용 전) | 월 약 17,567원 (GS 3박스 52,700원) | 월 14,900원 (일동몰 30캡슐, 30일분, 정가 27,000원) | 월 약 9,800원 (6개월분 58,900원) |
+| 월 환산가 | 월 13,200원 | (개발 중) | 월 약 7,040원 (3개월분 구매 기준) | 월 약 17,567원 (3박스 구매 기준) | 월 14,900원 | 월 약 9,800원 (6개월분 구매 기준) |
 | 판매 링크 | [알고케어 자사몰](https://www.algocare.ai/products/lutein-zeaxanthin) | (개발 중) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1013102250) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=34265777) | [일동몰](https://www.ildongmall.co.kr/goods/goods_view.php?goodsNo=1000002036) | [네이버 스토어](https://smartstore.naver.com/main/products/9396259383) |
 
 ---
@@ -340,7 +340,7 @@ Column groups / colors:
 | 원료사 | 아쿠아민 마그네슘: Superior Powders(영국) / 젖산 마그네슘: NOVICHEM(폴란드) / 글루콘산 마그네슘: Novotech(미국) | Albion TRAACS® | ‘미국산’ 표기만 존재 | - | ‘미국산’ 표기만 존재 | - |
 | 형태 | 미니정제 | (개발 중) | 정제 920mg × 2정 | 액상 앰플 33g | - | 캡슐 |
 | 제조 | 서흥헬스케어 | 서흥 | 코스맥스엔비티 | 팜텍코리아 | - | - |
-| 월 환산가 | 월 12,140원, 자사몰 | (개발 중) | 월 16,900원 (GS 60정 1개) | 월 약 64,100원 (GS 14병 29,900원) | 월 6,633원 (종근당건강 공식) | 월 $8.67 ($26/90캡슐, 1일 1캡슐) |
+| 월 환산가 | 월 12,140원 | (개발 중) | 월 16,900원 (1개 구매 기준) | 월 약 64,100원 (14병 구매 기준) | 월 6,633원 | 월 $8.67 |
 | 판매 링크 | [알고케어 자사몰](https://www.algocare.ai/products/magnesium) | (개발 중) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1132033154) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1133681064) | [종근당건강 공식](https://www.ckdhc.com/product/productView.do?prodCode=CHC0000245) | [Thorne 공식몰](https://www.thorne.com/products/dp/magnesium-glycinate) |
 
 ---
@@ -375,7 +375,7 @@ Column groups / colors:
 | 원료사 | Indena (이탈리아) | 미국산으로만 표기 | 이탈리아산으로만 표기 | 인도산으로만 표기 | - |
 | 형태 | 미니정제 | 정제 500mg | 식물성 연질캡슐 700mg | 연질캡슐 830mg | 미니정제 350mg |
 | 제조 | 서흥헬스케어 | 대원헬스케어 2공장 (라벨 기준, GS 고시는 극동에치팜) | 알피바이오 | - | 고려은단헬스케어 |
-| 월 환산가 | 월 10,200원, 자사몰 | 월 약 5,270원 (GS 6박스 31,600원, 쿠폰가) | 월 13,900원 (GS 1개) | 월 5,660원 (30캡슐, 다나와 최저가) | 월 약 3,800원 (180정 22,900원) |
+| 월 환산가 | 월 10,200원 | 월 약 5,270원 (6박스 구매 기준) | 월 13,900원 (1개 구매 기준) | 월 5,660원 | 월 약 3,800원 (6개월분 구매 기준) |
 | 판매 링크 | [알고케어 자사몰](https://www.algocare.ai/products/milk-thistle) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=18559942) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1043112860) | [종근당건강 공식](https://www.ckdhc.com/product/productView.do?prodCode=CHC0000058) | [네이버 스토어](https://smartstore.naver.com/main/products/11243018665) |
 
 ---
@@ -411,7 +411,7 @@ Column groups / colors:
 | 형태 | 미니정제 | 정제 500mg, 1일 1정 | 연질캡슐 150mg, 1일 1캡슐 | 정제 500mg | 제피정제 800mg, 1일 1정 |
 | 원료사 | STAR HI (인도) | 미표기 (인도산만 표기) | 미표기 (인도산만 표기) | - | - |
 | 제조 | 서흥헬스케어 | 광동헬스바이오 | 한풍네이처팜 | - | 한풍네이처팜 (식약처 신고 기준) |
-| 월 환산가 | 월 9,480원, 자사몰 | 월 약 4,633원 (GS 3개월분 13,900원) | 월 7,450원 (GS 2개월분 14,900원) | 월 약 5,273원 (다나와 90정 15,820원) | 월 약 4,850원 (다나와 60정 9,700원) |
+| 월 환산가 | 월 9,480원 | 월 약 4,633원 (3개월분 구매 기준) | 월 7,450원 (2개월분 구매 기준) | 월 약 5,273원 (3개월분 구매 기준) | 월 약 4,850원 (2개월분 구매 기준) |
 | 판매 링크 | [알고케어 자사몰](https://www.algocare.ai/products/banaba) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1017526986) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1018673805) | [다나와](https://prod.danawa.com/info/?pcode=17938931) | [다나와](https://prod.danawa.com/info/?pcode=60237761) |
 
 ---
@@ -450,7 +450,7 @@ Column groups / colors:
 | 원료사 | Nektium(스페인, 홍경천) · Molecules bio labs(인도, 테아닌) | 미표기 (테아닌 미국산, 홍경천 스페인산만 표기) | - | - | - |
 | 형태 | 미니정제 6정 | 정제 600mg × 2정 | 정제 1,000mg × 2정 | 정제 900mg, 1일 1정 | 구미 3g × 2개 (캔디류) |
 | 제조 | 서흥헬스케어 | 비엘헬스케어 2공장 | 바이오360 (식약처 신고 기준) | 서흥 | 코스맥스엔비티 |
-| 월 환산가 | 월 42,600원, 자사몰 | 월 26,900원 (GS 1박스) | 월 35,000원 (에스더몰 정가, 1개월분) | 월 15,000원 (디몰 10정×10박스 50,000원) | 월 14,900원 (종근당몰 60구미, 30일분) |
+| 월 환산가 | 월 42,600원 | 월 26,900원 (1박스 구매 기준) | 월 35,000원 | 월 15,000원 (10박스 구매 기준) | 월 14,900원 |
 | 판매 링크 | [알고케어 자사몰](https://www.algocare.ai/products/rhodiola-theanine) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1049322752) | [에스더몰](https://esthermall.co.kr/goods/goods_view.php?goodsNo=1000001578) | [디몰](https://www.dmall.co.kr/product/detail.html?product_no=1713) | [종근당몰](https://www.ckdmall.co.kr/product/detail.html?product_no=550) |
 
 ---
@@ -529,7 +529,7 @@ Column groups / colors:
 | 원료사 | 전 성분 공개 / DSM 10종 (A·B군 5종·C·D·E·K1), Gnosis MenaQ7®(이탈리아), Jost Chemical(미국) 등 | 활성형 엽산 Quatrefolic® / 그 외 원료사 기획 단계 | 비타민만 DSM 표기 / 미네랄 원료사 미표기 | - | - | 킬레이트 미네랄 : Albion TRAACS® |
 | 형태 | 미니정제 120mg, 1일 6정 (15정까지 조절 가능) | 미니정제 | 액상 20mL + 정제 2정 (700mg + 600mg), 1일 1병 | 액상 20mL + 정제 2정 (919mg), 1일 1병 | 정제 550mg, 1일 1정 | 캡슐, 1일 2캡슐 |
 | 제조 | 서흥헬스케어 | (개발 중) | 네추럴웨이 포천 제2공장 | Orthomol (독일), 수입판매원 오쏘몰·동아제약 | 코스맥스엔비티 (식약처 신고 기준) | - |
-| 월 환산가 | 월 18,400원, 자사몰 | (개발 중) | 월 약 68,700원 (GS 10병 22,900원) | 월 124,300원 (GS 30병 124,300원) | 월 17,000원 (유한양행 공식몰 30정) | 월 $40 ($40/60캡슐, 1일 2캡슐) |
+| 월 환산가 | 월 18,400원 | (개발 중) | 월 약 68,700원 (10병 구매 기준) | 월 124,300원 (30병 구매 기준) | 월 17,000원 | 월 $40 |
 | 판매 링크 | [알고케어 자사몰](https://www.algocare.ai/products/multivitamin-mineral) | (개발 중) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1102722658) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1084474303) | [유한양행 공식몰](https://www.yuhanshop.co.kr/goods/goods_view.php?goodsNo=1000000951) | [Thorne 공식몰](https://www.thorne.com/products/dp/basic-nutrients-2-day) |
 
 ---
@@ -568,7 +568,7 @@ Column groups / colors:
 | 원료사 | DSM Quali®-D (스위스) | DSM Quali®-D (스위스) | - | DSM Quali®-D (스위스) | - |
 | 제형 | 미니정제 95mg | 츄어블 정제 600mg (오렌지맛) | 식물성 캡슐 300mg | 츄어블 연질캡슐 280mg | 식물성 캡슐 (HPMC) |
 | 제조 | 서흥헬스케어 | 한국씨엔에스팜 | NHS U.S., LLC (미국, 수입원 네슬레코리아) | 알피바이오 | - |
-| 월 환산가 | 월 4,560원, 자사몰 | 월 4,000원 (GS 3박스 180정 24,000원) | 월 약 23,400원 (GS 50캡슐 39,000원) | 월 약 3,967원 (일동몰 90캡슐 11,900원, 정가 35,000원) | 월 $5.67 ($17/90캡슐, 1일 1캡슐) |
+| 월 환산가 | 월 4,560원 | 월 4,000원 (3박스 구매 기준) | 월 약 23,400원 (1개 구매 기준) | 월 약 3,967원 (3개월분 구매 기준) | 월 $5.67 |
 | 판매 링크 | [알고케어 자사몰](https://www.algocare.ai/products/vitamin-d) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1022169652) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1055104342) | [일동몰](https://www.ildongmall.co.kr/goods/goods_view.php?goodsNo=1000002137) | [Thorne 공식몰](https://www.thorne.com/products/dp/d-1000-vitamin-d-capsule) |
 
 ---
@@ -618,7 +618,7 @@ Column groups / colors:
 | 원료사 | 해조칼슘: Microferm (영국, Aquamin F) / 산화마그네슘: CALMAGS (독일) | 유단백추출물: TATUA (뉴질랜드) | 미표기 | 미표기 | - |
 | 제형 | 미니정제 135mg, 1일 14정 (최대 23정) | 경질캡슐 130mg, 1일 1캡슐 | 정제 1,000mg, 1일 2정 | 정제 900mg, 1일 2정 | 식물성 캡슐, 1일 3캡슐 |
 | 제조 | 서흥헬스케어 | 서흥헬스케어 2공장 | 이앤에스 | 비엘헬스케어 2공장 | - |
-| 월 환산가 | 월 14,233원, 자사몰 | 월 약 44,667원 (GS 6개월분 268,000원) | 월 약 5,633원 (GS 3개월분 180정 16,900원) | 월 11,500원 (컬리 2개월분 정가 23,000원) | 월 약 $16.13 ($43/240캡슐, 1일 3캡슐) |
+| 월 환산가 | 월 14,233원 | 월 약 44,667원 (6개월분 구매 기준) | 월 약 5,633원 (3개월분 구매 기준) | 월 11,500원 (2개월분 구매 기준) | 월 약 $16.13 |
 | 판매 링크 | [알고케어 자사몰](https://www.algocare.ai/products/calcium-magnesium) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1048125487) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=29385966) | [컬리](https://www.kurly.com/goods/1000154414) | [Thorne 공식몰](https://www.thorne.com/products/dp/calcium-magnesium-malate) |
 
 ---
@@ -659,7 +659,7 @@ Column groups / colors:
 | 그 밖의 성분 | 없음 (단일 배합, 멀티와 중복 섭취 방지) | 비타민D 3μg · 마그네슘 94.5mg · 아연 2.55mg / 셀렌 16.5μg · 망간 0.9mg | B2 1.4mg · 나이아신 15mg NE · B6 1.5mg / 비타민D 10μg · 비타민K 70μg / 아연 8.5mg · 셀렌 55μg · 망간 3mg | B2 1.4mg · 나이아신 15mg NE · B6 1.5mg / 비타민D 10μg · 아연 8.5mg · 셀렌 55μg | 없음 |
 | 제형 | 미니정제 90mg, 1일 8정 | 정제 850mg, 1일 2정 (PTP) | 제피정제 900mg, 1일 1정 | 제피정제 800mg, 1일 1정 (PTP) | 식물성 캡슐, 1일 1캡슐 |
 | 제조 | 서흥헬스케어 | 노바렉스 | 코스맥스바이오 (식약처 신고 기준, GS 고시 제조사 항목은 한미양행) | 코스맥스엔비티 | - |
-| 월 환산가 | 월 22,800원, 자사몰 | 월 37,500원 (GS 6개월분 225,000원) | 월 14,850원 (GS 1개 30정 14,850원) / 월 11,880원 (GS 5개 150정 59,400원) | 월 17,950원 (종근당몰 60정 35,900원) | 월 $17 ($34/60캡슐, 1일 1캡슐) |
+| 월 환산가 | 월 22,800원 | 월 37,500원 (6개월분 구매 기준) | 월 14,850원 (1개 구매 기준) | 월 17,950원 (2개월분 구매 기준) | 월 $17 |
 | 판매 링크 | [알고케어 자사몰](https://www.algocare.ai/products/boswellia) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=34174792) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1052402166) | [종근당몰](https://www.ckdmall.co.kr/product/detail.html?product_no=301) | [Pure 공식몰](https://pureforyou.com/products/boswellia-akba-60) |
 
 ---
@@ -698,7 +698,7 @@ Column groups / colors:
 | 원료사 | UNIAREA (미국) | 미표기 (인도산만 표기, 아모레퍼시픽 자체 추출 공정 강조) | 미표기 (인도산만 표기) | 미표기 (인도산만 표기) | Indena (Greenselect Phytosome) |
 | 제형 | 미니정제 100mg, 1일 7정 | 장용성 제피정제 680mg, 1일 1정 | 제피정제 550mg, 1일 2정 | 코팅정제 800mg, 1일 1정 | 식물성 캡슐, 1일 2~3캡슐 |
 | 제조 | 서흥헬스케어 | 아모레퍼시픽 | 허브큐어 | 엠에스바이오텍 | - |
-| 월 환산가 | 월 17,400원, 자사몰 | 월 30,600원 (GS 30일분 30,600원) / 부스터샷 묶음: 50일세트 89,600원 | 월 약 14,893원 (GS 1병 4주분 13,900원) | 월 6,950원 (GS 2개월분 13,900원) | 월 약 $34~51 ($34/60캡슐, 1일 2~3캡슐) |
+| 월 환산가 | 월 17,400원 | 월 30,600원 (1개월분 구매 기준) | 월 약 14,893원 (1병 구매 기준) | 월 6,950원 (2개월분 구매 기준) | 월 약 $34~51 |
 | 판매 링크 | [알고케어 자사몰](https://www.algocare.ai/products/green-tea-catechin) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1052357022) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=31538915) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1056705288) | [Thorne 공식몰](https://www.thorne.com/products/dp/green-tea-phytosome) |
 
 ---
