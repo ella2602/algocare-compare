@@ -93,7 +93,7 @@ def table_logos(label, cell):
 
 # 비교표 칸 평가 표시: 셀 끝에 [[베스트]] [[우수]] [[동급]] [[평범]] [[열위]] [[비교불가]]
 RATE = {"베스트": "best", "우수": "good", "동급": "eq", "평범": "mid", "열위": "low", "비교불가": "na"}
-RATE_RE = re.compile(r"\s*\[\[(베스트|우수|동급|평범|열위|비교불가)\]\]\s*$")
+RATE_RE = re.compile(r"\s*\[\[(베스트|우수|동급|평범|열위|비교불가)(?:\|([^\]]+))?\]\]\s*$")  # [[종류|표시 문구]]
 
 def render_table(rows, dense=False):
     # 글자 수가 매우 많은 표(멀티 8열 등)만 셀 여백을 줄여 자동 맞춤 글자 크기를 확보
@@ -157,7 +157,7 @@ def render_table(rows, dense=False):
             m = RATE_RE.search(c)
             if m:
                 c = c[:m.start()].rstrip()
-                badge = f'<span class="rate r-{RATE[m.group(1)]}">{m.group(1)}</span>'
+                badge = f'<span class="rate r-{RATE[m.group(1)]}">{html.escape(m.group(2) or m.group(1))}</span>'
             if lab == "참고":
                 cls += " note"
             h.append(f'<td class="{cls}">{cell_html(c)}{badge}{mark}</td>')
