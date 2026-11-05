@@ -159,7 +159,7 @@ def render_table(rows, dense=False):
             if m:
                 c = c[:m.start()].rstrip()
                 badge = f'<span class="rate r-{RATE[m.group(1)]}">{html.escape(m.group(2) or m.group(1))}</span>'
-            if lab == "참고":
+            if lab in ("참고", "요약"):
                 cls += " note"
             long_badge = bool(m and m.group(2))
             body_html = (f'<div class="rc{" long" if long_badge else ""}"><span>{cell_html(c)}</span>{badge}</div>') if badge else cell_html(c)
