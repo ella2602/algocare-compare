@@ -106,8 +106,9 @@ def seal_svg():
             '<g fill="none" stroke="#F47B1A" stroke-width="3" stroke-linecap="round">'
             '<path d="M40 85 C18 72 12 45 22 20"/><path d="M80 85 C102 72 108 45 98 20"/></g>'
             f'<g fill="#F47B1A">{leaves}</g>'
-            '<text x="60" y="49" font-size="16" font-weight="800" text-anchor="middle" fill="#fff" letter-spacing="1.5">BEST</text>'
-            '<text x="60" y="65" font-size="10.5" font-weight="700" text-anchor="middle" fill="#F47B1A" letter-spacing="1.2">OVERALL</text></svg>')
+            '<text x="60" y="33" font-size="12" font-weight="800" text-anchor="middle" fill="#F47B1A">1</text>'
+            '<text x="60" y="52" font-size="16" font-weight="800" text-anchor="middle" fill="#fff" letter-spacing="1.5">BEST</text>'
+            '<text x="60" y="66" font-size="9" font-weight="700" text-anchor="middle" fill="#F47B1A" letter-spacing=".6">OVERALL</text></svg>')
 
 def render_table(rows, dense=False):
     # 글자 수가 매우 많은 표(멀티 8열 등)만 셀 여백을 줄여 자동 맞춤 글자 크기를 확보
