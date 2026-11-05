@@ -400,7 +400,7 @@ PAGE_NO = [0]
 
 def footer(dark=False, src=True):
     PAGE_NO[0] += 1
-    note = "자료 기준 2026.11.04" if src else ""
+    note = "내부용 / 대외비 · 자료 기준 2026.11.04" if src else "내부용 / 대외비"
     return (f'<footer class="ft"><span class="ft-logo">{logo(dark, 11)}</span>'
             f'<span class="ft-note">{note}</span><span class="ft-no">{PAGE_NO[0]:02d}</span></footer>')
 
