@@ -146,7 +146,7 @@ Column groups / colors:
 | 제조 | 서흥헬스케어 | 서흥 | 콜마비앤에이치 | 트래디스바이오 | - |
 | 월 환산가 | 월 13,500원 [[베스트]] | 월 17,380원 (5박스 구매 기준) [[열위]] | 월 17,380원 (5박스 구매 기준) [[열위]] | 월 약 35,000원 [[열위]] | 월 약 20,000원 [[열위]] |
 | 종합 평가 | 국내 비교 제품 중 최저용량 0.67mg 단일 배합으로 개인별 맞춤, 동품질 대비 가격 우세 | 3mg 고정에 트립토판 · 테아닌 · 허브 복합 배합으로, 자사 제품과 단순 비교 불가 | 5mg 고정에 마그네슘 · 테아닌 · 트립토판 복합 배합으로, 자사 제품과 단순 비교 불가 | 식물성 멜라토닌 단일 배합이나, 2mg 고정에 원료사 미표기, 월 가격이 약 2.6배 | 식물성 멜라토닌 2mg 고정에 원료사 미표기, 월 가격이 약 1.5배 |
-| 판매 링크 | [알고케어 자사몰](https://www.algocare.ai/products/melatonin) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1106390450) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1101181053) | 약국 | 온누리약국 |
+| 판매 링크 | [알고케어 자사몰](https://www.algocare.ai/products/melatonin) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1106390450) | [GS SHOP](https://www.gsshop.com/prd/prd.gs?prdid=1101181053) | 약국 전용 | 약국 전용 |
 
 ---
 
