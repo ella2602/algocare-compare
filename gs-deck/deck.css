@@ -212,3 +212,5 @@ td.note{font-size:.92em;color:var(--ink2);background-image:none}
 .rc.long .rate{margin:.45em 0 0!important}
 .cs{font-size:.82em;white-space:nowrap;color:var(--ink2)}
 .overall{display:inline-block;vertical-align:.15em;margin-left:.6em;font-size:5.8pt;font-weight:800;letter-spacing:.14em;line-height:1;padding:.5em .8em .42em;border-radius:99px;background:var(--orange);color:#fff;white-space:nowrap}
+.th-seal{display:flex;align-items:center;justify-content:space-between;gap:2mm}
+.th-seal svg.seal{flex:none;width:12.5mm;height:12.5mm;margin:-1.5mm 0}

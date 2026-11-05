@@ -96,6 +96,20 @@ def table_logos(label, cell):
 RATE = {"베스트": "best", "우수": "good", "동급": "eq", "평범": "mid", "열위": "low", "비교불가": "na"}
 RATE_RE = re.compile(r"\s*\[\[(베스트|우수|동급|평범|열위|비교불가)(?:\|([^\]]+))?\]\]\s*$")  # [[종류|표시 문구]]
 
+_SEAL_N = [0]
+def seal_svg():
+    """BEST OVERALL 원형 인장 마크"""
+    _SEAL_N[0] += 1
+    pid = f"sealc{_SEAL_N[0]}"
+    return (f'<svg class="seal" viewBox="0 0 100 100" aria-label="BEST OVERALL"><defs>'
+            f'<path id="{pid}" d="M50,50 m-36,0 a36,36 0 1,1 72,0 a36,36 0 1,1 -72,0"/></defs>'
+            '<circle cx="50" cy="50" r="47" fill="#F47B1A"/>'
+            '<circle cx="50" cy="50" r="42" fill="none" stroke="#fff" stroke-width="1.2" stroke-dasharray="2 2.4"/>'
+            f'<text font-size="10" font-weight="800" fill="#fff" letter-spacing="1.6" textLength="222" lengthAdjust="spacing">'
+            f'<textPath href="#{pid}">BEST OVERALL · BEST OVERALL ·</textPath></text>'
+            '<circle cx="50" cy="50" r="23" fill="#fff"/>'
+            '<text x="50" y="59" font-size="25" font-weight="800" text-anchor="middle" fill="#D54A0A">1</text></svg>')
+
 def render_table(rows, dense=False):
     # 글자 수가 매우 많은 표(멀티 8열 등)만 셀 여백을 줄여 자동 맞춤 글자 크기를 확보
     dense = sum(len(c) for r in rows for c in r) > 2600
@@ -145,9 +159,10 @@ def render_table(rows, dense=False):
         crown = ""
         if c.endswith("[[BEST OVERALL]]"):
             c = c[:-len("[[BEST OVERALL]]")].rstrip()
-            crown = '<span class="overall">BEST OVERALL</span>'
+            crown = seal_svg()
         name = OFFICIAL.get(c, c)
-        h.append(f'<th class="{kinds[i]}">{cell_html(name)}{crown}</th>')
+        inner = f'<div class="th-seal"><span>{cell_html(name)}</span>{crown}</div>' if crown else cell_html(name)
+        h.append(f'<th class="{kinds[i]}">{inner}</th>')
     h.append("</tr></thead><tbody>")
     for r in body[1:]:
         lab = ROW_LABEL.get(r[0], r[0])
