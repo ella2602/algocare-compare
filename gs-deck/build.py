@@ -182,7 +182,7 @@ def render_table(rows, dense=False):
                 badge = f'<span class="rate r-{RATE[m.group(1)]}">{html.escape(m.group(2) or m.group(1))}</span>'
             if lab in ("참고",) + SUMMARY_ROWS:
                 cls += " note"
-            long_badge = bool(m and m.group(2))
+            long_badge = bool(m and m.group(2) and len(m.group(2)) > 6)
             body_html = (f'<div class="rc{" long" if long_badge else ""}"><span>{cell_html(c)}</span>{badge}</div>') if badge else cell_html(c)
             h.append(f'<td class="{cls}">{body_html}{mark}</td>')
         h.append("</tr>")
