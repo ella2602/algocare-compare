@@ -181,7 +181,7 @@ table.cmp.dense th.grp{padding-top:.6em;padding-bottom:.6em}
 .core-wrap.top + .points{margin-top:2.4em}
 /* 원료사 로고: 포인트 제목 첫 줄 오른쪽 끝, 같은 줄 높이에 세로 가운데 정렬 · 모노톤으로 톤 통일 */
 .pt h4{display:flex;align-items:center;justify-content:flex-start;gap:2.6mm;flex-wrap:wrap}
-.pt h4 .pt-t{flex:none;min-width:0}
+.pt h4 .pt-t{flex:0 1 auto;min-width:0}
 .pt-logo{flex:none;display:flex;align-items:center;gap:2.2mm;height:1.35em}
 .pt-logo img{display:block;width:auto}
 .td-logo{display:flex;flex-wrap:wrap;align-items:center;gap:1.6mm 2.4mm;margin-top:1.4mm}
