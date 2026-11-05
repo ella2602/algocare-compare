@@ -225,7 +225,7 @@ BOTTLES = [
         ("멜라토닌 단일 배합", "국내 3종은 모두 타성분 복합 배합. 알고케어는 테아닌/마그네슘 등 별도 보틀 운영"),
       ],
       core="국내 비교군 중 최저용량 멜라토닌으로 개인별 맞춤이 가능한 유일한 제품",
-      next="멜라토닌에 글로벌 프리미엄 수면 원료를 더한 <b>프레스티지 수면</b> 출시 예정 · p.08 참고"),
+      next="멜라토닌에 글로벌 프리미엄 수면 원료를 더한 <b>프레스티지 수면</b> 출시 예정 · p.{{PAGE:sleep}} 참고"),
  dict(key="sleep", no="03-1", en="SLEEP PRESTIGE", table=None, prerelease=True,
       name="알고케어 프레스티지 수면", photo=None, badge="PRESTIGE",
       hero="멜라토닌에 글로벌 프리미엄<br>수면 원료들을 더한 나이트 보틀",
@@ -256,7 +256,8 @@ BOTTLES = [
         ("최대 2캡슐까지 조절", "필요에 따라 루테인 20mg · 지아잔틴 4mg까지"),
         ("장용 연질캡슐", "위 부담을 덜어 주는 장용 연질캡슐을 갖춘 유일한 제품"),
       ],
-      core="Lute-gen® 개별인정형 원료를 장용 연질캡슐에 담은, 비교 제품 중 유일한 장용 루테인"),
+      core="Lute-gen® 개별인정형 원료를 장용 연질캡슐에 담은, 비교 제품 중 유일한 장용 루테인",
+      next="Mirtoselect® 빌베리 · 아스타잔틴을 더한 <b>프레스티지 눈 건강</b> 출시 예정 · p.{{PAGE:lutein-pre}} 참고"),
  dict(key="lutein-pre", no="05-1", en="EYE PRESTIGE", table=None, prerelease=True,
       name="알고케어 프레스티지 루테인지아잔틴", photo=None, badge="PRESTIGE",
       hero="Indena Mirtoselect® 빌베리와<br>아스타잔틴을 더한 프리미엄 눈 건강 보틀",
@@ -277,7 +278,8 @@ BOTTLES = [
         ("1정 25.71mg 단위 조절", "1정 25.71mg로 개인별 섭취량 조절 가능"),
         ("킬레이트 Mg는 USA 제품으로 별도 구비", "고관여 고객을 위해, Albion TRAACS® 비스글리시네이트 기반 알고케어 USA 제품을 별도로 준비 중 || 국내 규정상 킬레이트 마그네슘은 건강기능식품 원료로 사용 불가"),
       ],
-      core="비교 제품 중 유일하게 마그네슘 원료 3종을 복합으로 배합하여, 1정 단위로 조절하는 제품"),
+      core="비교 제품 중 유일하게 마그네슘 원료 3종을 복합으로 배합하여, 1정 단위로 조절하는 제품",
+      next="Albion TRAACS® 킬레이트 마그네슘을 담은 <b>USA Magnesium</b> 미국 출시 예정 · p.{{PAGE:mag-line}} 참고"),
  dict(key="mag-line", no="06-1", en="MAGNESIUM · USA", table=None, prerelease=True,
       name="알고케어 USA Magnesium", photo=None, badge="USA",
       hero="Albion TRAACS®<br>비스글리시네이트 마그네슘",
@@ -330,7 +332,8 @@ BOTTLES = [
         ("중성 비타민C · K1+K2", "위장관 부담까지 고려한 L-아스코브산칼슘. 국내 비교 제품 중 MenaQ7® K2를 갖춘 유일한 제품"),
         ("칼슘 · 마그네슘은 별도 보틀", "시너지 마그네슘 · 칼슘&마그네슘 보틀로 나눠 중복 섭취 방지"),
       ],
-      core="DSM · MenaQ7® 등 글로벌 원료사와 중성 비타민C로 완성한 데일리 멀티비타민미네랄"),
+      core="DSM · MenaQ7® 등 글로벌 원료사와 중성 비타민C로 완성한 데일리 멀티비타민미네랄",
+      next="Quatrefolic® 활성형 엽산 · 메타좀 비타민C · 헴철을 담은 <b>프레스티지 멀티</b> 출시 예정 · p.{{PAGE:multi-pre}} 참고"),
  dict(key="multi-pre", no="10-1", en="MULTI · PRESTIGE", table=None, prerelease=True,
       name="알고케어 프레스티지 멀티비타민미네랄", photo=None, badge="PRESTIGE",
       hero="Quatrefolic® 활성형 엽산·<br>메타좀 비타민C·헴철,<br>한 단계 위의 프리미엄 멀티",
@@ -655,11 +658,15 @@ def closing():
 CSS = (ROOT / "deck.css").read_text(encoding="utf-8") + (ROOT / "visual_options.css").read_text(encoding="utf-8")
 
 pages = [cover(), lineup()]
+PAGE_OF = {}
 for b in BOTTLES:
     pages.append(hero_page(b))
+    PAGE_OF[b["key"]] = PAGE_NO[0]
     if b["table"]:
         pages.append(table_page(b, tbl(b["table"])))
 pages.append(closing())
+# 본문의 p.{{PAGE:키}} 를 실제 쪽 번호로 치환
+pages = [re.sub(r"\{\{PAGE:([\w-]+)\}\}", lambda m: f"{PAGE_OF[m.group(1)]:02d}", p) for p in pages]
 
 doc = f"""<!doctype html><html lang="ko"><head><meta charset="utf-8">
 <title>알고케어 뉴트리션 보틀 품질 비교 자료</title>
