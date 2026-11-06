@@ -390,7 +390,7 @@ BOTTLES = [
 ]
 
 # 덱에서 뺀 보틀 (데이터는 남겨 둠, 다시 넣으려면 여기서 지우면 됨)
-EXCLUDE = {"vitd", "calmag", "boswellia", "catechin"}
+EXCLUDE = set()
 BOTTLES = [_b for _b in BOTTLES if _b["key"] not in EXCLUDE]
 
 # 순서대로 번호 매김 (출시 예정 보틀은 바로 앞 보틀의 N-1)
