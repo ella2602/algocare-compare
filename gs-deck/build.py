@@ -168,7 +168,7 @@ def render_table(rows, dense=False):
     h.append("</tr></thead><tbody>")
     for r in body[1:]:
         lab = ROW_LABEL.get(r[0], r[0])
-        h.append(f'<tr{" class=\"summary\"" if lab in SUMMARY_ROWS else ""}><th class="rl">{html.escape(lab)}</th>')
+        h.append(f'<tr{" class=\"summary\"" if lab in SUMMARY_ROWS else ""}><th class="rl">{re.sub(r"\{(.+?)\}", r"<span class='cs'>\1</span>", html.escape(lab))}</th>')
         for i, c in enumerate(r[1:], start=1):
             cls = kinds[i]
             plain = re.sub(r"\s+", "", c)
