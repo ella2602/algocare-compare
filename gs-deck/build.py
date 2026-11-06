@@ -316,7 +316,7 @@ BOTTLES = [
  dict(key="lutein", no="05", en="LUTEIN & ZEAXANTHIN", table="5. 루테인",
       name="알고케어 뉴트리션 장용성 루테인지아잔틴", photo="lutein", pillcap="장용 연질캡슐 300mg",
       hero="Lute-gen® 개별인정형 원료로 매일 챙기는 눈 건강 기본 루틴",
-      stats=[("10+2", "mg", "루테인 + 지아잔틴"), ("2", "캡슐", "최대 20+4mg까지"), ("장용", "", "연질캡슐 300mg")],
+      stats=[("10+2", "mg", "루테인 + 지아잔틴"), ("1~2", "캡슐", "최대 20+4mg까지"), ("장용", "", "연질캡슐 300mg")],
       points=[
         ("루테인 10 + 지아잔틴 2mg", "부담 없이 시작할 수 있는 눈 영양제 포지션 / 맞춤 조절로 20 + 4mg까지 섭취 가능"),
         ("개별인정형 Lute-gen® 원료", "Lute-gen®(Bio-gen Extracts)의 개별인정형 원료 사용", "lutegen"),
