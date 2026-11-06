@@ -229,7 +229,7 @@ BOTTLES = [
  dict(key="multi-pre", no="10-1", en="MULTI · PRESTIGE", table=None, prerelease=True,
       name="알고케어 프레스티지 멀티비타민미네랄", photo=None, badge="PRESTIGE",
       hero="Quatrefolic® 활성형 엽산·<br>메타좀 비타민C·헴철,<br>한 단계 위의 프리미엄 멀티",
-      stats=[("1,000", "IU", "비타민D (기준치 250%)"), ("50", "mg", "B1 · B2"), ("500", "㎍", "B12")],
+      stats=[("1,000", "IU", "비타민D (기준치 250%)"), ("Quatrefolic®", "", "활성형 엽산"), ("3,500", "% 이상", "B1 · B2 · B12 (기준치 대비)")],
       points=[
         ("Quatrefolic® 활성형 엽산", "국내 건강기능식품에 쓸 수 있는 유일한 활성형 비타민인 활성형 엽산(5-MTHF) 사용"),
         ("메타좀 비타민C · 헴철", "국내 비교 제품 중 활성형 엽산 · 메타좀 비타민C를 사용한 멀티는 없음"),
